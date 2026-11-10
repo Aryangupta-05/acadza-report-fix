@@ -27,6 +27,8 @@ All required deliverable files and public links are present. No submission email
 - No email has been sent. Aryan should review personal wording and understand WALKTHROUGH.md before any submission. Do not send unless explicitly instructed.
 - No task-resume automation or constant retry timer was created. Do not create duplicate concurrent runs or bypass limits.
 
-## Exact next action
+## Exact next action for Aryan
 
-Finalize the evidence-only commit/push and regenerate ../Acadza_Report_Fix_Source.zip from finalHEAD, excluding secrets/cache/runtime/dependencies. Verify matching Render commit is live, then give Aryan the public repo/console/video and local sourceZIP plus the acceptance matrix. No further inference retry is needed to establish full44 execution. If later changes are requested, inspect this file, REQUIREMENTS.md, actual Git state and the corresponding deployment before editing. Never replace reviewed output with unchecked model output or fabricate provenance.
+Review SUBMISSION_EMAIL.md personal wording and WALKTHROUGH.md, then decide whether to submit by11November2026 at23:59IST. No email sending is authorized yet. The build,44-result reviewed release, full runtime execution evidence, public console/video, documentation and checks are complete within the disclosed limits. Final sourceZIP and handoff evidence are verified separately in the session output folder after publication. No further inference retry is needed to establish full44 execution.
+
+If later changes are requested, inspect this file, REQUIREMENTS.md, actual Git state and the corresponding deployment before editing. Never replace reviewed output with unchecked model output, invent provenance, enable billing or start duplicate runs.
