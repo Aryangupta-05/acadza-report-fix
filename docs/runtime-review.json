@@ -1037,5 +1037,6 @@
       "reviewNote": "An integer response needs its unit stated; implied N does not resolve the report.",
       "selectedEvidence": "The numerical response field omits a unit. With the stored solution’s g = 10 m/s² convention, static friction balances mg = 20 N, below μN = 30 N; propose adding “in N” only. Faculty should also confirm the g convention rather than silently changing the answer."
     }
-  ]
+  ],
+  "releasedHashBasis": "Git blob bytes (LF normalized by Git); JSON content is identical to the Windows working copy."
 }
