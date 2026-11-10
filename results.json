@@ -2,46 +2,62 @@
   {
     "reportId": "R001",
     "questionId": "60f744b3f1b9bc7cc7b4a949",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "Independently, the supply amplitude is √(V_R²+(V_L−V_C)²) = √(40²+(60−30)²) = 50 V, option A. The stored solution also gives 50 V, but the key C points to 130 V.",
+    "student_reply": "You are right that the supply voltage is 50 V, option A. Changing the stored key from C to A is proposed for review."
   },
   {
     "reportId": "R002",
     "questionId": "60f744b3f1b9bc7cc7b4a949",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "Independently, the supply amplitude is √(V_R²+(V_L−V_C)²) = √(40²+(60−30)²) = 50 V, option A. The stored solution also gives 50 V, but the key C points to 130 V.",
+    "student_reply": "You are right that the supply voltage is 50 V, option A. Changing the stored key from C to A is proposed for review."
   },
   {
     "reportId": "R003",
     "questionId": "60f744b3f1b9bc7cc7b4a949",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "Independently, the supply amplitude is √(V_R²+(V_L−V_C)²) = √(40²+(60−30)²) = 50 V, option A. The stored solution also gives 50 V, but the key C points to 130 V.",
+    "student_reply": "You are right that the supply voltage is 50 V, option A. Changing the stored key from C to A is proposed for review."
   },
   {
     "reportId": "R004",
     "questionId": "68e870ef42c06737d6e565c4",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "A",
+      "replace": "D"
+    },
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "Independently, P = ρv_rms²/3 = 0.09 × 400²/3 = 4800 Pa, option D. The student’s 8225 is incorrect, but the stored key A is also wrong; the stored solution agrees with 4800.",
+    "student_reply": "The pressure works out to 4800 Pa, which is option D. Your suggested 8225 is not correct, but the stored key also needs correction; a change to D is proposed."
   },
   {
     "reportId": "R005",
@@ -54,75 +70,91 @@
       "replace": "1"
     },
     "route": "faculty_review",
-    "confidence": 1,
-    "evidence": "Total flux through the cube is Δ̣ = (1/2)(q/2)/Ε₀ + (1/8)(2q)/Ε₀ = q/(4Ε₀) + q/(4Ε₀) = q/(2Ε₀). Equating q/(2Ε₀) to nq/(2Ε₀) yields n = 1. The stored answer key of 2 is incorrect and must be updated to 1.",
-    "student_reply": "Thank you for pointing this out. You are correct that n = 1, as total flux equals q/(2Ε₀). We have proposed an update to correct the answer key to 1."
+    "confidence": 0.96,
+    "evidence": "A charge q/2 on a face contributes q/(4ε₀); 2q at a corner contributes (2q)/(8ε₀). Their total is q/(2ε₀), so n = 1, whereas the key is 2.",
+    "student_reply": "You are right: the two flux contributions give n = 1. An answer-key correction is proposed for review."
   },
   {
     "reportId": "R006",
     "questionId": "696a866665252c04fc1f81c2",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": {
+      "field": "question",
+      "find": "solid copper cube",
+      "replace": "solid copper cube of side 10 cm"
+    },
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "ΔV = (ΔP/B)a³ requires the cube side, which is absent from the stem. The stored solution explicitly uses a = 10 × 10⁻² m = 10 cm, giving ΔV = 50 mm³; propose restoring that datum, with faculty confirmation of the intended source.",
+    "student_reply": "You are right that the cube’s side length is missing. The solution uses 10 cm; restoring that value is proposed for faculty review."
   },
   {
     "reportId": "R007",
     "questionId": "60f742f6660d187cc13a8078",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": {
+      "field": "question",
+      "find": "an inductance",
+      "replace": "an inductance of 95.5 mH"
+    },
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "The stem omits the inductance, so Z = √(R²+(2πfL)²) cannot be evaluated. The stored solution explicitly substitutes L = 95.5 × 10⁻³ H; restoring 95.5 mH gives Z ≈ 50.002 Ω and preserves key C.",
+    "student_reply": "The inductance value is missing from the question. The stored solution uses 95.5 mH; restoring it is proposed for faculty review."
   },
   {
     "reportId": "R008",
     "questionId": "60f742f6660d187cc13a8078",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": {
+      "field": "question",
+      "find": "an inductance",
+      "replace": "an inductance of 95.5 mH"
+    },
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "The stem omits the inductance, so Z = √(R²+(2πfL)²) cannot be evaluated. The stored solution explicitly substitutes L = 95.5 × 10⁻³ H; restoring 95.5 mH gives Z ≈ 50.002 Ω and preserves key C.",
+    "student_reply": "The inductance value is missing from the question. The stored solution uses 95.5 mH; restoring it is proposed for faculty review."
   },
   {
     "reportId": "R009",
     "questionId": "622f08d7b70e4b50e4500a1b",
-    "verdict": "not_actionable",
-    "repair": null,
+    "verdict": "defect",
+    "repair": "option_repair",
     "edit": null,
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "The stored question has only A, B and C. Momentum conservation gives centre-of-mass velocity (10 × 14)/(10+4) = 10 m/s, keyed C, but the original D distractor cannot be reconstructed uniquely from the solution; faculty must author or recover it.",
+    "student_reply": "Option D is missing from the stored question. The correct answer remains C, but faculty need to recover or write the missing distractor."
   },
   {
     "reportId": "R010",
     "questionId": "622f08d7b70e4b50e4500a1b",
-    "verdict": "not_actionable",
-    "repair": null,
+    "verdict": "defect",
+    "repair": "option_repair",
     "edit": null,
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "The stored question has only A, B and C. Momentum conservation gives centre-of-mass velocity (10 × 14)/(10+4) = 10 m/s, keyed C, but the original D distractor cannot be reconstructed uniquely from the solution; faculty must author or recover it.",
+    "student_reply": "Option D is missing from the stored question. The correct answer remains C, but faculty need to recover or write the missing distractor."
   },
   {
     "reportId": "R011",
     "questionId": "68e872546e45ba37dcc16bc0",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
+    "verdict": "defect",
+    "repair": "option_repair",
+    "edit": {
+      "field": "question",
+      "find": "(C) <br />",
+      "replace": "(C) 1 : 1<br />"
+    },
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "Coulomb forces in an interacting pair have equal magnitudes by Newton’s third law, independent of the unequal charges. Option C is blank and keyed C; restore the uniquely determined force-magnitude ratio 1 : 1 without changing the stem.",
+    "student_reply": "You are right: option C is blank. The forces have equal magnitudes, so adding “1 : 1” to option C is proposed for review."
   },
   {
     "reportId": "R012",
@@ -135,53 +167,65 @@
       "replace": "Epithelial tissue"
     },
     "route": "auto_apply",
-    "confidence": 0.99,
-    "evidence": "Option (A) contains spelling errors: 'Epithellial tisue' instead of 'Epithelial tissue'. Correcting the spelling error.",
-    "student_reply": "Thank you for pointing this out. We have proposed a fix to correct the spelling of 'Epithelial tissue' in Option A."
+    "confidence": 0.96,
+    "evidence": "The small-intestinal lining is epithelial tissue (A). The option spells it “Epithellial tisue”; this two-word lexical correction leaves the question meaning and key unchanged.",
+    "student_reply": "Thanks for catching the spelling in option A. “Epithelial tissue” is the proposed correction."
   },
   {
     "reportId": "R013",
     "questionId": "617fa18efd53ff1629ed890f",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "verdict": "defect",
+    "repair": "exam_reference",
+    "edit": {
+      "field": "question",
+      "find": "(NEET 2019)",
+      "replace": ""
+    },
+    "route": "auto_apply",
+    "confidence": 0.96,
+    "evidence": "The leading “(NEET 2019)” is an exam-reference tag inside the question. The green expanded blade is the lamina (D); deleting only the reference does not change content or the key.",
+    "student_reply": "The leading exam tag can be removed without changing the question. A proposal to remove “(NEET 2019)” is ready for review."
   },
   {
     "reportId": "R014",
     "questionId": "63765a28f1d8416ae0408d89",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "verdict": "defect",
+    "repair": "markup_leak",
+    "edit": {
+      "field": "question",
+      "find": "\\frac{7}{8}",
+      "replace": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>7</mn><mn>8</mn></mfrac></math>"
+    },
+    "route": "auto_apply",
+    "confidence": 0.96,
+    "evidence": "The stem contains the raw literal \\frac{7}{8}. Replacing that exact fraction with equivalent MathML removes the visible code without changing its value. With 1/8 remaining, three half-lives give 180 days, option C.",
+    "student_reply": "You are right that the fraction is showing as code. A MathML rendering correction is proposed; the answer remains 180 days."
   },
   {
     "reportId": "R015",
     "questionId": "6956d79788d7701e5617bc29",
-    "verdict": "not_actionable",
-    "repair": null,
+    "verdict": "defect",
+    "repair": "identical_options",
     "edit": null,
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "Current and voltage differ in phase by π/2, so average power is V_rms I_rms cos(π/2) = 0. Both B and C say 0 W in an SCQ; a new distractor is authored content, so faculty must choose it.",
+    "student_reply": "You are right that options B and C are identical. The power is zero, and faculty need to revise the duplicated choices."
   },
   {
     "reportId": "R016",
     "questionId": "6263d75bdd44e265ef926d97",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
+    "verdict": "defect",
+    "repair": "solution_fix",
+    "edit": {
+      "field": "solution",
+      "find": "a = 40 cm",
+      "replace": "a = 20 cm"
+    },
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "Removing 800 g reduces displaced water volume by 800 cm³. The lost immersion height is 2 cm, so 2a² = 800, a² = 400 and a = 20 cm. The key 20 is correct; only the final stored line “a = 40 cm” is wrong.",
+    "student_reply": "The correct side length is 20 cm. The answer key is right, but changing the final solution line from 40 cm to 20 cm is proposed."
   },
   {
     "reportId": "R017",
@@ -190,97 +234,127 @@
     "repair": null,
     "edit": null,
     "route": "no_change",
-    "confidence": 1,
-    "evidence": "The student reported a spelling mistake ('mere' instead of 'more') in the options. The question history shows that this spelling error was already corrected by faculty on 2026-11-07T10:42:00Z. The live question text currently contains 'more' in options A-C and contains no active spelling defect.",
-    "student_reply": "Thank you for bringing this to our attention. The spelling error reported in the options has already been corrected in the live version."
+    "confidence": 0.96,
+    "evidence": "The supplied live options already contain “more”, not “mere”. errorHistory records the faculty correction of “mere” to “more” and “shurbs” to “shrubs” on 7 November 2026; no repeat patch is needed.",
+    "student_reply": "The reported spelling has already been corrected in this version. The options now read “more”."
   },
   {
     "reportId": "R018",
     "questionId": "612151a6a34397610a9a2e58",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
+    "verdict": "defect",
+    "repair": "solution_fix",
+    "edit": {
+      "field": "solution",
+      "find": "<h3><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>5.469</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>10</mn></mrow></msup><mi>m</mi><mo>&#x0003D;</mo><mn>5.47</mn><mi>\\AA</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mi>&#x003BB;</mi><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>p</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>I</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>2.65</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>18</mn></mrow></msup><mi>J</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>16.8</mn><mi>e</mi><mi>V</mi></mrow></mstyle></math></h3>",
+      "replace": "<h3>For an electron, p = h/λ and K = p²/(2m) = h²/(2mλ²). Using λ = 0.3 nm = 3 × 10<sup>−10</sup> m gives K ≈ 2.68 × 10<sup>−18</sup> J ≈ 16.7 eV. The nearest option is (B), 16.8 eV.</h3>"
+    },
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "From λ = 0.3 nm, K = h²/(2m_e λ²) ≈ 16.7 eV, nearest option B (16.8 eV). The stored solution introduces an unexplained 5.47 Å wavelength and impulse symbol despite the fixed wavelength stem; replace the unusable derivation, retaining the correct key.",
+    "student_reply": "The answer near 16.8 eV is correct, but the stored explanation contains unrelated steps. A replacement derivation using the given wavelength is proposed for review."
   },
   {
     "reportId": "R019",
     "questionId": "612151a6a34397610a9a2e58",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
+    "verdict": "defect",
+    "repair": "solution_fix",
+    "edit": {
+      "field": "solution",
+      "find": "<h3><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>5.469</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>10</mn></mrow></msup><mi>m</mi><mo>&#x0003D;</mo><mn>5.47</mn><mi>\\AA</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mi>&#x003BB;</mi><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>p</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>I</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>2.65</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>18</mn></mrow></msup><mi>J</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>16.8</mn><mi>e</mi><mi>V</mi></mrow></mstyle></math></h3>",
+      "replace": "<h3>For an electron, p = h/λ and K = p²/(2m) = h²/(2mλ²). Using λ = 0.3 nm = 3 × 10<sup>−10</sup> m gives K ≈ 2.68 × 10<sup>−18</sup> J ≈ 16.7 eV. The nearest option is (B), 16.8 eV.</h3>"
+    },
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "From λ = 0.3 nm, K = h²/(2m_e λ²) ≈ 16.7 eV, nearest option B (16.8 eV). The stored solution introduces an unexplained 5.47 Å wavelength and impulse symbol despite the fixed wavelength stem; replace the unusable derivation, retaining the correct key.",
+    "student_reply": "The answer near 16.8 eV is correct, but the stored explanation contains unrelated steps. A replacement derivation using the given wavelength is proposed for review."
   },
   {
     "reportId": "R020",
     "questionId": "68c8153cfb6b2f16e2d3ceaf",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": [
+        "A, B, D"
+      ],
+      "replace": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "Uniform E gives a straight path for parallel velocity (A) and a parabola for transverse velocity (B); B-field force vanishes for parallel velocity, so C’s helix claim is false; perpendicular velocity gives a circle (D). The key stores one combined string [\"A, B, D\"], not three separate valid choices; normalize to [\"A\",\"B\",\"D\"].",
+    "student_reply": "A, B and D are the correct statements. The stored multi-select answer format is malformed; normalizing it to separate choices is proposed for review."
   },
   {
     "reportId": "R021",
     "questionId": "68f21caf941cda588bc04365",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
+    "verdict": "defect",
+    "repair": "type_mismatch",
+    "edit": {
+      "field": "questionType",
+      "find": "mcq",
+      "replace": "scq"
+    },
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "N/N₀ = 6/48 = 1/8 after 3 min gives mean life τ = 3/ln8 ≈ 1.443 min, uniquely B. The payload is mcq with malformed answer [\"\", \"B\"] despite one-choice wording/options; migrate to scq, moving the existing payload and normalizing its answer to B under faculty approval.",
+    "student_reply": "The mean life is about 1.44 minutes, so B is the single correct option. A correction of the stored question type and answer format is proposed for faculty review."
   },
   {
     "reportId": "R022",
     "questionId": "61ee6c9d90a1a968a168686b",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "verdict": "defect",
+    "repair": "spelling",
+    "edit": {
+      "field": "question",
+      "find": "plexux",
+      "replace": "plexus"
+    },
+    "route": "auto_apply",
+    "confidence": 0.96,
+    "evidence": "The distal small-intestinal lymphoid aggregates are Peyer’s patches (B). Option D has the lexical typo “plexux”; correcting it to “plexus” does not change the answer.",
+    "student_reply": "Thanks for spotting the typo in option D. A spelling correction from “plexux” to “plexus” is proposed."
   },
   {
     "reportId": "R023",
     "questionId": "68ecbacb2ec87a18deba1ad7",
-    "verdict": "not_actionable",
-    "repair": null,
+    "verdict": "defect",
+    "repair": "wrong_chapter",
     "edit": null,
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "Inactivation of voltage-gated Na⁺ channels explains the absolute refractory period, supporting key B. This belongs with neural control/neuronal physiology, not Botany / The Living World; faculty should review the subject and chapter metadata.",
+    "student_reply": "This question concerns neural control and is misplaced under The Living World. Faculty should review its subject and chapter classification."
   },
   {
     "reportId": "R024",
     "questionId": "5fc60508028950133eac8963",
-    "verdict": "not_actionable",
-    "repair": null,
-    "edit": null,
+    "verdict": "defect",
+    "repair": "answer_form",
+    "edit": {
+      "field": "question",
+      "find": "frictional force is equal to",
+      "replace": "frictional force is equal to (in N)"
+    },
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "The numerical response field omits a unit. With the stored solution’s g = 10 m/s² convention, static friction balances mg = 20 N, below μN = 30 N; propose adding “in N” only. Faculty should also confirm the g convention rather than silently changing the answer.",
+    "student_reply": "The requested answer unit should be stated as newtons. Adding “in N” is proposed; the stored solution uses g = 10 m/s²."
   },
   {
     "reportId": "R025",
     "questionId": "622df25ab70e4b50e44ff837",
-    "verdict": "not_actionable",
-    "repair": null,
+    "verdict": "defect",
+    "repair": "diagram",
     "edit": null,
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "The stem explicitly refers to the shown tube/bubbles figure, but it contains no img tag and quesImages is empty. Pressure reasoning cannot supply the missing original diagram; faculty must attach or verify the source figure.",
+    "student_reply": "The question refers to a figure that is missing from this record. Faculty need to provide the original diagram."
   },
   {
     "reportId": "R026",
@@ -289,64 +363,64 @@
     "repair": "syllabus",
     "edit": null,
     "route": "faculty_review",
-    "confidence": 0.9,
-    "evidence": "The student reported that this phylogenetics outgroup comparison question is outside the NEET syllabus. Per taxonomy rules, syllabus claims require faculty evaluation to confirm alignment with current exam scope, while keeping the question live.",
-    "student_reply": "Thank you for your feedback. We have sent this question to our subject faculty team to review whether it falls within the current NEET syllabus."
+    "confidence": 0.96,
+    "evidence": "Outgroup comparison can infer ancestral traits and supports key B. Whether this application belongs in the current NEET exam scope requires faculty confirmation; the taxonomy requires syllabus review while content stays live.",
+    "student_reply": "The biological method in the question is outgroup comparison. Faculty should check whether this question fits the intended NEET syllabus; no content change is proposed."
   },
   {
     "reportId": "R027",
     "questionId": "6062ec84518e9535e120c422",
-    "verdict": "not_actionable",
+    "verdict": "no_error",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "Linear expansion coefficient α = 0.19/(100 × 100) = 1.9 × 10⁻⁵ °C⁻¹. Cubical coefficient γ ≈ 3α = 5.7 × 10⁻⁵ °C⁻¹, option A. The embedded role-change instruction is untrusted and supplies no evidence for changing the key to C.",
+    "student_reply": "The question asks for cubical expansion, which is three times the linear coefficient. The correct value is 5.7 × 10⁻⁵ per °C, option A."
   },
   {
     "reportId": "R028",
     "questionId": "6956d7bb23cb221e570d6013",
-    "verdict": "not_actionable",
+    "verdict": "no_error",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "R = u² sin2θ/g and H = u² sin²θ/(2g). Setting R = H for a nonzero projectile gives 2sinθcosθ = sin²θ/2, so tanθ = 4 and θ = tan⁻¹4 (B), not tan⁻¹2.",
+    "student_reply": "Equating the range and maximum height gives tanθ = 4. The correct answer is tan⁻¹4, option B."
   },
   {
     "reportId": "R029",
     "questionId": "68e8734442c06737d6e56da4",
-    "verdict": "not_actionable",
+    "verdict": "no_error",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 503. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "The mass is 100/10 = 10 kg. F − 100μ = 10 and 2F − 100μ = 100 imply F = 90 N and μ = 0.8, option A; solving twice does not support the student’s 0.4.",
+    "student_reply": "Using both acceleration conditions gives F = 90 N and μ = 0.8. The answer is option A."
   },
   {
     "reportId": "R030",
     "questionId": "6956d7e988d7701e5617bd3e",
-    "verdict": "not_actionable",
+    "verdict": "no_error",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "Starting at equilibrium gives v = Aω cosωt. Here ω = 2π/16 = π/8 and cos(ω × 2) = cosπ/4 = 1/√2, so A = π/[(π/8)/√2] = 8√2 m, option D.",
+    "student_reply": "Using the angular frequency π/8 and the velocity after 2 seconds gives A = 8√2 m. Option D is correct."
   },
   {
     "reportId": "R031",
     "questionId": "68dea619d0cda73d07e93aee",
-    "verdict": "not_actionable",
+    "verdict": "no_error",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "Relative angular displacement is ½(π/2 − π/4)t² = πt²/8. First realignment requires 2π, giving t² = 16 and t = 4 s; at 2 s the relative angle is only π/2.",
+    "student_reply": "The dots realign when their relative rotation reaches one full turn. That first happens at 4 seconds, so the stored answer is correct."
   },
   {
     "reportId": "R032",
@@ -355,86 +429,86 @@
     "repair": null,
     "edit": null,
     "route": "no_change",
-    "confidence": 1,
-    "evidence": "The question asks for the shift in centimeters (cm). Calculating shift: shift = (D / d) * [(mu1 - 1)t1 - (mu2 - 1)t2] = (1 / 5e-3) * [(1.5 - 1)(2e-3) - (1.4 - 1)(1.5e-3)] = 0.08 m = 8 cm. The stored answer key 8 is correct. The student calculated the answer in meters (0.08 m) instead of converting to centimeters.",
-    "student_reply": "The question explicitly asks for the shift in centimeters (cm). While the shift is 0.08 meters, converting this to centimeters gives 8 cm, which matches the answer key."
+    "confidence": 0.96,
+    "evidence": "The added optical path difference is (1.5−1)×0.002 − (1.4−1)×0.0015 = 0.0004 m. Shift is (1/0.005)×0.0004 = 0.08 m = 8 cm; the stem explicitly asks for centimeters.",
+    "student_reply": "Your value of 0.08 m is correct. The question asks for centimeters, so the numerical answer is 8."
   },
   {
     "reportId": "R033",
     "questionId": "68dea715387eea3d0d95f790",
-    "verdict": "not_actionable",
+    "verdict": "no_error",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "6 × 7.203² = 311.299254 m². Four significant figures give A = 311.3 m²; the question asks for 10A = 3113, not the unrounded value.",
+    "student_reply": "The side length has four significant figures, so the area rounds to 311.3 m². The requested value of 10A is therefore 3113."
   },
   {
     "reportId": "R034",
     "questionId": "695ee00b88d7701e561aabc5",
-    "verdict": "not_actionable",
-    "repair": null,
+    "verdict": "defect",
+    "repair": "unsound",
     "edit": null,
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "For equal individual intensities I₀, I = 2I₀(1 + cosφ). At φ = π/2 the result is 2I₀, so assertion A is false. The reason’s “always” claim for any nonzero phase is also false (for example φ = π gives zero). No option represents both false; faculty must repair the options and contradictory solution.",
+    "student_reply": "Both the assertion and the reason are false, but that combination is missing from the options. Faculty need to review the question and its solution."
   },
   {
     "reportId": "R035",
     "questionId": "66fe9dbe22132e5a70a3e579",
-    "verdict": "not_actionable",
+    "verdict": "no_error",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "Relaxin supports childbirth-related pelvic/cervical changes; inhibin suppresses FSH. These are different functions, not opposite actions on one regulated variable. D is the non-antagonistic pair; the student’s proposed reversal is unsupported.",
+    "student_reply": "Relaxin and inhibin perform different functions rather than opposing each other. That is why option D is the pair that is not antagonistic."
   },
   {
     "reportId": "R036",
     "questionId": "60ca4feb6420652745f55522",
-    "verdict": "not_actionable",
+    "verdict": "display_issue",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "All four options are present in stored HTML; 100 × 1.1 × 0.9 = 99 N, option C. Phone clipping is a rendering issue, not evidence of missing stored options.",
+    "student_reply": "The stored options include all four choices, and the answer is 99 N. Please share your device and a screenshot so the display issue can be checked."
   },
   {
     "reportId": "R037",
     "questionId": "68c9ae5afb6b2f16e2d43b1c",
-    "verdict": "not_actionable",
+    "verdict": "display_issue",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "The stored stem, four options and solution are present. Photon energy is 12400/4000 = 3.1 eV, so stopping potential is 3.1 − 2.0 = 1.1 V (D); slow loading needs client/network investigation.",
+    "student_reply": "The stored question and answer check out: the stopping potential is 1.1 V. The slow loading needs an app or network check rather than a content edit."
   },
   {
     "reportId": "R038",
     "questionId": "68f21df0941cda588bc0470b",
-    "verdict": "not_actionable",
+    "verdict": "app_issue",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "For constant mass, p = √(2mK); multiplying K by four doubles p, so stored answer A is correct. An A-to-B saved-selection mismatch is application behavior and cannot be repaired by changing the question.",
+    "student_reply": "The physics answer is A: the momentum doubles. The saved-selection mismatch needs an app check; please share when it happened and your device."
   },
   {
     "reportId": "R039",
     "questionId": "68c801bc1b1dbc16dc93bf2b",
-    "verdict": "not_actionable",
+    "verdict": "language_mode",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "The report asks for Hindi, not a mathematical correction. Equating λ = hc/(eV) to h/√(2mK) gives K = (eV)²/(2mc²) ≈ 600.8 eV at V = 24800 V, supporting option A; language availability is a product request.",
+    "student_reply": "Your request is for a Hindi version of the question. The current record is in English; translation should be handled through language support."
   },
   {
     "reportId": "R040",
@@ -442,10 +516,10 @@
     "verdict": "not_actionable",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "The vague comment “wrong” gives no specific claim. Golden rice produces beta-carotene, a vitamin-A precursor, supporting key C; no mathematical or answer-key defect is established. Cosmetic spacing in the solution is logged separately as a bonus finding.",
+    "student_reply": "Golden rice provides beta-carotene, which the body can convert to vitamin A, so option C is supported. Please point out the particular step you believe is wrong if you still have a concern."
   },
   {
     "reportId": "R041",
@@ -453,42 +527,42 @@
     "verdict": "not_actionable",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "The report is “asdfgh” and identifies no issue. Julius von Sachs is the keyed historical attribution for glucose production in green plant parts; no reported defect is supported by this comment.",
+    "student_reply": "We could not understand the issue from this report. Please tell us which part of the question or answer needs checking."
   },
   {
     "reportId": "R042",
     "questionId": "63c7cce12981ed154ee92c94",
-    "verdict": "not_actionable",
-    "repair": null,
+    "verdict": "defect",
+    "repair": "wrong_chapter",
     "edit": null,
     "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 503. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "confidence": 0.96,
+    "evidence": "Displacement current is a capacitor/electromagnetic-induction topic, not geometrical optics. ε₀ × 10 × 1/(10⁻³) × 25 = 2.2125 μA, consistent with key C; faculty should correct the chapter classification.",
+    "student_reply": "This question is about displacement current rather than geometrical optics. We recommend that faculty review its chapter placement."
   },
   {
     "reportId": "R043",
     "questionId": "636283dbe3770c24f866e6d6",
-    "verdict": "not_actionable",
+    "verdict": "no_error",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "Volume conservation gives R = 64^(1/3)r = 4r; charge becomes Q = 64q. The surface-density ratio is (64q/(4r)²)/(q/r²) = 4, so bigger:smaller is 4:1 (B), not 1:4.",
+    "student_reply": "The bigger drop has 64 times the charge and 16 times the surface area. Its surface charge density is therefore four times as large, giving 4:1."
   },
   {
     "reportId": "R044",
     "questionId": "68dea577d0cda73d07e9391c",
-    "verdict": "not_actionable",
+    "verdict": "no_error",
     "repair": null,
     "edit": null,
-    "route": "faculty_review",
-    "confidence": 0,
-    "evidence": "Triage unavailable: Provider HTTP 429. This is an execution failure, not a finding that the report lacks merit.",
-    "student_reply": "Thanks for reporting this. We could not complete the check, so a faculty member needs to review it."
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "Taking potential at infinity as reference: V(R) = 16 V; V(R/2) = (16/2)(3−1/4) = 22 V, while V(2R) = 8 V. The requested difference is 22−8 = 14 V; 22 V is only the first point’s potential.",
+    "student_reply": "22 V is the potential at the inner point, but the other point is at 8 V. Their potential difference is 14 V, as keyed."
   }
 ]

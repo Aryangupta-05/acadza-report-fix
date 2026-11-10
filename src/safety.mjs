@@ -46,6 +46,7 @@ export function validatePatch(q,repairKey,edit,{facultyAuthored=false}={}) {
    if(!validAnswer(q.questionType,edit.replace))throw new SafetyError('Invalid answer format for question type');
  } else {
    if(typeof edit.find!=='string'||typeof edit.replace!=='string')throw new SafetyError('Text patch requires strings');
+   if(edit.find&&edit.replace.includes(edit.find)&&old.includes(edit.replace))throw new SafetyError('Replacement already present; duplicate insertion rejected');
    if(!edit.find.trim()) {
      // Only a wholly empty solution may receive an explicitly typed missing-solution insertion.
      if(!(repairKey==='solution_missing'&&edit.field==='solution'&&old===''&&edit.find===''&&edit.replace.trim()))throw new SafetyError('Empty insertion anchor rejected');

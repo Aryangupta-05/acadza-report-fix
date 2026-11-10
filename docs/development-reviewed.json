@@ -1,0 +1,1036 @@
+[
+  {
+    "sourceVersion": "1852d707e84edf85223857796c4b7c58f8db88c0e4d5feec060aa58e7df660dc",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "All four options are present in stored HTML; 100 × 1.1 × 0.9 = 99 N, option C. Phone clipping is a rendering issue, not evidence of missing stored options.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R036",
+        "questionId": "60ca4feb6420652745f55522",
+        "verdict": "display_issue",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "All four options are present in stored HTML; 100 × 1.1 × 0.9 = 99 N, option C. Phone clipping is a rendering issue, not evidence of missing stored options.",
+        "student_reply": "The stored options include all four choices, and the answer is 99 N. Please share your device and a screenshot so the display issue can be checked."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "7ef01d3e87bd642e51d39651ba2d02261a6cf83ba1a715d5272394031c20dda9",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "A charge q/2 on a face contributes q/(4ε₀); 2q at a corner contributes (2q)/(8ε₀). Their total is q/(2ε₀), so n = 1, whereas the key is 2.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R005",
+        "questionId": "68dea616d0cda73d07e93ae6",
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": "2",
+          "replace": "1"
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "A charge q/2 on a face contributes q/(4ε₀); 2q at a corner contributes (2q)/(8ε₀). Their total is q/(2ε₀), so n = 1, whereas the key is 2.",
+        "student_reply": "You are right: the two flux contributions give n = 1. An answer-key correction is proposed for review."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "68d233ba650d0ca80fd39cbdb2cc7db4032018c663adde32a2632f16ad161ca6",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "6 × 7.203² = 311.299254 m². Four significant figures give A = 311.3 m²; the question asks for 10A = 3113, not the unrounded value.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R033",
+        "questionId": "68dea715387eea3d0d95f790",
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "6 × 7.203² = 311.299254 m². Four significant figures give A = 311.3 m²; the question asks for 10A = 3113, not the unrounded value.",
+        "student_reply": "The side length has four significant figures, so the area rounds to 311.3 m². The requested value of 10A is therefore 3113."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "29d3fd0a1ee75880d6827c1299714c3eba3e70c1bc2d045de47cf70bed5507b7",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The distal small-intestinal lymphoid aggregates are Peyer’s patches (B). Option D has the lexical typo “plexux”; correcting it to “plexus” does not change the answer.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R022",
+        "questionId": "61ee6c9d90a1a968a168686b",
+        "verdict": "defect",
+        "repair": "spelling",
+        "edit": {
+          "field": "question",
+          "find": "plexux",
+          "replace": "plexus"
+        },
+        "route": "auto_apply",
+        "confidence": 0.96,
+        "evidence": "The distal small-intestinal lymphoid aggregates are Peyer’s patches (B). Option D has the lexical typo “plexux”; correcting it to “plexus” does not change the answer.",
+        "student_reply": "Thanks for spotting the typo in option D. A spelling correction from “plexux” to “plexus” is proposed."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "ba7f442647a86876551fca719bb326218a23d1cba6b4176d47411c7e61ca6748",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The stored stem, four options and solution are present. Photon energy is 12400/4000 = 3.1 eV, so stopping potential is 3.1 − 2.0 = 1.1 V (D); slow loading needs client/network investigation.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R037",
+        "questionId": "68c9ae5afb6b2f16e2d43b1c",
+        "verdict": "display_issue",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "The stored stem, four options and solution are present. Photon energy is 12400/4000 = 3.1 eV, so stopping potential is 3.1 − 2.0 = 1.1 V (D); slow loading needs client/network investigation.",
+        "student_reply": "The stored question and answer check out: the stopping potential is 1.1 V. The slow loading needs an app or network check rather than a content edit."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "0308059a7926043e7cdaed56ea672f5059ed018a20264df910e54fd4885d934e",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "ΔV = (ΔP/B)a³ requires the cube side, which is absent from the stem. The stored solution explicitly uses a = 10 × 10⁻² m = 10 cm, giving ΔV = 50 mm³; propose restoring that datum, with faculty confirmation of the intended source.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R006",
+        "questionId": "696a866665252c04fc1f81c2",
+        "verdict": "defect",
+        "repair": "stem_data",
+        "edit": {
+          "field": "question",
+          "find": "solid copper cube",
+          "replace": "solid copper cube of side 10 cm"
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "ΔV = (ΔP/B)a³ requires the cube side, which is absent from the stem. The stored solution explicitly uses a = 10 × 10⁻² m = 10 cm, giving ΔV = 50 mm³; propose restoring that datum, with faculty confirmation of the intended source.",
+        "student_reply": "You are right that the cube’s side length is missing. The solution uses 10 cm; restoring that value is proposed for faculty review."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "21a53e55dac34d1aed81112a8b23d96947c1604b921a83db242d4cd33c12400b",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Displacement current is a capacitor/electromagnetic-induction topic, not geometrical optics. ε₀ × 10 × 1/(10⁻³) × 25 = 2.2125 μA, consistent with key C; faculty should correct the chapter classification.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "Faculty decision or authoring required",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R042",
+        "questionId": "63c7cce12981ed154ee92c94",
+        "verdict": "defect",
+        "repair": "wrong_chapter",
+        "edit": null,
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "Displacement current is a capacitor/electromagnetic-induction topic, not geometrical optics. ε₀ × 10 × 1/(10⁻³) × 25 = 2.2125 μA, consistent with key C; faculty should correct the chapter classification.",
+        "student_reply": "This question is about displacement current rather than geometrical optics. We recommend that faculty review its chapter placement."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "0b5927b8fccc99163d9fbc70166dfece0f9f8db64989dd040337a65ad49c3bc3",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Relative angular displacement is ½(π/2 − π/4)t² = πt²/8. First realignment requires 2π, giving t² = 16 and t = 4 s; at 2 s the relative angle is only π/2.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R031",
+        "questionId": "68dea619d0cda73d07e93aee",
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "Relative angular displacement is ½(π/2 − π/4)t² = πt²/8. First realignment requires 2π, giving t² = 16 and t = 4 s; at 2 s the relative angle is only π/2.",
+        "student_reply": "The dots realign when their relative rotation reaches one full turn. That first happens at 4 seconds, so the stored answer is correct."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "d2c389ea9b42acbf8ec02c623c831fea4dc42326b36cf19af9dbe830f8c50ed0",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Coulomb forces in an interacting pair have equal magnitudes by Newton’s third law, independent of the unequal charges. Option C is blank and keyed C; restore the uniquely determined force-magnitude ratio 1 : 1 without changing the stem.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R011",
+        "questionId": "68e872546e45ba37dcc16bc0",
+        "verdict": "defect",
+        "repair": "option_repair",
+        "edit": {
+          "field": "question",
+          "find": "(C) <br />",
+          "replace": "(C) 1 : 1<br />"
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "Coulomb forces in an interacting pair have equal magnitudes by Newton’s third law, independent of the unequal charges. Option C is blank and keyed C; restore the uniquely determined force-magnitude ratio 1 : 1 without changing the stem.",
+        "student_reply": "You are right: option C is blank. The forces have equal magnitudes, so adding “1 : 1” to option C is proposed for review."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "53585e8c2e3c797879825adff3bfb7ae8aef6d42621f766ab3f7e0de32b92e28",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Relaxin supports childbirth-related pelvic/cervical changes; inhibin suppresses FSH. These are different functions, not opposite actions on one regulated variable. D is the non-antagonistic pair; the student’s proposed reversal is unsupported.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R035",
+        "questionId": "66fe9dbe22132e5a70a3e579",
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "Relaxin supports childbirth-related pelvic/cervical changes; inhibin suppresses FSH. These are different functions, not opposite actions on one regulated variable. D is the non-antagonistic pair; the student’s proposed reversal is unsupported.",
+        "student_reply": "Relaxin and inhibin perform different functions rather than opposing each other. That is why option D is the pair that is not antagonistic."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "18979fd83484d062d5c569bbd979cbec8b339f87212e0f5f82ec8e80b07b425d",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Outgroup comparison can infer ancestral traits and supports key B. Whether this application belongs in the current NEET exam scope requires faculty confirmation; the taxonomy requires syllabus review while content stays live.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "Faculty decision or authoring required",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R026",
+        "questionId": "620e23cecc50543bc7db9186",
+        "verdict": "defect",
+        "repair": "syllabus",
+        "edit": null,
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "Outgroup comparison can infer ancestral traits and supports key B. Whether this application belongs in the current NEET exam scope requires faculty confirmation; the taxonomy requires syllabus review while content stays live.",
+        "student_reply": "The biological method in the question is outgroup comparison. Faculty should check whether this question fits the intended NEET syllabus; no content change is proposed."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "226be73505f66d3f65e4814c279cefbf75a6d9c982bbbc51ef1f4d90925c1c6e",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The supplied live options already contain “more”, not “mere”. errorHistory records the faculty correction of “mere” to “more” and “shurbs” to “shrubs” on 7 November 2026; no repeat patch is needed.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R017",
+        "questionId": "6208e80a9cb2ab67dac61bd0",
+        "verdict": "already_fixed",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "The supplied live options already contain “more”, not “mere”. errorHistory records the faculty correction of “mere” to “more” and “shurbs” to “shrubs” on 7 November 2026; no repeat patch is needed.",
+        "student_reply": "The reported spelling has already been corrected in this version. The options now read “more”."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "ffaba00923a9eb4c4c5bd2088e3f3c03af5b70cbbbe1c057607921f1b2878c7b",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The small-intestinal lining is epithelial tissue (A). The option spells it “Epithellial tisue”; this two-word lexical correction leaves the question meaning and key unchanged.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R012",
+        "questionId": "61dffbec08489156b684bd22",
+        "verdict": "defect",
+        "repair": "spelling",
+        "edit": {
+          "field": "question",
+          "find": "Epithellial tisue",
+          "replace": "Epithelial tissue"
+        },
+        "route": "auto_apply",
+        "confidence": 0.96,
+        "evidence": "The small-intestinal lining is epithelial tissue (A). The option spells it “Epithellial tisue”; this two-word lexical correction leaves the question meaning and key unchanged.",
+        "student_reply": "Thanks for catching the spelling in option A. “Epithelial tissue” is the proposed correction."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "fd9bb6f53ded6e7ace9b8976213b83c4893dab834f547d7c52b286cc774cdac8",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Independently, P = ρv_rms²/3 = 0.09 × 400²/3 = 4800 Pa, option D. The student’s 8225 is incorrect, but the stored key A is also wrong; the stored solution agrees with 4800.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R004",
+        "questionId": "68e870ef42c06737d6e565c4",
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": "A",
+          "replace": "D"
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "Independently, P = ρv_rms²/3 = 0.09 × 400²/3 = 4800 Pa, option D. The student’s 8225 is incorrect, but the stored key A is also wrong; the stored solution agrees with 4800.",
+        "student_reply": "The pressure works out to 4800 Pa, which is option D. Your suggested 8225 is not correct, but the stored key also needs correction; a change to D is proposed."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "dec93abbf3c5fcee4e896d2b41073234856664f14825dcf11ae2cc5d33aa296d",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The mass is 100/10 = 10 kg. F − 100μ = 10 and 2F − 100μ = 100 imply F = 90 N and μ = 0.8, option A; solving twice does not support the student’s 0.4.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R029",
+        "questionId": "68e8734442c06737d6e56da4",
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "The mass is 100/10 = 10 kg. F − 100μ = 10 and 2F − 100μ = 100 imply F = 90 N and μ = 0.8, option A; solving twice does not support the student’s 0.4.",
+        "student_reply": "Using both acceleration conditions gives F = 90 N and μ = 0.8. The answer is option A."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "373cea222f611e8f1d5f9de42698e891cedc343e137e368a04bbaad128b9beb2",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Current and voltage differ in phase by π/2, so average power is V_rms I_rms cos(π/2) = 0. Both B and C say 0 W in an SCQ; a new distractor is authored content, so faculty must choose it.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "Faculty decision or authoring required",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R015",
+        "questionId": "6956d79788d7701e5617bc29",
+        "verdict": "defect",
+        "repair": "identical_options",
+        "edit": null,
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "Current and voltage differ in phase by π/2, so average power is V_rms I_rms cos(π/2) = 0. Both B and C say 0 W in an SCQ; a new distractor is authored content, so faculty must choose it.",
+        "student_reply": "You are right that options B and C are identical. The power is zero, and faculty need to revise the duplicated choices."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "8fe62692540b72e3aa6f8769516d74200a0c2f6b4c799f49bc6e3c9b014a1522",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "For equal individual intensities I₀, I = 2I₀(1 + cosφ). At φ = π/2 the result is 2I₀, so assertion A is false. The reason’s “always” claim for any nonzero phase is also false (for example φ = π gives zero). No option represents both false; faculty must repair the options and contradictory solution.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "Faculty decision or authoring required",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R034",
+        "questionId": "695ee00b88d7701e561aabc5",
+        "verdict": "defect",
+        "repair": "unsound",
+        "edit": null,
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "For equal individual intensities I₀, I = 2I₀(1 + cosφ). At φ = π/2 the result is 2I₀, so assertion A is false. The reason’s “always” claim for any nonzero phase is also false (for example φ = π gives zero). No option represents both false; faculty must repair the options and contradictory solution.",
+        "student_reply": "Both the assertion and the reason are false, but that combination is missing from the options. Faculty need to review the question and its solution."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "46709d76d60d51eb06553800142dc739fcf1a422922966ba89e84cf76b40000a",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The stem explicitly refers to the shown tube/bubbles figure, but it contains no img tag and quesImages is empty. Pressure reasoning cannot supply the missing original diagram; faculty must attach or verify the source figure.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "Faculty decision or authoring required",
+      "figureRequired": true
+    },
+    "results": [
+      {
+        "reportId": "R025",
+        "questionId": "622df25ab70e4b50e44ff837",
+        "verdict": "defect",
+        "repair": "diagram",
+        "edit": null,
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "The stem explicitly refers to the shown tube/bubbles figure, but it contains no img tag and quesImages is empty. Pressure reasoning cannot supply the missing original diagram; faculty must attach or verify the source figure.",
+        "student_reply": "The question refers to a figure that is missing from this record. Faculty need to provide the original diagram."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "f83934cc00589bf9ed8e722f8a5bd8c2ba3f41beb7382c5338ff11479544aaf7",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The report is “asdfgh” and identifies no issue. Julius von Sachs is the keyed historical attribution for glucose production in green plant parts; no reported defect is supported by this comment.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R041",
+        "questionId": "6208e298fa399567e0878700",
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "The report is “asdfgh” and identifies no issue. Julius von Sachs is the keyed historical attribution for glucose production in green plant parts; no reported defect is supported by this comment.",
+        "student_reply": "We could not understand the issue from this report. Please tell us which part of the question or answer needs checking."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "d135b72447cfe8e1203d288dea011dcd824ec746bdc2279329411cdbcc75e0a2",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "From λ = 0.3 nm, K = h²/(2m_e λ²) ≈ 16.7 eV, nearest option B (16.8 eV). The stored solution introduces an unexplained 5.47 Å wavelength and impulse symbol despite the fixed wavelength stem; replace the unusable derivation, retaining the correct key.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R018",
+        "questionId": "612151a6a34397610a9a2e58",
+        "verdict": "defect",
+        "repair": "solution_fix",
+        "edit": {
+          "field": "solution",
+          "find": "<h3><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>5.469</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>10</mn></mrow></msup><mi>m</mi><mo>&#x0003D;</mo><mn>5.47</mn><mi>\\AA</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mi>&#x003BB;</mi><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>p</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>I</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>2.65</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>18</mn></mrow></msup><mi>J</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>16.8</mn><mi>e</mi><mi>V</mi></mrow></mstyle></math></h3>",
+          "replace": "<h3>For an electron, p = h/λ and K = p²/(2m) = h²/(2mλ²). Using λ = 0.3 nm = 3 × 10<sup>−10</sup> m gives K ≈ 2.68 × 10<sup>−18</sup> J ≈ 16.7 eV. The nearest option is (B), 16.8 eV.</h3>"
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "From λ = 0.3 nm, K = h²/(2m_e λ²) ≈ 16.7 eV, nearest option B (16.8 eV). The stored solution introduces an unexplained 5.47 Å wavelength and impulse symbol despite the fixed wavelength stem; replace the unusable derivation, retaining the correct key.",
+        "student_reply": "The answer near 16.8 eV is correct, but the stored explanation contains unrelated steps. A replacement derivation using the given wavelength is proposed for review."
+      },
+      {
+        "reportId": "R019",
+        "questionId": "612151a6a34397610a9a2e58",
+        "verdict": "defect",
+        "repair": "solution_fix",
+        "edit": {
+          "field": "solution",
+          "find": "<h3><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>5.469</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>10</mn></mrow></msup><mi>m</mi><mo>&#x0003D;</mo><mn>5.47</mn><mi>\\AA</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mi>&#x003BB;</mi><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>p</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>I</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>2.65</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>18</mn></mrow></msup><mi>J</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>16.8</mn><mi>e</mi><mi>V</mi></mrow></mstyle></math></h3>",
+          "replace": "<h3>For an electron, p = h/λ and K = p²/(2m) = h²/(2mλ²). Using λ = 0.3 nm = 3 × 10<sup>−10</sup> m gives K ≈ 2.68 × 10<sup>−18</sup> J ≈ 16.7 eV. The nearest option is (B), 16.8 eV.</h3>"
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "From λ = 0.3 nm, K = h²/(2m_e λ²) ≈ 16.7 eV, nearest option B (16.8 eV). The stored solution introduces an unexplained 5.47 Å wavelength and impulse symbol despite the fixed wavelength stem; replace the unusable derivation, retaining the correct key.",
+        "student_reply": "The answer near 16.8 eV is correct, but the stored explanation contains unrelated steps. A replacement derivation using the given wavelength is proposed for review."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "3c3eb65373e37647a75dbbb5a2bf017f6d7358e3226ee1edc5e885d56264263f",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The stem omits the inductance, so Z = √(R²+(2πfL)²) cannot be evaluated. The stored solution explicitly substitutes L = 95.5 × 10⁻³ H; restoring 95.5 mH gives Z ≈ 50.002 Ω and preserves key C.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R008",
+        "questionId": "60f742f6660d187cc13a8078",
+        "verdict": "defect",
+        "repair": "stem_data",
+        "edit": {
+          "field": "question",
+          "find": "an inductance",
+          "replace": "an inductance of 95.5 mH"
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "The stem omits the inductance, so Z = √(R²+(2πfL)²) cannot be evaluated. The stored solution explicitly substitutes L = 95.5 × 10⁻³ H; restoring 95.5 mH gives Z ≈ 50.002 Ω and preserves key C.",
+        "student_reply": "The inductance value is missing from the question. The stored solution uses 95.5 mH; restoring it is proposed for faculty review."
+      },
+      {
+        "reportId": "R007",
+        "questionId": "60f742f6660d187cc13a8078",
+        "verdict": "defect",
+        "repair": "stem_data",
+        "edit": {
+          "field": "question",
+          "find": "an inductance",
+          "replace": "an inductance of 95.5 mH"
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "The stem omits the inductance, so Z = √(R²+(2πfL)²) cannot be evaluated. The stored solution explicitly substitutes L = 95.5 × 10⁻³ H; restoring 95.5 mH gives Z ≈ 50.002 Ω and preserves key C.",
+        "student_reply": "The inductance value is missing from the question. The stored solution uses 95.5 mH; restoring it is proposed for faculty review."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "0a9e067314a5907d766fff4b06150ffa736fccb70e4a4fd351417fec88e4d0a6",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "For constant mass, p = √(2mK); multiplying K by four doubles p, so stored answer A is correct. An A-to-B saved-selection mismatch is application behavior and cannot be repaired by changing the question.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R038",
+        "questionId": "68f21df0941cda588bc0470b",
+        "verdict": "app_issue",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "For constant mass, p = √(2mK); multiplying K by four doubles p, so stored answer A is correct. An A-to-B saved-selection mismatch is application behavior and cannot be repaired by changing the question.",
+        "student_reply": "The physics answer is A: the momentum doubles. The saved-selection mismatch needs an app check; please share when it happened and your device."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "8c5298d498bf27bd672c0db385bb460639880dd8f838a2073a71d7347e09fd32",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The vague comment “wrong” gives no specific claim. Golden rice produces beta-carotene, a vitamin-A precursor, supporting key C; no mathematical or answer-key defect is established. Cosmetic spacing in the solution is logged separately as a bonus finding.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R040",
+        "questionId": "6264197209f4fd65f58f5707",
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "The vague comment “wrong” gives no specific claim. Golden rice produces beta-carotene, a vitamin-A precursor, supporting key C; no mathematical or answer-key defect is established. Cosmetic spacing in the solution is logged separately as a bonus finding.",
+        "student_reply": "Golden rice provides beta-carotene, which the body can convert to vitamin A, so option C is supported. Please point out the particular step you believe is wrong if you still have a concern."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "338ce66006b7b97964d9cc76c91cf99bea4b524a6316482e74340f506e602ac1",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The leading “(NEET 2019)” is an exam-reference tag inside the question. The green expanded blade is the lamina (D); deleting only the reference does not change content or the key.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R013",
+        "questionId": "617fa18efd53ff1629ed890f",
+        "verdict": "defect",
+        "repair": "exam_reference",
+        "edit": {
+          "field": "question",
+          "find": "(NEET 2019)",
+          "replace": ""
+        },
+        "route": "auto_apply",
+        "confidence": 0.96,
+        "evidence": "The leading “(NEET 2019)” is an exam-reference tag inside the question. The green expanded blade is the lamina (D); deleting only the reference does not change content or the key.",
+        "student_reply": "The leading exam tag can be removed without changing the question. A proposal to remove “(NEET 2019)” is ready for review."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "964f50cbfd4ab60758fc5ce04692b8db33439163d742025e2e0853e94b93b9e6",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Linear expansion coefficient α = 0.19/(100 × 100) = 1.9 × 10⁻⁵ °C⁻¹. Cubical coefficient γ ≈ 3α = 5.7 × 10⁻⁵ °C⁻¹, option A. The embedded role-change instruction is untrusted and supplies no evidence for changing the key to C.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R027",
+        "questionId": "6062ec84518e9535e120c422",
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "Linear expansion coefficient α = 0.19/(100 × 100) = 1.9 × 10⁻⁵ °C⁻¹. Cubical coefficient γ ≈ 3α = 5.7 × 10⁻⁵ °C⁻¹, option A. The embedded role-change instruction is untrusted and supplies no evidence for changing the key to C.",
+        "student_reply": "The question asks for cubical expansion, which is three times the linear coefficient. The correct value is 5.7 × 10⁻⁵ per °C, option A."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "db76add2ab1dcbfe81ad3636aec3d7a7b2ba536d6afac90a5cfa58c88904a270",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The numerical response field omits a unit. With the stored solution’s g = 10 m/s² convention, static friction balances mg = 20 N, below μN = 30 N; propose adding “in N” only. Faculty should also confirm the g convention rather than silently changing the answer.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R024",
+        "questionId": "5fc60508028950133eac8963",
+        "verdict": "defect",
+        "repair": "answer_form",
+        "edit": {
+          "field": "question",
+          "find": "frictional force is equal to",
+          "replace": "frictional force is equal to (in N)"
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "The numerical response field omits a unit. With the stored solution’s g = 10 m/s² convention, static friction balances mg = 20 N, below μN = 30 N; propose adding “in N” only. Faculty should also confirm the g convention rather than silently changing the answer.",
+        "student_reply": "The requested answer unit should be stated as newtons. Adding “in N” is proposed; the stored solution uses g = 10 m/s²."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "910b6aff65b4afc41b35a2c1caa1b47d01566eacab994f46fe1b3bf8f3768d18",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "N/N₀ = 6/48 = 1/8 after 3 min gives mean life τ = 3/ln8 ≈ 1.443 min, uniquely B. The payload is mcq with malformed answer [\"\", \"B\"] despite one-choice wording/options; migrate to scq, moving the existing payload and normalizing its answer to B under faculty approval.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R021",
+        "questionId": "68f21caf941cda588bc04365",
+        "verdict": "defect",
+        "repair": "type_mismatch",
+        "edit": {
+          "field": "questionType",
+          "find": "mcq",
+          "replace": "scq"
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "N/N₀ = 6/48 = 1/8 after 3 min gives mean life τ = 3/ln8 ≈ 1.443 min, uniquely B. The payload is mcq with malformed answer [\"\", \"B\"] despite one-choice wording/options; migrate to scq, moving the existing payload and normalizing its answer to B under faculty approval.",
+        "student_reply": "The mean life is about 1.44 minutes, so B is the single correct option. A correction of the stored question type and answer format is proposed for faculty review."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "7dadb7ed7dc9ff5b9945325e9692c5bd5f446ab54ffc35ddc3a53f65a0d2b9d4",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Independently, the supply amplitude is √(V_R²+(V_L−V_C)²) = √(40²+(60−30)²) = 50 V, option A. The stored solution also gives 50 V, but the key C points to 130 V.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R002",
+        "questionId": "60f744b3f1b9bc7cc7b4a949",
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": "C",
+          "replace": "A"
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "Independently, the supply amplitude is √(V_R²+(V_L−V_C)²) = √(40²+(60−30)²) = 50 V, option A. The stored solution also gives 50 V, but the key C points to 130 V.",
+        "student_reply": "You are right that the supply voltage is 50 V, option A. Changing the stored key from C to A is proposed for review."
+      },
+      {
+        "reportId": "R003",
+        "questionId": "60f744b3f1b9bc7cc7b4a949",
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": "C",
+          "replace": "A"
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "Independently, the supply amplitude is √(V_R²+(V_L−V_C)²) = √(40²+(60−30)²) = 50 V, option A. The stored solution also gives 50 V, but the key C points to 130 V.",
+        "student_reply": "You are right that the supply voltage is 50 V, option A. Changing the stored key from C to A is proposed for review."
+      },
+      {
+        "reportId": "R001",
+        "questionId": "60f744b3f1b9bc7cc7b4a949",
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": "C",
+          "replace": "A"
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "Independently, the supply amplitude is √(V_R²+(V_L−V_C)²) = √(40²+(60−30)²) = 50 V, option A. The stored solution also gives 50 V, but the key C points to 130 V.",
+        "student_reply": "You are right that the supply voltage is 50 V, option A. Changing the stored key from C to A is proposed for review."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "62489b3bb0c630569a162b1536a6a766655ef1e24903ef3de14f485211943020",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The report asks for Hindi, not a mathematical correction. Equating λ = hc/(eV) to h/√(2mK) gives K = (eV)²/(2mc²) ≈ 600.8 eV at V = 24800 V, supporting option A; language availability is a product request.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R039",
+        "questionId": "68c801bc1b1dbc16dc93bf2b",
+        "verdict": "language_mode",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "The report asks for Hindi, not a mathematical correction. Equating λ = hc/(eV) to h/√(2mK) gives K = (eV)²/(2mc²) ≈ 600.8 eV at V = 24800 V, supporting option A; language availability is a product request.",
+        "student_reply": "Your request is for a Hindi version of the question. The current record is in English; translation should be handled through language support."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "3c989a44ed2bd607c4c6ca65741e564d6bd52e246e6329fbc88ec37d3d641021",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Taking potential at infinity as reference: V(R) = 16 V; V(R/2) = (16/2)(3−1/4) = 22 V, while V(2R) = 8 V. The requested difference is 22−8 = 14 V; 22 V is only the first point’s potential.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R044",
+        "questionId": "68dea577d0cda73d07e9391c",
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "Taking potential at infinity as reference: V(R) = 16 V; V(R/2) = (16/2)(3−1/4) = 22 V, while V(2R) = 8 V. The requested difference is 22−8 = 14 V; 22 V is only the first point’s potential.",
+        "student_reply": "22 V is the potential at the inner point, but the other point is at 8 V. Their potential difference is 14 V, as keyed."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "fbdb7a417303cd5389e82bd689dd075fb66af1ed6ea5b16b6a924e1e732b9909",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Volume conservation gives R = 64^(1/3)r = 4r; charge becomes Q = 64q. The surface-density ratio is (64q/(4r)²)/(q/r²) = 4, so bigger:smaller is 4:1 (B), not 1:4.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R043",
+        "questionId": "636283dbe3770c24f866e6d6",
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "Volume conservation gives R = 64^(1/3)r = 4r; charge becomes Q = 64q. The surface-density ratio is (64q/(4r)²)/(q/r²) = 4, so bigger:smaller is 4:1 (B), not 1:4.",
+        "student_reply": "The bigger drop has 64 times the charge and 16 times the surface area. Its surface charge density is therefore four times as large, giving 4:1."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "00a11dba61e0a721af6d4070f22cc97276c1eaa0e211cea9e10a1c56eeb932fc",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Removing 800 g reduces displaced water volume by 800 cm³. The lost immersion height is 2 cm, so 2a² = 800, a² = 400 and a = 20 cm. The key 20 is correct; only the final stored line “a = 40 cm” is wrong.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R016",
+        "questionId": "6263d75bdd44e265ef926d97",
+        "verdict": "defect",
+        "repair": "solution_fix",
+        "edit": {
+          "field": "solution",
+          "find": "a = 40 cm",
+          "replace": "a = 20 cm"
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "Removing 800 g reduces displaced water volume by 800 cm³. The lost immersion height is 2 cm, so 2a² = 800, a² = 400 and a = 20 cm. The key 20 is correct; only the final stored line “a = 40 cm” is wrong.",
+        "student_reply": "The correct side length is 20 cm. The answer key is right, but changing the final solution line from 40 cm to 20 cm is proposed."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "1d6bfeccb0d3f64408131fac9c28956d19cc481b2b7f319f52e4c3fb6bd1821b",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The stored question has only A, B and C. Momentum conservation gives centre-of-mass velocity (10 × 14)/(10+4) = 10 m/s, keyed C, but the original D distractor cannot be reconstructed uniquely from the solution; faculty must author or recover it.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "Faculty decision or authoring required",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R010",
+        "questionId": "622f08d7b70e4b50e4500a1b",
+        "verdict": "defect",
+        "repair": "option_repair",
+        "edit": null,
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "The stored question has only A, B and C. Momentum conservation gives centre-of-mass velocity (10 × 14)/(10+4) = 10 m/s, keyed C, but the original D distractor cannot be reconstructed uniquely from the solution; faculty must author or recover it.",
+        "student_reply": "Option D is missing from the stored question. The correct answer remains C, but faculty need to recover or write the missing distractor."
+      },
+      {
+        "reportId": "R009",
+        "questionId": "622f08d7b70e4b50e4500a1b",
+        "verdict": "defect",
+        "repair": "option_repair",
+        "edit": null,
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "The stored question has only A, B and C. Momentum conservation gives centre-of-mass velocity (10 × 14)/(10+4) = 10 m/s, keyed C, but the original D distractor cannot be reconstructed uniquely from the solution; faculty must author or recover it.",
+        "student_reply": "Option D is missing from the stored question. The correct answer remains C, but faculty need to recover or write the missing distractor."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "5cdf2677811c5d737e453f683d7c4047cfed3a52b2a4aa76409f3f76a70ab42e",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The stem contains the raw literal \\frac{7}{8}. Replacing that exact fraction with equivalent MathML removes the visible code without changing its value. With 1/8 remaining, three half-lives give 180 days, option C.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R014",
+        "questionId": "63765a28f1d8416ae0408d89",
+        "verdict": "defect",
+        "repair": "markup_leak",
+        "edit": {
+          "field": "question",
+          "find": "\\frac{7}{8}",
+          "replace": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>7</mn><mn>8</mn></mfrac></math>"
+        },
+        "route": "auto_apply",
+        "confidence": 0.96,
+        "evidence": "The stem contains the raw literal \\frac{7}{8}. Replacing that exact fraction with equivalent MathML removes the visible code without changing its value. With 1/8 remaining, three half-lives give 180 days, option C.",
+        "student_reply": "You are right that the fraction is showing as code. A MathML rendering correction is proposed; the answer remains 180 days."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "a025361355169e1c56e80c4083c045cb1bbd5b51f9f372ca3530f3f4befba4d3",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Uniform E gives a straight path for parallel velocity (A) and a parabola for transverse velocity (B); B-field force vanishes for parallel velocity, so C’s helix claim is false; perpendicular velocity gives a circle (D). The key stores one combined string [\"A, B, D\"], not three separate valid choices; normalize to [\"A\",\"B\",\"D\"].",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R020",
+        "questionId": "68c8153cfb6b2f16e2d3ceaf",
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": [
+            "A, B, D"
+          ],
+          "replace": [
+            "A",
+            "B",
+            "D"
+          ]
+        },
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "Uniform E gives a straight path for parallel velocity (A) and a parabola for transverse velocity (B); B-field force vanishes for parallel velocity, so C’s helix claim is false; perpendicular velocity gives a circle (D). The key stores one combined string [\"A, B, D\"], not three separate valid choices; normalize to [\"A\",\"B\",\"D\"].",
+        "student_reply": "A, B and D are the correct statements. The stored multi-select answer format is malformed; normalizing it to separate choices is proposed for review."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "1235790cb5724ea41054637293edec1dcd2806c099e139e41fcb3a465ad74799",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Starting at equilibrium gives v = Aω cosωt. Here ω = 2π/16 = π/8 and cos(ω × 2) = cosπ/4 = 1/√2, so A = π/[(π/8)/√2] = 8√2 m, option D.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R030",
+        "questionId": "6956d7e988d7701e5617bd3e",
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "Starting at equilibrium gives v = Aω cosωt. Here ω = 2π/16 = π/8 and cos(ω × 2) = cosπ/4 = 1/√2, so A = π/[(π/8)/√2] = 8√2 m, option D.",
+        "student_reply": "Using the angular frequency π/8 and the velocity after 2 seconds gives A = 8√2 m. Option D is correct."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "02c587edd00d140f255b2bfb58d07796796a4248bc09b7e920ccbbd9713a3440",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "R = u² sin2θ/g and H = u² sin²θ/(2g). Setting R = H for a nonzero projectile gives 2sinθcosθ = sin²θ/2, so tanθ = 4 and θ = tan⁻¹4 (B), not tan⁻¹2.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R028",
+        "questionId": "6956d7bb23cb221e570d6013",
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "R = u² sin2θ/g and H = u² sin²θ/(2g). Setting R = H for a nonzero projectile gives 2sinθcosθ = sin²θ/2, so tanθ = 4 and θ = tan⁻¹4 (B), not tan⁻¹2.",
+        "student_reply": "Equating the range and maximum height gives tanθ = 4. The correct answer is tan⁻¹4, option B."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "ecf5123b89c47110b4d53156d42741997902edf89c722dc1060a279b41815b6f",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "The added optical path difference is (1.5−1)×0.002 − (1.4−1)×0.0015 = 0.0004 m. Shift is (1/0.005)×0.0004 = 0.08 m = 8 cm; the stem explicitly asks for centimeters.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R032",
+        "questionId": "68dea7c2387eea3d0d95f9bb",
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 0.96,
+        "evidence": "The added optical path difference is (1.5−1)×0.002 − (1.4−1)×0.0015 = 0.0004 m. Shift is (1/0.005)×0.0004 = 0.08 m = 8 cm; the stem explicitly asks for centimeters.",
+        "student_reply": "Your value of 0.08 m is correct. The question asks for centimeters, so the numerical answer is 8."
+      }
+    ]
+  },
+  {
+    "sourceVersion": "5692254c0ebfd63e0dcd3c32fdcba700cafaa747c461186553a8ee30b6aea02e",
+    "provenance": "development-time coding-assistant review; not runtime inference or faculty validation",
+    "solve": {
+      "summary": "Inactivation of voltage-gated Na⁺ channels explains the absolute refractory period, supporting key B. This belongs with neural control/neuronal physiology, not Botany / The Living World; faculty should review the subject and chapter metadata.",
+      "answer": "See checkable evidence summary; not a blind runtime solve",
+      "uncertainty": "Faculty decision or authoring required",
+      "figureRequired": false
+    },
+    "results": [
+      {
+        "reportId": "R023",
+        "questionId": "68ecbacb2ec87a18deba1ad7",
+        "verdict": "defect",
+        "repair": "wrong_chapter",
+        "edit": null,
+        "route": "faculty_review",
+        "confidence": 0.96,
+        "evidence": "Inactivation of voltage-gated Na⁺ channels explains the absolute refractory period, supporting key B. This belongs with neural control/neuronal physiology, not Botany / The Living World; faculty should review the subject and chapter metadata.",
+        "student_reply": "This question concerns neural control and is misplaced under The Living World. Faculty should review its subject and chapter classification."
+      }
+    ]
+  }
+]
