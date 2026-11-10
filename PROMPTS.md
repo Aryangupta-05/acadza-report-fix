@@ -347,3 +347,13 @@ These are coding-assistant errors, not invented failed Gemini classifications. T
 - Each public evaluator receives a separate durable workspace, so a demo mutation cannot destroy the original dataset or another evaluator’s scenario. This is proportionate demo isolation, not production faculty identity/authentication.
 - The code, UI, result reviews, copy and documentation were generated with coding-assistant help. Automated tests, provider responses, source checks and browser observations are verification evidence; they are not claimed as manual human review. Aryan supplied authorization, the fresh key and availability answers. Aryan still needs to understand the work and review the motivation wording.
 - Current documentation used: OpenAI Structured Outputs (https://developers.openai.com/api/docs/guides/structured-outputs), Google structured output (https://ai.google.dev/gemini-api/docs/structured-output) and pricing (https://ai.google.dev/gemini-api/docs/pricing), Render Blueprint/free/deploy/health-check references.
+
+## Final substantive user instruction, verbatim
+
+> Retry Chrome control; I’ll approve the prompt
+
+## Further genuine failures
+
+A later local test exposed Windows-sandbox EPERM on cache-file rename. The successful provider-response branch had allowed a cache persistence error to enter the request retry path, potentially spending another model request. Cache writes now have a separate bounded filesystem retry; a cache error is recorded in trace metadata and never repeats a successful provider request. A new regression test verifies that boundary. Cache tests use an ignored workspace runtime directory instead of an unreliable sandbox temp path.
+
+Recording used only the public console. Browser capture did not produce a verified video: background work failed with lost execution context, active capture timed out, native Chrome control later stopped on a URL-verification guard. These failures are disclosed, not represented as a completed screen recording. Prepared narration was synthesized offline with Microsoft Zira via System.Speech; it is not Aryan’s voice.

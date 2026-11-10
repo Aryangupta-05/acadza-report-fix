@@ -5,7 +5,7 @@ const ajv=new Ajv({allErrors:true});
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 export class ModelClient {
  constructor({provider=process.env.LLM_PROVIDER||'gemini',model,cache='.cache',fetcher=fetch,retries=1,timeout=90000}={}) {
-  this.provider=provider;this.model=model||(provider==='gemini'?process.env.GEMINI_MODEL||'gemini-2.5-flash':process.env.OPENAI_MODEL);this.cache=cache;this.fetcher=fetcher;this.retries=retries;this.timeout=timeout;this.calls=0;this.hits=0;this.traces=[];
+  this.provider=provider;this.model=model||(provider==='gemini'?process.env.GEMINI_MODEL||'gemini-3.8-flash':process.env.OPENAI_MODEL);this.cache=cache;this.fetcher=fetcher;this.retries=retries;this.timeout=timeout;this.calls=0;this.hits=0;this.traces=[];
  }
  async generate(system,data,schema,phase) {
   const key=this.provider==='gemini'?process.env.GEMINI_API_KEY:process.env.OPENAI_API_KEY;
@@ -35,7 +35,11 @@ export class ModelClient {
     if(!outputText)throw new Error('Model refusal or empty output');
     const output=JSON.parse(outputText);if(!valid(output))throw new Error('Structured output failed schema validation: '+ajv.errorsText(valid.errors));
     const meta={phase,provider:this.provider,model:this.model,cache:false,digest,attempt,status,elapsedMs:Date.now()-started,usage:raw.usageMetadata||raw.usage||null,responseId:raw.responseId||raw.id||null};
-    this.traces.push(meta);await mkdir(this.cache,{recursive:true});await writeFile(path+'.tmp',JSON.stringify({output,meta},null,2));await rename(path+'.tmp',path);return output;
+    this.traces.push(meta);
+    // A cache disk failure must not spend another model request after a successful response.
+    try{await mkdir(this.cache,{recursive:true});await writeFile(path+'.tmp',JSON.stringify({output,meta},null,2));let saved=false;for(let n=0;n<3;n++){try{await rename(path+'.tmp',path);saved=true;break}catch(e){if(!['EPERM','EBUSY'].includes(e.code)||n===2)throw e;await sleep(50*(n+1));}}if(!saved)throw new Error('Cache not saved');}
+    catch(e){meta.cacheWriteError=e.code||'Cache write unavailable';}
+    return output;
    }catch(e){this.traces.push({phase,digest,model:this.model,attempt,status:status||null,elapsedMs:Date.now()-started,error:e.message.replaceAll(key,'[REDACTED]')});if(attempt===this.retries||e.retryable===false)throw e;await sleep(Math.min(1000*2**attempt,8000));}
   }
  }

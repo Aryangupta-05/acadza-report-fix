@@ -24,7 +24,7 @@ npm run build
 npm start
 ```
 
-On PowerShell use `Copy-Item .env.example .env` and `npm.cmd` if execution policy blocks npm.ps1. Open `http://localhost:3100`. Local actions persist in `runtime/acadza.sqlite` through a restart. The source data remains unchanged.
+On PowerShell use `Copy-Item .env.example .env` and `npm.cmd` if execution policy blocks npm.ps 1. Open `http://localhost:3100`. Local actions persist in `runtime/acadza.sqlite` through a restart. The source data remains unchanged.
 
 For actual inference, put a fresh, free-tier Gemini key in `.env` and explicitly select a currently accessible free model:
 
@@ -48,16 +48,25 @@ The engine never applies content. `auto_apply` means eligible, not already appli
 
 ## Review experience
 
-Search question text, chapter or report text; filter by status, verdict or route. Urgency = severity (60 answer/type/unsound, 40 other defects, 20 review referral, 5 other) + repeated-report points (5 each, capped at20) + waiting-age points (2/day, capped at20). It does not invent student exposure. Native MathML is preserved by a server sanitizer; scripts, handlers, unsafe URLs and SVG are removed. Missing image records and failed loads are visible. Before/after, exact patches, student reports, replies, solution and audit history appear in one case view. Faculty-only authoring is explicitly distinguished from AI suggestions.
+Search question text, chapter or report text; filter by status, verdict or route. Urgency = severity (60 answer/type/unsound, 40 other defects, 20 review referral, 5 other) + repeated-report points (5 each, capped at 20) + waiting-age points (2/day, capped at 20). It does not invent student exposure. Native MathML is preserved by a server sanitizer; scripts, handlers, unsafe URLs and SVG are removed. Missing image records and failed loads are visible. Before/after, exact patches, student reports, replies, solution and audit history appear in one case view. Faculty-only authoring is explicitly distinguished from AI suggestions.
 
 ## Deployment and seven-day evaluation
 
 `render.yaml` provisions a **free** Node web service and PostgreSQL database in Singapore. Production refuses ephemeral SQLite. Render’s database URL is injected through `fromDatabase`; no secrets are committed. The app’s `/health` endpoint reports the store and snapshot mode. Build installs development tools explicitly, then runs tests and compiles assets.
 
-The deployment is intended to remain available through at least **18 November 2026**, seven days after the submission deadline, subject to free-tier availability. Free web services sleep after15 idle minutes and may need about a minute to wake; local disk changes are ephemeral. Free PostgreSQL lasts30 days, has no backups, and may have maintenance interruptions. The shared database preserves demo actions across web-service restarts. There is no promise of uninterrupted uptime. [Render free-tier limitations](https://render.com/docs/free)
+The deployment is intended to remain available through at least **18 November 2026**, seven days after the submission deadline, subject to free-tier availability. Free web services sleep after 15 idle minutes and may need about a minute to wake; local disk changes are ephemeral. Free PostgreSQL lasts 30 days, has no backups, and may have maintenance interruptions. The shared database preserves demo actions across web-service restarts. There is no promise of uninterrupted uptime. [Render free-tier limitations](https://render.com/docs/free)
 
 ## Results and verification
 
-Source:43 questions,44 reports,39 reported-question groups. Committed results:44 unique report IDs,27 defect reports,19 proposed patches,4 automatic-eligible routes,23 faculty-review routes and17 no-change routes. Source byte hashes are recorded in `docs/input-hashes.json`; `npm run check` compares them, validates every result and rejects repeat patch application. See `VERIFICATION.md` for actual test/browser/deployment evidence and limits. Evaluator ground-truth labels are unavailable; no accuracy percentage is claimed. Confidence values are subjective judgments, not calibrated probabilities.
+Source:43 questions,44 reports,39 reported-question groups. Committed results:44 unique report IDs,27 defect reports,19 proposed patches,4 automatic-eligible routes,23 faculty-review routes and 17 no-change routes. Source byte hashes are recorded in `docs/input-hashes.json`; `npm run check` compares them, validates every result and rejects repeat patch application. See `VERIFICATION.md` for actual test/browser/deployment evidence and limits. Evaluator ground-truth labels are unavailable; no accuracy percentage is claimed. Confidence values are subjective judgments, not calibrated probabilities.
 
 See `PROMPTS.md`, `PRODUCT.md`, `BONUS.md`, `REQUIREMENTS.md`, `PROGRESS.md`, `DEMO_SCRIPT.md`, `SUBMISSION_EMAIL.md` and `WALKTHROUGH.md`. Submission answers are in the draft email. Do not send it without Aryan’s final instruction.
+
+## Submission answers for review
+
+- Remote Monday–Saturday: yes (confirmed by Aryan).
+- Commitment:6 months (confirmed).
+- Earliest start:21 November 2026 (confirmed).
+- Motivation draft: I want to build AI that makes a real student workflow more reliable, with clear evidence and careful safeguards. This work interests me because the useful outcome is a correction people can trust, and I want to develop that product judgment alongside my engineering skills. Aryan should review this AI-assisted wording before submission.
+
+**Video remains blocked.** The demo script and 180-second synthetic narration are prepared, but no verified screen recording or hosted video link exists.

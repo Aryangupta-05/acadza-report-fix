@@ -1,0 +1,7 @@
+{
+  "status": "direct_sql_not_verified",
+  "attempt": "Read-only aggregate SELECT action, provenance, COUNT(*) FROM audit GROUP BY action, provenance",
+  "providerResponse": "This database blocks all external connections because its IP allowlist is empty, so this tool cannot reach it.",
+  "actionTaken": "Kept external access blocked. Did not change the allowlist.",
+  "alternativeEvidence": "Public browser saved approve, edit, reject and recommendation events; LCR correction/audit survived refresh and redeploy. Public /health reports PostgreSQL."
+}
