@@ -404,4 +404,4 @@ A separate audit review caught that first faculty-authored patches in categories
 
 Alternate CLI result paths now receive matching <out>.run.json metadata (or explicit --run-out), preventing an experimental --out run from overwriting release provenance. A reviewed-mode custom-output smoke produced44 identical results and preserved the reviewed release metadata.
 
-The final ZIP audit caught a release-hash mismatch caused by Git LF normalization versus the Windows working copy, with identical parsed JSON. Corrected runtime-review.json to hash the actual Git blob, labeled that byte basis, and regenerated/rechecked the archive. This was an evidence-packaging error, not a changed triage decision.
+The final ZIP audit caught an archive-hash mismatch: git archive honored core.autocrlf=true and emitted CRLF although the Git blob and local results both used LF, with identical parsed JSON. Labeled the review hash as Git blob bytes and regenerated with git -c core.autocrlf=false archive. Rechecked the actual ZIP bytes against the published hash. This was a packaging error, not a changed triage decision.
