@@ -1,0 +1,16 @@
+{
+  "complete": false,
+  "error": "Provider HTTP 503",
+  "traces": [
+    {
+      "phase": "independent_solve_batch",
+      "digest": "fb7f5eec19733f1672deb0120073125b1f2aa7a62c185b3ff7a8248975c5191b",
+      "model": "gemini-3.8-flash",
+      "attempt": 0,
+      "status": 503,
+      "elapsedMs": 9433,
+      "error": "Provider HTTP 503"
+    }
+  ],
+  "checkedAt": "2026-11-10T18:00:18.607Z"
+}

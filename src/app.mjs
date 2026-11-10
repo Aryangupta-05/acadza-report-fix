@@ -51,6 +51,14 @@ export function createApp({store,questions,reports,results,runInfo,assets}) {
     }
     return json({error:'Method not allowed'},405);
    }
+   if(path==='/demo')return new Response('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Acadza · Three-minute walkthrough</title><link rel="stylesheet" href="/style.css"></head><body><main class="demo-page"><div class="eyebrow">ACADZA · REPORT → FIX</div><h1>A careful correction, from report to audit.</h1><p>Three-minute walkthrough using actual deployed-console capture. Edited and retimed for readability, with synthetic Microsoft Zira narration. The console uses clearly labeled development-reviewed snapshots.</p><video controls preload="metadata" src="/demo.mp4" aria-label="Acadza three-minute screen walkthrough"></video><p><a href="/">Open the faculty console</a> · <a href="https://github.com/Aryangupta-05/acadza-report-fix">Source and verification</a> · <a href="/demo.mp4" download>Download the MP4</a></p></main></body></html>',{headers:{'Content-Type':'text/html','Content-Security-Policy':"default-src 'self'; style-src 'self'; media-src 'self'; object-src 'none'; base-uri 'none'",'X-Content-Type-Options':'nosniff'}});
+   if(path==='/demo.mp4'){
+    const bytes=assets['demo.mp4'];if(!bytes)return new Response('Video not available',{status:404});
+    if(!['GET','HEAD'].includes(req.method))return new Response('Method not allowed',{status:405});
+    const headers={'Content-Type':'video/mp4','Accept-Ranges':'bytes','Cache-Control':'public, max-age=3600','Content-Length':String(bytes.length)};
+    const range=req.headers.get('range');if(range){const m=/^bytes=(\d+)-(\d*)$/.exec(range);const start=m?Number(m[1]):-1,end=m&&m[2]?Math.min(Number(m[2]),bytes.length-1):bytes.length-1;if(start<0||start>=bytes.length||end<start)return new Response(null,{status:416,headers:{'Content-Range':'bytes */'+bytes.length}});headers['Content-Range']=`bytes ${start}-${end}/${bytes.length}`;headers['Content-Length']=String(end-start+1);return new Response(req.method==='HEAD'?null:bytes.subarray(start,end+1),{status:206,headers});}
+    return new Response(req.method==='HEAD'?null:bytes,{headers});
+   }
    const file=path==='/'?'index.html':path.slice(1);if(!['index.html','app.js','style.css'].includes(file))return new Response('Not found',{status:404});
    return new Response(assets[file],{headers:{'Content-Type':file.endsWith('.css')?'text/css':file.endsWith('.js')?'text/javascript':'text/html','Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",'X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'}});
   }catch(e){return json({error:e.status?e.message:'Request failed. Check the server and retry.'},e.status||500);}

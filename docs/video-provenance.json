@@ -1,0 +1,123 @@
+{
+  "durationSeconds": 180,
+  "captureSeconds": 95,
+  "sourceFrameCount": 1288,
+  "width": 1280,
+  "height": 720,
+  "editing": "Active browser segments joined and retimed for narration; not an uninterrupted180-second real-time capture",
+  "voice": "Offline Microsoft Zira synthetic voice, not Aryan",
+  "captureSource": "Public deployed console, in-app browser",
+  "sourceSegments": [
+    {
+      "label": "Queue overview and provenance",
+      "start": 0,
+      "seconds": 5,
+      "actualSeconds": 5.046
+    },
+    {
+      "label": "Queue overview and durable evaluation workspace",
+      "start": 5,
+      "seconds": 10,
+      "actualSeconds": 10.015
+    },
+    {
+      "label": "Queue overview",
+      "start": 15,
+      "seconds": 5,
+      "actualSeconds": 5.055
+    },
+    {
+      "label": "Independent pressure calculation gives 4800 Pa",
+      "start": 20,
+      "seconds": 10,
+      "actualSeconds": 10.054
+    },
+    {
+      "label": "Rendered question and four options",
+      "start": 30,
+      "seconds": 10,
+      "actualSeconds": 10.002
+    },
+    {
+      "label": "Student claim is a lead, not an instruction",
+      "start": 40,
+      "seconds": 5,
+      "actualSeconds": 5.024
+    },
+    {
+      "label": "Only the stored key changes from A to D",
+      "start": 45,
+      "seconds": 10,
+      "actualSeconds": 10.022
+    },
+    {
+      "label": "Exact patch and field restriction",
+      "start": 55,
+      "seconds": 10,
+      "actualSeconds": 10.054
+    },
+    {
+      "label": "Stored derivation corroborates the independently checked value",
+      "start": 65,
+      "seconds": 5,
+      "actualSeconds": 5.073
+    },
+    {
+      "label": "Faculty records a concrete verification reason",
+      "start": 70,
+      "seconds": 10,
+      "actualSeconds": 10.088
+    },
+    {
+      "label": "Verified saved correction and audit",
+      "start": 80,
+      "seconds": 10,
+      "actualSeconds": 10.026
+    },
+    {
+      "label": "Audit stores source and resulting versions with the exact change",
+      "start": 90,
+      "seconds": 5,
+      "actualSeconds": 5.059
+    }
+  ],
+  "retiming": [
+    {
+      "sourceStart": 0,
+      "sourceEnd": 20,
+      "videoStart": 0,
+      "videoEnd": 20
+    },
+    {
+      "sourceStart": 20,
+      "sourceEnd": 45,
+      "videoStart": 20,
+      "videoEnd": 60
+    },
+    {
+      "sourceStart": 45,
+      "sourceEnd": 70,
+      "videoStart": 60,
+      "videoEnd": 100
+    },
+    {
+      "sourceStart": 70,
+      "sourceEnd": 80,
+      "videoStart": 100,
+      "videoEnd": 125
+    },
+    {
+      "sourceStart": 80,
+      "sourceEnd": 90,
+      "videoStart": 125,
+      "videoEnd": 160
+    },
+    {
+      "sourceStart": 90,
+      "sourceEnd": 95,
+      "videoStart": 160,
+      "videoEnd": 180
+    }
+  ],
+  "fileBytes": 3656701
+}
