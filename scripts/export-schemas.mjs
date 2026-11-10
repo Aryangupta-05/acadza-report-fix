@@ -1,2 +1,3 @@
-import {writeFile} from 'node:fs/promises';import {resultSchema,editSchema} from '../src/safety.mjs';import {solveSchema,triageSchema,solveBatchSchema} from '../src/engine.mjs';
-await writeFile('prompts/schemas.json',JSON.stringify({resultSchema,editSchema,solveSchema,triageSchema,solveBatchSchema},null,2)+'\n');
+import {writeFile} from 'node:fs/promises';import {resultSchema,editSchema} from '../src/safety.mjs';import {solveSchema,triageSchema,solveBatchSchema,batchSolveSchema,batchTriageSchema,batchSolveInstruction,batchTriageInstruction} from '../src/engine.mjs';
+await writeFile('prompts/schemas.json',JSON.stringify({resultSchema,editSchema,solveSchema,triageSchema,solveBatchSchema,batchSolveExample:batchSolveSchema([{_id:'QUESTION_ID'}]),batchTriageExample:batchTriageSchema([{reportId:'REPORT_ID',questionId:'QUESTION_ID'}])},null,2)+'\n');
+await writeFile('prompts/solve-batch-v2.txt',batchSolveInstruction+'\n');await writeFile('prompts/triage-batch-v2.txt',batchTriageInstruction+'\n');

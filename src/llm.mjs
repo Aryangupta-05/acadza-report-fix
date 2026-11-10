@@ -4,8 +4,9 @@ import Ajv from 'ajv';
 const ajv=new Ajv({allErrors:true});
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 export class ModelClient {
- constructor({provider=process.env.LLM_PROVIDER||'gemini',model,cache='.cache',fetcher=fetch,retries=1,timeout=90000}={}) {
+ constructor({provider=process.env.LLM_PROVIDER||'gemini',model,cache='.cache',fetcher=fetch,retries=1,timeout=90000,minIntervalMs=Number(process.env.LLM_MIN_INTERVAL_MS||0)}={}) {
   this.provider=provider;this.model=model||(provider==='gemini'?process.env.GEMINI_MODEL||'gemini-3.8-flash':process.env.OPENAI_MODEL);this.cache=cache;this.fetcher=fetcher;this.retries=retries;this.timeout=timeout;this.calls=0;this.hits=0;this.traces=[];
+  this.minIntervalMs=Math.max(0,Math.min(30000,minIntervalMs||0));this.lastRequestAt=0;
  }
  async generate(system,data,schema,phase) {
   const key=this.provider==='gemini'?process.env.GEMINI_API_KEY:process.env.OPENAI_API_KEY;
@@ -14,7 +15,7 @@ export class ModelClient {
   const input=JSON.stringify({UNTRUSTED_DATA:data});
   const digest=createHash('sha256').update(JSON.stringify({provider:this.provider,model:this.model,system,input,schema})).digest('hex');
   const path=`${this.cache}/${digest}.json`,valid=ajv.compile(schema);
-  try{const stored=JSON.parse(await readFile(path,'utf8'));if(valid(stored.output)){this.hits++;this.traces.push({phase,cache:true,digest,model:this.model});return stored.output;}}catch{}
+  try{const stored=JSON.parse(await readFile(path,'utf8'));if(valid(stored.output)){this.hits++;this.traces.push({phase,cache:true,digest,model:this.model,source:stored.meta||null});return stored.output;}}catch{}
   for(let attempt=0;attempt<=this.retries;attempt++) {
    const started=Date.now();let status;
    try {
@@ -27,6 +28,7 @@ export class ModelClient {
      url='https://api.openai.com/v1/responses';headers.Authorization=`Bearer ${key}`;
      body={model:this.model,input:[{role:'system',content:system},{role:'user',content:input}],text:{format:{type:'json_schema',name:'triage',strict:true,schema}},max_output_tokens:10000};
     }
+    const delay=this.minIntervalMs-(Date.now()-this.lastRequestAt);if(delay>0)await sleep(delay);this.lastRequestAt=Date.now();
     this.calls++;const res=await this.fetcher(url,{method:'POST',headers,body:JSON.stringify(body),signal:AbortSignal.timeout(this.timeout)});status=res.status;
     // Do not log raw provider error bodies: they may contain secrets or reflected input.
     if(!res.ok){const e=new Error('Provider HTTP '+res.status);e.retryable=[500,502,503,504].includes(res.status);e.rateLimited=res.status===429;throw e;}

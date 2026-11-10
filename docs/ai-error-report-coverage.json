@@ -1,0 +1,82 @@
+{
+  "error": "Batch report coverage mismatch",
+  "observedOutput": {
+    "results": [
+      {
+        "reportId": "R034",
+        "questionId": "695ee00b88d7701e561aabc5",
+        "verdict": "defect",
+        "repair": "solution_fix",
+        "edit": {
+          "field": "solution",
+          "find": "<h3>Assertion<br />\n(A) is false because when two waves of equal amplitude interfere with a phase difference of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\"><mrow><mfrac><mrow><mi>&pi;</mi></mrow><mrow><mn> 2 </mn></mrow></mfrac></mrow></mstyle></math>, the resultant intensity is not equal to the intensity of one wave. Instead, it is given by:<br />\n<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\"><mrow><mi> I </mi><mo>=</mo><mn> 2 </mn><msub><mi> I </mi><mrow><mn> 0 </mn></mrow></msub><msup><mi> cos </mi><mrow><mn> 2 </mn></mrow></msup><mrow><mo fence=\"true\" form=\"prefix\" stretchy=\"true\">(</mo><mfrac><mrow><mi>\u03d5</mi></mrow><mrow><mn> 2 </mn></mrow></mfrac><mo fence=\"true\" form=\"postfix\" stretchy=\"true\">)</mo></mrow></mrow></mstyle></math><br />\nFor a phase difference of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\"><mrow><mfrac><mrow><mi>&pi;</mi></mrow><mrow><mn> 2 </mn></mrow></mfrac></mrow></mstyle></math>, this formula gives:<br />\n<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\"><mrow><mi> I </mi><mo>=</mo><mn> 2 </mn><msub><mi> I </mi><mrow><mn> 0 </mn></mrow></msub><msup><mi> cos </mi><mrow><mn> 2 </mn></mrow></msup><mrow><mo fence=\"true\" form=\"prefix\" stretchy=\"true\">(</mo><mfrac><mrow><mi>&pi;</mi></mrow><mrow><mn> 4 </mn></mrow></mfrac><mo fence=\"true\" form=\"postfix\" stretchy=\"true\">)</mo></mrow><mo>=</mo><mn> 2 </mn><msub><mi> I </mi><mrow><mn> 0 </mn></mrow></msub><mi>&times;</mi><mfrac><mrow><mn> 1 </mn></mrow><mrow><mn> 2 </mn></mrow></mfrac><mo>=</mo><msub><mi> I </mi><mrow><mn> 0 </mn></mrow></msub></mrow></mstyle></math><br />\nThus, the intensity is equal to the intensity of one wave. Therefore, assertion<br />\n(A) is true. Reason (R) is correct because the resultant intensity in interference can indeed be the sum of the individual intensities when the phase difference is non-zero. However, in the case of a phase difference of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\"><mrow><mfrac><mrow><mi>&pi;</mi></mrow><mrow><mn> 2 </mn></mrow></mfrac></mrow></mstyle></math>, the intensities do not simply add up; they are modified by the interference effect.<br />\nThus, the correct answer is (d), as assertion<br />\n(A) is false but reason (R) is true.</h3>",
+          "replace": "<h3>Assertion (A) is false. When two waves of equal amplitude (A) interfere, the resultant intensity is I = I1 + I2 + 2*sqrt(I1*I2)*cos(phi). With I1 = I2 = I0 and phi = pi/2, I = I0 + I0 + 0 = 2*I0. The assertion claims the intensity is equal to one wave (I0), which is incorrect. Reason (R) is also false because the resultant intensity in interference is not simply the sum of individual intensities (I1 + I2) unless the phase difference is an odd multiple of pi.</h3>"
+        },
+        "route": "faculty_review",
+        "confidence": 0.9,
+        "evidence": "The assertion is false because the resultant intensity is 2*I0, not I0. The reason is also false as the intensity formula includes an interference term. The current solution incorrectly concludes the assertion is true and the reason is true.",
+        "student_reply": "You are correct that the assertion is false. The solution has been sent for review to correct the explanation and the final answer."
+      },
+      {
+        "reportId": "R025",
+        "questionId": "622df25ab70e4b50e44ff837",
+        "verdict": "defect",
+        "repair": "diagram",
+        "edit": null,
+        "route": "faculty_review",
+        "confidence": 1,
+        "evidence": "The question refers to a figure that is missing from the content. Without the figure, the relative sizes of the bubbles cannot be determined, making the question unsolvable.",
+        "student_reply": "Thank you for pointing this out. The missing figure has been sent for review so the question can be properly displayed."
+      },
+      {
+        "reportId": "R041",
+        "questionId": "6208e298fa399567e0878700",
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change",
+        "confidence": 1,
+        "evidence": "The question and answer are factually correct. The student's report comment is unintelligible.",
+        "student_reply": "The question has been reviewed and is correct as written. Please let us know if you have a specific question about the content."
+      },
+      {
+        "reportId": "R018",
+        "questionId": "612151a6a34397610a9a2e58",
+        "verdict": "defect",
+        "repair": "solution_fix",
+        "edit": {
+          "field": "solution",
+          "find": "<h3><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>5.469</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>10</mn></mrow></msup><mi>m</mi><mo>&#x0003D;</mo><mn>5.47</mn><mi>\\AA</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mi>&#x003BB;</mi><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>p</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>I</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>2.65</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>18</mn></mrow></msup><mi>J</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>16.8</mn><mi>e</mi><mi>V</mi></mrow></mstyle></math></h3>",
+          "replace": "<h3>The kinetic energy K of an electron is given by K = h^2 / (2 * m * lambda^2). Given lambda = 0.3 nm = 3 * 10^-10 m, h = 6.63 * 10^-34 J\u00b7s, and m = 9.1 * 10^-31 kg: K = (6.63 * 10^-34)^2 / (2 * 9.1 * 10^-31 * (3 * 10^-10)^2) = 2.68 * 10^-18 J. Converting to eV: K = 2.68 * 10^-18 / 1.6 * 10^-19 = 16.75 eV, which is approximately 16.8 eV.</h3>"
+        },
+        "route": "auto_apply",
+        "confidence": 1,
+        "evidence": "The original solution contained irrelevant calculations and garbled text. The new solution provides the correct derivation for the kinetic energy of an electron given its de-Broglie wavelength.",
+        "student_reply": "The solution has been updated to show the correct derivation for the kinetic energy. Thank you for bringing this to our attention."
+      }
+    ]
+  },
+  "providerMetadata": {
+    "phase": "triage_batch",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "cache": false,
+    "digest": "495edcedd85a20e6faee0f9f48d3debd4145b94fa8fc38801fd07d2dbd4c75f6",
+    "attempt": 0,
+    "status": 200,
+    "elapsedMs": 6748,
+    "usage": {
+      "promptTokenCount": 5262,
+      "candidatesTokenCount": 2354,
+      "totalTokenCount": 7616,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 5262
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "responseId": "YWTzaobzA-3j4t4PtOq56Qw"
+  }
+}

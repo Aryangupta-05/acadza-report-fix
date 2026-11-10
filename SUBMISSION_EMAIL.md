@@ -12,7 +12,7 @@ Here is my Report → Fix assignment:
 - Faculty console: https://acadza-report-fix-qeyq.onrender.com
 - Three-minute video: https://acadza-report-fix-qeyq.onrender.com/demo
 
-The console clearly labels its development-reviewed snapshots. Actual Gemini orchestration is implemented and was exercised, but free-tier 429/503 responses prevented a complete live 44-report run. PROMPTS.md records AI contributions, verbatim prompts, genuine failures and safety decisions. The 44-result reviewed file and reproducible checks are committed. Free hosting may need about a minute to wake.
+The console clearly labels its development-reviewed snapshots. Actual Gemini orchestration completed all44 reports in20 successful calls. Safety checks blocked eight proposals, and source review found additional model mistakes; raw output and the per-report review are archived honestly. PROMPTS.md records AI contributions, verbatim prompts, genuine failures and safety decisions. The 44-result reviewed file and reproducible checks are committed. Free hosting may need about a minute to wake.
 
 1. Yes, I can work remotely Monday–Saturday and want to build useful product rather than treat this as a college requirement.
 2. I can commit for 6 months.

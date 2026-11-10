@@ -1,0 +1,30 @@
+{
+  "complete": false,
+  "error": "Independent solve batch has incorrect coverage",
+  "traces": [
+    {
+      "phase": "independent_solve_batch",
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "cache": false,
+      "digest": "c46449e48199fbea1c5ca3b4cf7a7a5b49d37eedbb7d209f3c8b8750350f8648",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 12515,
+      "usage": {
+        "promptTokenCount": 12383,
+        "candidatesTokenCount": 4889,
+        "totalTokenCount": 17272,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 12383
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "responseId": "MGfzaqjBD9SM694PgrL5kAw"
+    }
+  ],
+  "checkedAt": "2026-11-10T18:49:32.724Z"
+}

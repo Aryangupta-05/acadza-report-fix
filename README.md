@@ -8,7 +8,9 @@ A faculty workbench for checking student reports, proposing small corrections, a
 
 The published console uses **development-reviewed snapshots**, created with coding-assistant help and explicitly labeled in the UI. They are not faculty-validated ground truth or fabricated runtime model output. `npm run engine -- --mode reviewed` reproduces the committed 44-result file from source-version-bound snapshots. A new or changed question has no matching reviewed snapshot and fails visibly for faculty review.
 
-An actual Gemini integration is implemented and was exercised. The first `gemini-3.6-flash` run produced 12 successful solve/triage calls, completing five question groups; 34 groups failed with 429/503 errors. The original outputs and real provider metadata are preserved in `docs/first-live-{run,results}.json`. A batched 2.5 Flash attempt returned 404, a 3.6 Flash batch returned 429, and a 3.8 Flash batch returned 503. Full live inference is **blocked by provider availability/quota**, not claimed complete. No billing was enabled. No generation retry loop runs in the deployed app.
+The real Gemini integration now completed a full live run using `gemini-3.1-flash-lite`: **20 successful provider calls, 39 independent question analyses, and 44 report results**. Eight proposed edits were blocked by deterministic guards. Further source review found substantive errors in structurally valid decisions, including hallucinated options and misread keys. Raw results and provider metadata are preserved in `docs/lite-v3-{run,results}.json`; the per-report review is in `docs/RUNTIME_REVIEW.md` and `docs/runtime-review.json`. The published file deliberately retains the independently reviewed proposals, with truthful reviewed-mode provenance. Raw output is not claimed accurate or silently relabeled. No billing was enabled and no retry loop runs in the deployed app.
+
+Earlier attempts failed with 404/429/503; their evidence remains archived. The successful run resolved the execution blocker, not the need for faculty judgment or evaluator ground truth.
 
 ## Run locally
 
@@ -29,10 +31,10 @@ On PowerShell use `Copy-Item .env.example .env` and `npm.cmd` if execution polic
 For actual inference, put a fresh, free-tier Gemini key in `.env` and explicitly select a currently accessible free model:
 
 ```sh
-npm run engine -- --model gemini-3.8-flash
+npm run engine -- --model gemini-3.1-flash-lite --out docs/new-live-results.json
 ```
 
-For new inputs use `--questions path/questions.json --reports path/reports.json --out path/results.json`. Live mode uses one blind solve batch, then four-question triage batches. Checkpoints are written after each successful triage batch to `docs/batch-checkpoint.json`; successful responses are cached privately by SHA-256 of provider, model, complete prompts, input and schema. Re-running reuses matching cached calls. A 429 stops immediately; other transient errors have one bounded retry, and each call times out after 90 seconds. A failed batch run leaves the previous final `results.json` intact. Inspect its provenance before submitting it.
+For new inputs use `--questions path/questions.json --reports path/reports.json --out path/results.json`. Live mode first solves all questions in four-question batches without keys, solutions or reports, then triages four-question batches. Both response envelopes require an entry keyed by every supplied identity, including duplicate reports. Stem-only executable calculations corroborate supported arithmetic; they never authorize writes. Set LLM_MIN_INTERVAL_MS=6000 for pacing. Checkpoints are written after each successful triage batch to `docs/batch-checkpoint.json`; successful responses are cached privately by SHA-256 of provider, model, complete prompts, input and schema. Re-running reuses matching cached calls. A 429 stops immediately; other transient errors have one bounded retry, and each call times out after 90 seconds. A failed batch run leaves the previous final result file intact. The default output is paired with docs/engine-run.json; a custom --out path is paired with <out>.run.json so experiments preserve the release provenance. Override the metadata path with --run-out. Inspect both outputs before submitting them.
 
 Optional OpenAI Responses integration is selected with `LLM_PROVIDER=openai`, `OPENAI_API_KEY`, and `OPENAI_MODEL`; it is implemented but **not live-tested**, and needs separately authorized spend. Do not assume an OpenAI model is free.
 
@@ -71,4 +73,4 @@ See `PROMPTS.md`, `PRODUCT.md`, `BONUS.md`, `REQUIREMENTS.md`, `PROGRESS.md`, `D
 
 **Video available:** [watch the walkthrough](https://acadza-report-fix-qeyq.onrender.com/demo). The180-second MP4 is edited and retimed from95 seconds of actual browser capture, with synthetic narration; see DEMO_SCRIPT.md and docs/video-provenance.json.
 
-Latest bounded live retry: gemini-3.8-flash returned503 after one request, without retries; actual metadata is in docs/live-retry-run.json. The reviewed result file remains unchanged.
+Latest full execution: docs/lite-v3-run.json records 20 successful calls and eight safety-blocked proposals. The released 44-result file remains explicitly development-reviewed after substantive review.

@@ -33,7 +33,7 @@ export class ReviewStore {
     patch=input.action==='edit'?input.edit:proposal.edit;
     if(input.action==='edit'&&!patch)throw new SafetyError('An edited patch is required');
     if(input.action==='approve'&&proposal.sourceVersion!==sourceVersion)throw new SafetyError('Proposal is stale',409);
-    const facultyAuthored=input.action==='edit'&&proposal.manualOnly;
+    const facultyAuthored=input.action==='edit'&&(proposal.manualOnly||!proposal.edit);
     if(facultyAuthored&&input.facultyAuthored!==true)throw new SafetyError('Confirm faculty-authored content');
     if(patch){next=patched(q,proposal.repair,patch,{facultyAuthored});status='applied';provenance=facultyAuthored?'faculty_authored':input.action==='edit'?'faculty_edited_ai_proposal':'ai_proposal_faculty_approved';}
     else status='reviewed';

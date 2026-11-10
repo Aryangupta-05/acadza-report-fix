@@ -5,10 +5,10 @@ Status: pending / implemented / verified / blocked. Input documents describe the
 | ID | Requirement | Artifact / evidence | Status |
 |---|---|---|---|
 | INPUT | Read email, README, every question/report and taxonomy; preserve originals | ASSIGNMENT.md; data/; data-inventory.json | verified |
-| ENGINE | Executable pipeline supports new production-format inputs, groups by question and returns one result per report | src/engine.mjs | implemented |
+| ENGINE | Executable pipeline supports new production-format inputs, groups by question and returns one result per report | src/engine.mjs; docs/lite-v3-run.json | verified |
 | TAXONOMY | Exact verdict/repair keys, result fields and null conventions | src/safety.mjs | verified |
-| LLM | Actual provider calls, strict structured output, retries, timeout, cache, visible failure, server-only secrets | src/llm.mjs; prompts/ | blocked |
-| SOLVER | Independent stem-only solve before stored answer and solution, mathematical checks | src/engine.mjs; scripts/numeric-checks.mjs | implemented |
+| LLM | Actual provider calls, strict structured output, retries, timeout, cache, visible failure, server-only secrets | src/llm.mjs; prompts/; docs/lite-v3-run.json | verified |
+| SOLVER | Independent stem-only solve before stored answer and solution, mathematical checks | src/engine.mjs; scripts/numeric-checks.mjs; docs/lite-v3-run.json | verified |
 | SAFETY | Repair scope and every repair restriction enforced independently of model | src/safety.mjs | verified |
 | MANUAL | auto:false never edited; empty fields mean evidence and recommendation only | src/safety.mjs | verified |
 | PATCH | Unique nonempty anchors, stale versions, idempotency, structure and images retained | src/safety.mjs; src/store.mjs | verified |
@@ -34,4 +34,4 @@ Status: pending / implemented / verified / blocked. Input documents describe the
 
 Defaults: proposed auto_apply is eligibility, never proof of persistence. Null repair/edit for nondefects; manual-only defects have null edit. Type migrations always require review. No exposure counts invented. Reviewer actions use isolated durable demo workspaces unless an authorized shared reviewer token is supplied.
 
-Verified scope: reviewed-mode results, public console, and actual edited/retimed video. Complete live inference remains blocked by provider responses. See ACCEPTANCE.md and VERIFICATION.md for exact execution boundaries.
+Verified scope: reviewed-mode results, public console, and actual edited/retimed video. Complete live execution is verified for all44 reports; eight model proposals failed guards and substantive review found further model errors. Released results remain development-reviewed, not relabeled runtime output. See docs/RUNTIME_REVIEW.md. See ACCEPTANCE.md and VERIFICATION.md for exact execution boundaries.

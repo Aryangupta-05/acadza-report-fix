@@ -1,0 +1,1041 @@
+{
+  "checkedAt": "2026-11-10T18:59:27.409Z",
+  "reviewer": "Codex coding assistant; not faculty validation or evaluator ground truth",
+  "runtimeModel": "gemini-3.1-flash-lite",
+  "runtimeSuccessfulCalls": 20,
+  "independentQuestions": 39,
+  "reports": 44,
+  "safetyBlocked": 8,
+  "verdictAndRepairAgreement": 21,
+  "releasedMode": "reviewed",
+  "releasedSHA256": "795c4da93f88f3509ade1c9a10d4c3b595dc6c35dc02379dc46707f33b521ab3",
+  "policy": "Raw live output is archived unchanged. Root results remain source-bound development-reviewed snapshots; they are not relabeled as runtime output. Agreement is comparison with assistant-reviewed decisions, not accuracy.",
+  "entries": [
+    {
+      "reportId": "R005",
+      "questionId": "68dea616d0cda73d07e93ae6",
+      "sourceVersion": "7ef01d3e87bd642e51d39651ba2d02261a6cf83ba1a715d5272394031c20dda9",
+      "runtime": {
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "safetyFailure": "Invalid answer format for question type",
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": "2",
+          "replace": "1"
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "Safety gate correctly blocked the model patch: Invalid answer format for question type. Retain the independently reviewed narrow proposal; see selected evidence.",
+      "selectedEvidence": "A charge q/2 on a face contributes q/(4ε₀); 2q at a corner contributes (2q)/(8ε₀). Their total is q/(2ε₀), so n = 1, whereas the key is 2."
+    },
+    {
+      "reportId": "R029",
+      "questionId": "68e8734442c06737d6e56da4",
+      "sourceVersion": "dec93abbf3c5fcee4e896d2b41073234856664f14825dcf11ae2cc5d33aa296d",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "The mass is 100/10 = 10 kg. F − 100μ = 10 and 2F − 100μ = 100 imply F = 90 N and μ = 0.8, option A; solving twice does not support the student’s 0.4."
+    },
+    {
+      "reportId": "R012",
+      "questionId": "61dffbec08489156b684bd22",
+      "sourceVersion": "ffaba00923a9eb4c4c5bd2088e3f3c03af5b70cbbbe1c057607921f1b2878c7b",
+      "runtime": {
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "safetyFailure": "Spelling must be words only",
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "spelling",
+        "edit": {
+          "field": "question",
+          "find": "Epithellial tisue",
+          "replace": "Epithelial tissue"
+        },
+        "route": "auto_apply"
+      },
+      "reviewNote": "Safety gate correctly blocked the model patch: Spelling must be words only. Retain the independently reviewed narrow proposal; see selected evidence.",
+      "selectedEvidence": "The small-intestinal lining is epithelial tissue (A). The option spells it “Epithellial tisue”; this two-word lexical correction leaves the question meaning and key unchanged."
+    },
+    {
+      "reportId": "R002",
+      "questionId": "60f744b3f1b9bc7cc7b4a949",
+      "sourceVersion": "7dadb7ed7dc9ff5b9945325e9692c5bd5f446ab54ffc35ddc3a53f65a0d2b9d4",
+      "runtime": {
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": "C",
+          "replace": "A"
+        },
+        "route": "faculty_review"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": "C",
+          "replace": "A"
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "Independently, the supply amplitude is √(V_R²+(V_L−V_C)²) = √(40²+(60−30)²) = 50 V, option A. The stored solution also gives 50 V, but the key C points to 130 V."
+    },
+    {
+      "reportId": "R004",
+      "questionId": "68e870ef42c06737d6e565c4",
+      "sourceVersion": "fd9bb6f53ded6e7ace9b8976213b83c4893dab834f547d7c52b286cc774cdac8",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": "A",
+          "replace": "D"
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "The model called D the stored key; actual source key is A. Both the student claim and stored key are wrong.",
+      "selectedEvidence": "Independently, P = ρv_rms²/3 = 0.09 × 400²/3 = 4800 Pa, option D. The student’s 8225 is incorrect, but the stored key A is also wrong; the stored solution agrees with 4800."
+    },
+    {
+      "reportId": "R008",
+      "questionId": "60f742f6660d187cc13a8078",
+      "sourceVersion": "3c3eb65373e37647a75dbbb5a2bf017f6d7358e3226ee1edc5e885d56264263f",
+      "runtime": {
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "safetyFailure": "Stem-data guard accepts explicit additive missing data only",
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "stem_data",
+        "edit": {
+          "field": "question",
+          "find": "an inductance",
+          "replace": "an inductance of 95.5 mH"
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "Safety gate correctly blocked the model patch: Stem-data guard accepts explicit additive missing data only. Retain the independently reviewed narrow proposal; see selected evidence.",
+      "selectedEvidence": "The stem omits the inductance, so Z = √(R²+(2πfL)²) cannot be evaluated. The stored solution explicitly substitutes L = 95.5 × 10⁻³ H; restoring 95.5 mH gives Z ≈ 50.002 Ω and preserves key C."
+    },
+    {
+      "reportId": "R034",
+      "questionId": "695ee00b88d7701e561aabc5",
+      "sourceVersion": "8fe62692540b72e3aa6f8769516d74200a0c2f6b4c799f49bc6e3c9b014a1522",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "unsound",
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "reviewNote": "The model proved both statements false and admitted the key was wrong, then returned no_error; no option represents both false.",
+      "selectedEvidence": "For equal individual intensities I₀, I = 2I₀(1 + cosφ). At φ = π/2 the result is 2I₀, so assertion A is false. The reason’s “always” claim for any nonzero phase is also false (for example φ = π gives zero). No option represents both false; faculty must repair the options and contradictory solution."
+    },
+    {
+      "reportId": "R010",
+      "questionId": "622f08d7b70e4b50e4500a1b",
+      "sourceVersion": "1d6bfeccb0d3f64408131fac9c28956d19cc481b2b7f319f52e4c3fb6bd1821b",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "option_repair",
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "reviewNote": "The model misattributed a missing stored option to the student device.",
+      "selectedEvidence": "The stored question has only A, B and C. Momentum conservation gives centre-of-mass velocity (10 × 14)/(10+4) = 10 m/s, keyed C, but the original D distractor cannot be reconstructed uniquely from the solution; faculty must author or recover it."
+    },
+    {
+      "reportId": "R017",
+      "questionId": "6208e80a9cb2ab67dac61bd0",
+      "sourceVersion": "226be73505f66d3f65e4814c279cefbf75a6d9c982bbbc51ef1f4d90925c1c6e",
+      "runtime": {
+        "verdict": "already_fixed",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "already_fixed",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "The supplied live options already contain “more”, not “mere”. errorHistory records the faculty correction of “mere” to “more” and “shurbs” to “shrubs” on 7 November 2026; no repeat patch is needed."
+    },
+    {
+      "reportId": "R032",
+      "questionId": "68dea7c2387eea3d0d95f9bb",
+      "sourceVersion": "ecf5123b89c47110b4d53156d42741997902edf89c722dc1060a279b41815b6f",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "The added optical path difference is (1.5−1)×0.002 − (1.4−1)×0.0015 = 0.0004 m. Shift is (1/0.005)×0.0004 = 0.08 m = 8 cm; the stem explicitly asks for centimeters."
+    },
+    {
+      "reportId": "R026",
+      "questionId": "620e23cecc50543bc7db9186",
+      "sourceVersion": "18979fd83484d062d5c569bbd979cbec8b339f87212e0f5f82ec8e80b07b425d",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "syllabus",
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "reviewNote": "The model asserted exam-syllabus coverage without verification; retain a faculty scope review.",
+      "selectedEvidence": "Outgroup comparison can infer ancestral traits and supports key B. Whether this application belongs in the current NEET exam scope requires faculty confirmation; the taxonomy requires syllabus review while content stays live."
+    },
+    {
+      "reportId": "R042",
+      "questionId": "63c7cce12981ed154ee92c94",
+      "sourceVersion": "21a53e55dac34d1aed81112a8b23d96947c1604b921a83db242d4cd33c12400b",
+      "runtime": {
+        "verdict": "defect",
+        "repair": "wrong_chapter",
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "defect",
+        "repair": "wrong_chapter",
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "Displacement current is a capacitor/electromagnetic-induction topic, not geometrical optics. ε₀ × 10 × 1/(10⁻³) × 25 = 2.2125 μA, consistent with key C; faculty should correct the chapter classification."
+    },
+    {
+      "reportId": "R023",
+      "questionId": "68ecbacb2ec87a18deba1ad7",
+      "sourceVersion": "5692254c0ebfd63e0dcd3c32fdcba700cafaa747c461186553a8ee30b6aea02e",
+      "runtime": {
+        "verdict": "defect",
+        "repair": "wrong_chapter",
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "defect",
+        "repair": "wrong_chapter",
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "Inactivation of voltage-gated Na⁺ channels explains the absolute refractory period, supporting key B. This belongs with neural control/neuronal physiology, not Botany / The Living World; faculty should review the subject and chapter metadata."
+    },
+    {
+      "reportId": "R007",
+      "questionId": "60f742f6660d187cc13a8078",
+      "sourceVersion": "3c3eb65373e37647a75dbbb5a2bf017f6d7358e3226ee1edc5e885d56264263f",
+      "runtime": {
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "safetyFailure": "Stem-data guard accepts explicit additive missing data only",
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "stem_data",
+        "edit": {
+          "field": "question",
+          "find": "an inductance",
+          "replace": "an inductance of 95.5 mH"
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "Safety gate correctly blocked the model patch: Stem-data guard accepts explicit additive missing data only. Retain the independently reviewed narrow proposal; see selected evidence.",
+      "selectedEvidence": "The stem omits the inductance, so Z = √(R²+(2πfL)²) cannot be evaluated. The stored solution explicitly substitutes L = 95.5 × 10⁻³ H; restoring 95.5 mH gives Z ≈ 50.002 Ω and preserves key C."
+    },
+    {
+      "reportId": "R003",
+      "questionId": "60f744b3f1b9bc7cc7b4a949",
+      "sourceVersion": "7dadb7ed7dc9ff5b9945325e9692c5bd5f446ab54ffc35ddc3a53f65a0d2b9d4",
+      "runtime": {
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": "C",
+          "replace": "A"
+        },
+        "route": "faculty_review"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": "C",
+          "replace": "A"
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "Independently, the supply amplitude is √(V_R²+(V_L−V_C)²) = √(40²+(60−30)²) = 50 V, option A. The stored solution also gives 50 V, but the key C points to 130 V."
+    },
+    {
+      "reportId": "R038",
+      "questionId": "68f21df0941cda588bc0470b",
+      "sourceVersion": "0a9e067314a5907d766fff4b06150ffa736fccb70e4a4fd351417fec88e4d0a6",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "app_issue",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Use taxonomy app_issue for recorded-selection behavior; no question edit.",
+      "selectedEvidence": "For constant mass, p = √(2mK); multiplying K by four doubles p, so stored answer A is correct. An A-to-B saved-selection mismatch is application behavior and cannot be repaired by changing the question."
+    },
+    {
+      "reportId": "R014",
+      "questionId": "63765a28f1d8416ae0408d89",
+      "sourceVersion": "5cdf2677811c5d737e453f683d7c4047cfed3a52b2a4aa76409f3f76a70ab42e",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "markup_leak",
+        "edit": {
+          "field": "question",
+          "find": "\\frac{7}{8}",
+          "replace": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>7</mn><mn>8</mn></mfrac></math>"
+        },
+        "route": "auto_apply"
+      },
+      "reviewNote": "The model assumed a LaTeX renderer exists; this console preserves native MathML and the source has a literal fraction command.",
+      "selectedEvidence": "The stem contains the raw literal \\frac{7}{8}. Replacing that exact fraction with equivalent MathML removes the visible code without changing its value. With 1/8 remaining, three half-lives give 180 days, option C."
+    },
+    {
+      "reportId": "R040",
+      "questionId": "6264197209f4fd65f58f5707",
+      "sourceVersion": "8c5298d498bf27bd672c0db385bb460639880dd8f838a2073a71d7347e09fd32",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "The vague wrong report establishes no concrete defect; use not_actionable after checking content.",
+      "selectedEvidence": "The vague comment “wrong” gives no specific claim. Golden rice produces beta-carotene, a vitamin-A precursor, supporting key C; no mathematical or answer-key defect is established. Cosmetic spacing in the solution is logged separately as a bonus finding."
+    },
+    {
+      "reportId": "R044",
+      "questionId": "68dea577d0cda73d07e9391c",
+      "sourceVersion": "3c989a44ed2bd607c4c6ca65741e564d6bd52e246e6329fbc88ec37d3d641021",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "Taking potential at infinity as reference: V(R) = 16 V; V(R/2) = (16/2)(3−1/4) = 22 V, while V(2R) = 8 V. The requested difference is 22−8 = 14 V; 22 V is only the first point’s potential."
+    },
+    {
+      "reportId": "R028",
+      "questionId": "6956d7bb23cb221e570d6013",
+      "sourceVersion": "02c587edd00d140f255b2bfb58d07796796a4248bc09b7e920ccbbd9713a3440",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "R = u² sin2θ/g and H = u² sin²θ/(2g). Setting R = H for a nonzero projectile gives 2sinθcosθ = sin²θ/2, so tanθ = 4 and θ = tan⁻¹4 (B), not tan⁻¹2."
+    },
+    {
+      "reportId": "R022",
+      "questionId": "61ee6c9d90a1a968a168686b",
+      "sourceVersion": "29d3fd0a1ee75880d6827c1299714c3eba3e70c1bc2d045de47cf70bed5507b7",
+      "runtime": {
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "safetyFailure": "Spelling pair outside verified dictionary",
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "spelling",
+        "edit": {
+          "field": "question",
+          "find": "plexux",
+          "replace": "plexus"
+        },
+        "route": "auto_apply"
+      },
+      "reviewNote": "Safety gate correctly blocked the model patch: Spelling pair outside verified dictionary. Retain the independently reviewed narrow proposal; see selected evidence.",
+      "selectedEvidence": "The distal small-intestinal lymphoid aggregates are Peyer’s patches (B). Option D has the lexical typo “plexux”; correcting it to “plexus” does not change the answer."
+    },
+    {
+      "reportId": "R015",
+      "questionId": "6956d79788d7701e5617bc29",
+      "sourceVersion": "373cea222f611e8f1d5f9de42698e891cedc343e137e368a04bbaad128b9beb2",
+      "runtime": {
+        "verdict": "defect",
+        "repair": "identical_options",
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "defect",
+        "repair": "identical_options",
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "Current and voltage differ in phase by π/2, so average power is V_rms I_rms cos(π/2) = 0. Both B and C say 0 W in an SCQ; a new distractor is authored content, so faculty must choose it."
+    },
+    {
+      "reportId": "R016",
+      "questionId": "6263d75bdd44e265ef926d97",
+      "sourceVersion": "00a11dba61e0a721af6d4070f22cc97276c1eaa0e211cea9e10a1c56eeb932fc",
+      "runtime": {
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "safetyFailure": "Reply falsely claims persisted fix",
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "solution_fix",
+        "edit": {
+          "field": "solution",
+          "find": "a = 40 cm",
+          "replace": "a = 20 cm"
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "Safety gate correctly blocked the model patch: Reply falsely claims persisted fix. Retain the independently reviewed narrow proposal; see selected evidence.",
+      "selectedEvidence": "Removing 800 g reduces displaced water volume by 800 cm³. The lost immersion height is 2 cm, so 2a² = 800, a² = 400 and a = 20 cm. The key 20 is correct; only the final stored line “a = 40 cm” is wrong."
+    },
+    {
+      "reportId": "R018",
+      "questionId": "612151a6a34397610a9a2e58",
+      "sourceVersion": "d135b72447cfe8e1203d288dea011dcd824ec746bdc2279329411cdbcc75e0a2",
+      "runtime": {
+        "verdict": "defect",
+        "repair": "solution_fix",
+        "edit": {
+          "field": "solution",
+          "find": "<h3><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>5.469</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>10</mn></mrow></msup><mi>m</mi><mo>&#x0003D;</mo><mn>5.47</mn><mi>\\AA</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mi>&#x003BB;</mi><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>p</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>I</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>2.65</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>18</mn></mrow></msup><mi>J</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>16.8</mn><mi>e</mi><mi>V</mi></mrow></mstyle></math></h3>",
+          "replace": "<h3>The kinetic energy K is given by K = p^2 / (2m) = h^2 / (2 * m * lambda^2). Substituting h = 6.626e-34 J.s, m = 9.11e-31 kg, and lambda = 0.3e-9 m, we get K = (6.626e-34)^2 / (2 * 9.11e-31 * (0.3e-9)^2) = 2.68e-18 J. Converting to eV, K = 2.68e-18 / 1.6e-19 = 16.75 eV, which is approximately 16.8 eV.</h3>"
+        },
+        "route": "faculty_review"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "defect",
+        "repair": "solution_fix",
+        "edit": {
+          "field": "solution",
+          "find": "<h3><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>5.469</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>10</mn></mrow></msup><mi>m</mi><mo>&#x0003D;</mo><mn>5.47</mn><mi>\\AA</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mi>&#x003BB;</mi><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>p</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>I</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>2.65</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>18</mn></mrow></msup><mi>J</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>16.8</mn><mi>e</mi><mi>V</mi></mrow></mstyle></math></h3>",
+          "replace": "<h3>For an electron, p = h/λ and K = p²/(2m) = h²/(2mλ²). Using λ = 0.3 nm = 3 × 10<sup>−10</sup> m gives K ≈ 2.68 × 10<sup>−18</sup> J ≈ 16.7 eV. The nearest option is (B), 16.8 eV.</h3>"
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "From λ = 0.3 nm, K = h²/(2m_e λ²) ≈ 16.7 eV, nearest option B (16.8 eV). The stored solution introduces an unexplained 5.47 Å wavelength and impulse symbol despite the fixed wavelength stem; replace the unusable derivation, retaining the correct key."
+    },
+    {
+      "reportId": "R039",
+      "questionId": "68c801bc1b1dbc16dc93bf2b",
+      "sourceVersion": "62489b3bb0c630569a162b1536a6a766655ef1e24903ef3de14f485211943020",
+      "runtime": {
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "language_mode",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Use taxonomy language_mode; do not invent an English-only platform policy.",
+      "selectedEvidence": "The report asks for Hindi, not a mathematical correction. Equating λ = hc/(eV) to h/√(2mK) gives K = (eV)²/(2mc²) ≈ 600.8 eV at V = 24800 V, supporting option A; language availability is a product request."
+    },
+    {
+      "reportId": "R009",
+      "questionId": "622f08d7b70e4b50e4500a1b",
+      "sourceVersion": "1d6bfeccb0d3f64408131fac9c28956d19cc481b2b7f319f52e4c3fb6bd1821b",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "option_repair",
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "reviewNote": "The model hallucinated a fourth stored option. D is absent in the raw source.",
+      "selectedEvidence": "The stored question has only A, B and C. Momentum conservation gives centre-of-mass velocity (10 × 14)/(10+4) = 10 m/s, keyed C, but the original D distractor cannot be reconstructed uniquely from the solution; faculty must author or recover it."
+    },
+    {
+      "reportId": "R013",
+      "questionId": "617fa18efd53ff1629ed890f",
+      "sourceVersion": "338ce66006b7b97964d9cc76c91cf99bea4b524a6316482e74340f506e602ac1",
+      "runtime": {
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "safetyFailure": "Only exam reference label can be removed",
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "exam_reference",
+        "edit": {
+          "field": "question",
+          "find": "(NEET 2019)",
+          "replace": ""
+        },
+        "route": "auto_apply"
+      },
+      "reviewNote": "Safety gate correctly blocked the model patch: Only exam reference label can be removed. Retain the independently reviewed narrow proposal; see selected evidence.",
+      "selectedEvidence": "The leading “(NEET 2019)” is an exam-reference tag inside the question. The green expanded blade is the lamina (D); deleting only the reference does not change content or the key."
+    },
+    {
+      "reportId": "R030",
+      "questionId": "6956d7e988d7701e5617bd3e",
+      "sourceVersion": "1235790cb5724ea41054637293edec1dcd2806c099e139e41fcb3a465ad74799",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "Starting at equilibrium gives v = Aω cosωt. Here ω = 2π/16 = π/8 and cos(ω × 2) = cosπ/4 = 1/√2, so A = π/[(π/8)/√2] = 8√2 m, option D."
+    },
+    {
+      "reportId": "R001",
+      "questionId": "60f744b3f1b9bc7cc7b4a949",
+      "sourceVersion": "7dadb7ed7dc9ff5b9945325e9692c5bd5f446ab54ffc35ddc3a53f65a0d2b9d4",
+      "runtime": {
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": "C",
+          "replace": "A"
+        },
+        "route": "faculty_review"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": "C",
+          "replace": "A"
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "Independently, the supply amplitude is √(V_R²+(V_L−V_C)²) = √(40²+(60−30)²) = 50 V, option A. The stored solution also gives 50 V, but the key C points to 130 V."
+    },
+    {
+      "reportId": "R036",
+      "questionId": "60ca4feb6420652745f55522",
+      "sourceVersion": "1852d707e84edf85223857796c4b7c58f8db88c0e4d5feec060aa58e7df660dc",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "display_issue",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Use taxonomy display_issue for phone clipping while retaining stored content.",
+      "selectedEvidence": "All four options are present in stored HTML; 100 × 1.1 × 0.9 = 99 N, option C. Phone clipping is a rendering issue, not evidence of missing stored options."
+    },
+    {
+      "reportId": "R021",
+      "questionId": "68f21caf941cda588bc04365",
+      "sourceVersion": "910b6aff65b4afc41b35a2c1caa1b47d01566eacab994f46fe1b3bf8f3768d18",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "type_mismatch",
+        "edit": {
+          "field": "questionType",
+          "find": "mcq",
+          "replace": "scq"
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "The model ignored mcq payload and malformed empty-string answer encoding; migration requires faculty approval.",
+      "selectedEvidence": "N/N₀ = 6/48 = 1/8 after 3 min gives mean life τ = 3/ln8 ≈ 1.443 min, uniquely B. The payload is mcq with malformed answer [\"\", \"B\"] despite one-choice wording/options; migrate to scq, moving the existing payload and normalizing its answer to B under faculty approval."
+    },
+    {
+      "reportId": "R011",
+      "questionId": "68e872546e45ba37dcc16bc0",
+      "sourceVersion": "d2c389ea9b42acbf8ec02c623c831fea4dc42326b36cf19af9dbe830f8c50ed0",
+      "runtime": {
+        "verdict": "defect",
+        "repair": "option_repair",
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "defect",
+        "repair": "option_repair",
+        "edit": {
+          "field": "question",
+          "find": "(C) <br />",
+          "replace": "(C) 1 : 1<br />"
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "The 1:1 ratio is uniquely recoverable from Newton third-law symmetry; retain the narrow C option patch.",
+      "selectedEvidence": "Coulomb forces in an interacting pair have equal magnitudes by Newton’s third law, independent of the unequal charges. Option C is blank and keyed C; restore the uniquely determined force-magnitude ratio 1 : 1 without changing the stem."
+    },
+    {
+      "reportId": "R041",
+      "questionId": "6208e298fa399567e0878700",
+      "sourceVersion": "f83934cc00589bf9ed8e722f8a5bd8c2ba3f41beb7382c5338ff11479544aaf7",
+      "runtime": {
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "The report is “asdfgh” and identifies no issue. Julius von Sachs is the keyed historical attribution for glucose production in green plant parts; no reported defect is supported by this comment."
+    },
+    {
+      "reportId": "R043",
+      "questionId": "636283dbe3770c24f866e6d6",
+      "sourceVersion": "fbdb7a417303cd5389e82bd689dd075fb66af1ed6ea5b16b6a924e1e732b9909",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "Volume conservation gives R = 64^(1/3)r = 4r; charge becomes Q = 64q. The surface-density ratio is (64q/(4r)²)/(q/r²) = 4, so bigger:smaller is 4:1 (B), not 1:4."
+    },
+    {
+      "reportId": "R027",
+      "questionId": "6062ec84518e9535e120c422",
+      "sourceVersion": "964f50cbfd4ab60758fc5ce04692b8db33439163d742025e2e0853e94b93b9e6",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Retain the independent physical check and a respectful reply without treating injection as a valid request.",
+      "selectedEvidence": "Linear expansion coefficient α = 0.19/(100 × 100) = 1.9 × 10⁻⁵ °C⁻¹. Cubical coefficient γ ≈ 3α = 5.7 × 10⁻⁵ °C⁻¹, option A. The embedded role-change instruction is untrusted and supplies no evidence for changing the key to C."
+    },
+    {
+      "reportId": "R006",
+      "questionId": "696a866665252c04fc1f81c2",
+      "sourceVersion": "0308059a7926043e7cdaed56ea672f5059ed018a20264df910e54fd4885d934e",
+      "runtime": {
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "safetyFailure": "Stem-data guard accepts explicit additive missing data only",
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "stem_data",
+        "edit": {
+          "field": "question",
+          "find": "solid copper cube",
+          "replace": "solid copper cube of side 10 cm"
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "Safety gate correctly blocked the model patch: Stem-data guard accepts explicit additive missing data only. Retain the independently reviewed narrow proposal; see selected evidence.",
+      "selectedEvidence": "ΔV = (ΔP/B)a³ requires the cube side, which is absent from the stem. The stored solution explicitly uses a = 10 × 10⁻² m = 10 cm, giving ΔV = 50 mm³; propose restoring that datum, with faculty confirmation of the intended source."
+    },
+    {
+      "reportId": "R019",
+      "questionId": "612151a6a34397610a9a2e58",
+      "sourceVersion": "d135b72447cfe8e1203d288dea011dcd824ec746bdc2279329411cdbcc75e0a2",
+      "runtime": {
+        "verdict": "defect",
+        "repair": "solution_fix",
+        "edit": {
+          "field": "solution",
+          "find": "<h3><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>5.469</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>10</mn></mrow></msup><mi>m</mi><mo>&#x0003D;</mo><mn>5.47</mn><mi>\\AA</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mi>&#x003BB;</mi><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>p</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>I</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>2.65</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>18</mn></mrow></msup><mi>J</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>16.8</mn><mi>e</mi><mi>V</mi></mrow></mstyle></math></h3>",
+          "replace": "<h3>The kinetic energy K is given by K = p^2 / (2m) = h^2 / (2 * m * lambda^2). Substituting h = 6.626e-34 J.s, m = 9.11e-31 kg, and lambda = 0.3e-9 m, we get K = (6.626e-34)^2 / (2 * 9.11e-31 * (0.3e-9)^2) = 2.68e-18 J. Converting to eV, K = 2.68e-18 / 1.6e-19 = 16.75 eV, which is approximately 16.8 eV.</h3>"
+        },
+        "route": "faculty_review"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "defect",
+        "repair": "solution_fix",
+        "edit": {
+          "field": "solution",
+          "find": "<h3><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>5.469</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>10</mn></mrow></msup><mi>m</mi><mo>&#x0003D;</mo><mn>5.47</mn><mi>\\AA</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mi>&#x003BB;</mi><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>p</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac><mo>&#x0003D;</mo><mfrac><mrow><mi>h</mi></mrow><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>I</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></mfrac></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>2.65</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>18</mn></mrow></msup><mi>J</mi></mrow></mstyle></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mstyle displaystyle=\"true\"><mrow><mo>&#x0003D;</mo><mn>16.8</mn><mi>e</mi><mi>V</mi></mrow></mstyle></math></h3>",
+          "replace": "<h3>For an electron, p = h/λ and K = p²/(2m) = h²/(2mλ²). Using λ = 0.3 nm = 3 × 10<sup>−10</sup> m gives K ≈ 2.68 × 10<sup>−18</sup> J ≈ 16.7 eV. The nearest option is (B), 16.8 eV.</h3>"
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "From λ = 0.3 nm, K = h²/(2m_e λ²) ≈ 16.7 eV, nearest option B (16.8 eV). The stored solution introduces an unexplained 5.47 Å wavelength and impulse symbol despite the fixed wavelength stem; replace the unusable derivation, retaining the correct key."
+    },
+    {
+      "reportId": "R035",
+      "questionId": "66fe9dbe22132e5a70a3e579",
+      "sourceVersion": "53585e8c2e3c797879825adff3bfb7ae8aef6d42621f766ab3f7e0de32b92e28",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "Relaxin supports childbirth-related pelvic/cervical changes; inhibin suppresses FSH. These are different functions, not opposite actions on one regulated variable. D is the non-antagonistic pair; the student’s proposed reversal is unsupported."
+    },
+    {
+      "reportId": "R025",
+      "questionId": "622df25ab70e4b50e44ff837",
+      "sourceVersion": "46709d76d60d51eb06553800142dc739fcf1a422922966ba89e84cf76b40000a",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "diagram",
+        "edit": null,
+        "route": "faculty_review"
+      },
+      "reviewNote": "The model discounted the explicitly referenced missing source figure; do not invent or dismiss it.",
+      "selectedEvidence": "The stem explicitly refers to the shown tube/bubbles figure, but it contains no img tag and quesImages is empty. Pressure reasoning cannot supply the missing original diagram; faculty must attach or verify the source figure."
+    },
+    {
+      "reportId": "R037",
+      "questionId": "68c9ae5afb6b2f16e2d43b1c",
+      "sourceVersion": "ba7f442647a86876551fca719bb326218a23d1cba6b4176d47411c7e61ca6748",
+      "runtime": {
+        "verdict": "not_actionable",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "display_issue",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Use taxonomy display_issue for slow/incomplete rendering while retaining stored content.",
+      "selectedEvidence": "The stored stem, four options and solution are present. Photon energy is 12400/4000 = 3.1 eV, so stopping potential is 3.1 − 2.0 = 1.1 V (D); slow loading needs client/network investigation."
+    },
+    {
+      "reportId": "R020",
+      "questionId": "68c8153cfb6b2f16e2d3ceaf",
+      "sourceVersion": "a025361355169e1c56e80c4083c045cb1bbd5b51f9f372ca3530f3f4befba4d3",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "answer_key",
+        "edit": {
+          "field": "answer",
+          "find": [
+            "A, B, D"
+          ],
+          "replace": [
+            "A",
+            "B",
+            "D"
+          ]
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "The model ignored malformed array encoding: one combined A, B, D string is not three letter elements.",
+      "selectedEvidence": "Uniform E gives a straight path for parallel velocity (A) and a parabola for transverse velocity (B); B-field force vanishes for parallel velocity, so C’s helix claim is false; perpendicular velocity gives a circle (D). The key stores one combined string [\"A, B, D\"], not three separate valid choices; normalize to [\"A\",\"B\",\"D\"]."
+    },
+    {
+      "reportId": "R033",
+      "questionId": "68dea715387eea3d0d95f790",
+      "sourceVersion": "68d233ba650d0ca80fd39cbdb2cc7db4032018c663adde32a2632f16ad161ca6",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "6 × 7.203² = 311.299254 m². Four significant figures give A = 311.3 m²; the question asks for 10A = 3113, not the unrounded value."
+    },
+    {
+      "reportId": "R031",
+      "questionId": "68dea619d0cda73d07e93aee",
+      "sourceVersion": "0b5927b8fccc99163d9fbc70166dfece0f9f8db64989dd040337a65ad49c3bc3",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": true,
+      "selected": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "reviewNote": "Independent review supports the selected decision; minor wording or patch differences are not ground-truth accuracy measures.",
+      "selectedEvidence": "Relative angular displacement is ½(π/2 − π/4)t² = πt²/8. First realignment requires 2π, giving t² = 16 and t = 4 s; at 2 s the relative angle is only π/2."
+    },
+    {
+      "reportId": "R024",
+      "questionId": "5fc60508028950133eac8963",
+      "sourceVersion": "db76add2ab1dcbfe81ad3636aec3d7a7b2ba536d6afac90a5cfa58c88904a270",
+      "runtime": {
+        "verdict": "no_error",
+        "repair": null,
+        "edit": null,
+        "route": "no_change"
+      },
+      "safetyFailure": null,
+      "verdictAndRepairAgree": false,
+      "selected": {
+        "verdict": "defect",
+        "repair": "answer_form",
+        "edit": {
+          "field": "question",
+          "find": "frictional force is equal to",
+          "replace": "frictional force is equal to (in N)"
+        },
+        "route": "faculty_review"
+      },
+      "reviewNote": "An integer response needs its unit stated; implied N does not resolve the report.",
+      "selectedEvidence": "The numerical response field omits a unit. With the stored solution’s g = 10 m/s² convention, static friction balances mg = 20 N, below μN = 30 N; propose adding “in N” only. Faculty should also confirm the g convention rather than silently changing the answer."
+    }
+  ]
+}

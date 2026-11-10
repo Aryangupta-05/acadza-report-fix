@@ -1,0 +1,381 @@
+{
+  "error": "Independent solve batch has incorrect coverage",
+  "observedOutput": {
+    "analyses": [
+      {
+        "questionId": "60ca4feb6420652745f55522",
+        "solve": {
+          "summary": "F = k q1 q2 / r\u00b2. New force F' = k (1.1 q1) (0.9 q2) / r\u00b2 = 0.99 F = 0.99 * 100 = 99 N.",
+          "answer": "(C)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "68dea616d0cda73d07e93ae6",
+        "solve": {
+          "summary": "Flux from charge q/2 at face center = (q/2) / (2\u03b50) = q / (4\u03b50). Flux from charge 2q at corner = (2q) / (8\u03b50) = q / (4\u03b50). Total flux = q / (4\u03b50) + q / (4\u03b50) = q / (2\u03b50). Thus n = 1.",
+          "answer": "1",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "68dea715387eea3d0d95f790",
+        "solve": {
+          "summary": "Surface area A = 6 * (7.203)\u00b2 = 311.299254. With 4 significant figures, A = 311.3 m\u00b2. 10A = 3113.",
+          "answer": "3113",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "61ee6c9d90a1a968a168686b",
+        "solve": {
+          "summary": "Peyer's patches are lymphoid follicles found in the ileum, which is the distal portion of the small intestine.",
+          "answer": "(B)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "68c9ae5afb6b2f16e2d43b1c",
+        "solve": {
+          "summary": "Energy of photon E = 12400 / 4000 = 3.1 eV. Stopping potential V_s = (E - \u03a6) / e = (3.1 - 2.0) V = 1.1 V.",
+          "answer": "(D)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "696a866665252c04fc1f81c2",
+        "solve": {
+          "summary": "Bulk modulus B = -\u0394P / (\u0394V/V). \u0394V/V = \u0394P / B = (7 * 10\u2076) / (1.4 * 10\u00b9\u00b9) = 5 * 10\u207b\u2075. Volume contraction \u0394V = V * 5 * 10\u207b\u2075. The question lacks the initial volume V of the cube.",
+          "answer": "Missing data",
+          "uncertainty": "Initial volume of the cube is not provided.",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "63c7cce12981ed154ee92c94",
+        "solve": {
+          "summary": "Displacement current I_d = \u03b50 * \u03b5r * A * (dE/dt) = \u03b50 * \u03b5r * A * (1/d) * (dV/dt) = (8.85 * 10\u207b\u00b9\u00b2 * 10 * 1 * 25) / 0.001 = 2.2125 * 10\u207b\u2076 A = 2.2 \u03bcA.",
+          "answer": "(C)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "68dea619d0cda73d07e93aee",
+        "solve": {
+          "summary": "Relative angular acceleration \u03b1_rel = \u03c0/2 - \u03c0/4 = \u03c0/4 rad/s\u00b2. Dots align when \u0394\u03b8 = 2\u03c0k. (1/2) * (\u03c0/4) * t\u00b2 = 2\u03c0. t\u00b2 = 16, t = 4 s.",
+          "answer": "4",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "68e872546e45ba37dcc16bc0",
+        "solve": {
+          "summary": "By Newton's third law, the forces acting on two charges are equal in magnitude and opposite in direction. The ratio is 1:1.",
+          "answer": "No option is correct",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "66fe9dbe22132e5a70a3e579",
+        "solve": {
+          "summary": "Relaxin and Inhibin are not antagonistic; they have distinct physiological roles in reproduction.",
+          "answer": "(D)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "620e23cecc50543bc7db9186",
+        "solve": {
+          "summary": "To determine the ancestral state, one should use outgroup analysis by looking at a distantly related species.",
+          "answer": "(B)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "6208e80a9cb2ab67dac61bd0",
+        "solve": {
+          "summary": "Herbs and shrubs in the understory receive light that has been filtered by the canopy, which is enriched in green light.",
+          "answer": "(C)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "61dffbec08489156b684bd22",
+        "solve": {
+          "summary": "The lining of the small intestine is composed of epithelial tissue (specifically simple columnar epithelium).",
+          "answer": "(A)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "68e870ef42c06737d6e565c4",
+        "solve": {
+          "summary": "P = (1/3) * \u03c1 * v_rms\u00b2 = (1/3) * 0.09 * (400)\u00b2 = 4800 Pa.",
+          "answer": "(D)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "68e8734442c06737d6e56da4",
+        "solve": {
+          "summary": "F - \u03bcmg = ma. F - 10\u03bc = 1. 2F - 10\u03bc = 10. Solving gives 10\u03bc = 8, \u03bc = 0.8.",
+          "answer": "(A)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "6956d79788d7701e5617bc29",
+        "solve": {
+          "summary": "Power P = V_rms * I_rms * cos(\u03c6). Phase difference \u03c6 = 90\u00b0. cos(90\u00b0) = 0. Power = 0 W.",
+          "answer": "(B)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "695ee00b88d7701e561aabc5",
+        "solve": {
+          "summary": "Assertion: I = I1 + I2 + 2*sqrt(I1*I2)*cos(\u03c0/2) = I + I = 2I. The statement says intensity is equal to one wave, which is false. Reason is also false.",
+          "answer": "None of these",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "622df25ab70e4b50e4500a1b",
+        "solve": {
+          "summary": "Pressure inside a bubble is P = P0 + 4T/r. Smaller radius means higher pressure. Air flows from smaller radius to larger radius.",
+          "answer": "(B)",
+          "uncertainty": "None",
+          "figureRequired": true
+        }
+      },
+      {
+        "questionId": "6208e298fa399567e0878700",
+        "solve": {
+          "summary": "Julius von Sachs provided evidence for the production of glucose in plants.",
+          "answer": "(A)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "612151a6a34397610a9a2e58",
+        "solve": {
+          "summary": "\u03bb = h / sqrt(2mK). K = h\u00b2 / (2m\u03bb\u00b2) = (6.63e-34)\u00b2 / (2 * 9.1e-31 * (0.3e-9)\u00b2) \u2248 2.67e-19 J \u2248 1.67 eV.",
+          "answer": "(C)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "60f742f6660d187cc13a8078",
+        "solve": {
+          "summary": "Impedance Z = sqrt(R\u00b2 + XL\u00b2). Since XL is not given, we cannot calculate Z. However, Z must be > 40 ohm.",
+          "answer": "None of these",
+          "uncertainty": "Inductance value missing.",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "68f21df0941cda588bc0470b",
+        "solve": {
+          "summary": "K = p\u00b2 / 2m. If K becomes 4K, p becomes sqrt(4)p = 2p.",
+          "answer": "(A)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "6264197209f4fd65f58f5707",
+        "solve": {
+          "summary": "Golden rice is genetically engineered to produce beta-carotene, a precursor to vitamin A.",
+          "answer": "(C)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "617fa18efd53ff1629ed890f",
+        "solve": {
+          "summary": "The lamina (or leaf blade) is the green expanded part of the leaf with veins and veinlets.",
+          "answer": "(D)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "6062ec84518e9535e120c422",
+        "solve": {
+          "summary": "\u0394L = L * \u03b1 * \u0394T. 0.19 = 100 * \u03b1 * 100. \u03b1 = 1.9 * 10\u207b\u2075 /\u00b0C. Coefficient of cubical expansion \u03b3 = 3\u03b1 = 5.7 * 10\u207b\u2075 /\u00b0C.",
+          "answer": "(A)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "5fc60508028950133eac8963",
+        "solve": {
+          "summary": "Friction f = \u03bcN = 0.3 * 100 = 30 N. Weight mg = 2 * 10 = 20 N. Since f > mg, the body is in equilibrium and friction equals weight.",
+          "answer": "20",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "68f21caf941cda588bc04365",
+        "solve": {
+          "summary": "N = N0 * (1/2)^(t/T). 6 = 48 * (1/2)^(3/T). 1/8 = (1/2)^(3/T). 3/T = 3, T = 1 min. Mean life \u03c4 = T / ln(2) = 1 / 0.693 \u2248 1.44 min.",
+          "answer": "(B)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "60f744b3f1b9bc7cc7b4a949",
+        "solve": {
+          "summary": "V = sqrt(VR\u00b2 + (VL - VC)\u00b2) = sqrt(40\u00b2 + (60 - 30)\u00b2) = 50 V.",
+          "answer": "(A)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "68c801bc1b1dbc16dc93bf2b",
+        "solve": {
+          "summary": "\u03bb = hc / eV = 12400 / 248000 = 0.05 \u00c5. K = h\u00b2 / (2m\u03bb\u00b2) = 600 eV.",
+          "answer": "(A)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "68dea577d0cda73d07e9391c",
+        "solve": {
+          "summary": "V_surface = kQ/R = 16 V. V_P = kQ/2R * (3 - (r/R)\u00b2) = kQ/2R * (3 - 0.25) = 16/2 * 2.75 = 22 V. V_S = kQ/2R = 8 V. \u0394V = 22 - 8 = 14 V.",
+          "answer": "14",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "636283dbe3770c24f866e6d6",
+        "solve": {
+          "summary": "R_big = 4 * R_small. Q_big = 64 * Q_small. \u03c3_big = Q_big / (4\u03c0R_big\u00b2) = (64 * Q_small) / (4\u03c0 * 16 * R_small\u00b2) = 4 * \u03c3_small. Ratio 4:1.",
+          "answer": "(B)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "6263d75bdd44e265ef926d97",
+        "solve": {
+          "summary": "Weight of displaced water = weight of cube + 0.8 kg. \u03c1 * a\u00b2 * (a - 2) = \u03c1 * a\u00b3 - 0.8. 1 * a\u00b2 * (a - 2) = 1 * a\u00b3 - 0.8. a\u00b3 - 2a\u00b2 = a\u00b3 - 800. 2a\u00b2 = 800, a = 20 cm.",
+          "answer": "20",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "622f08d7b70e4b50e4500a1b",
+        "solve": {
+          "summary": "V_cm = (m1v1 + m2v2) / (m1 + m2) = (10 * 14 + 4 * 0) / 14 = 140 / 14 = 10 m/s.",
+          "answer": "(C)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "63765a28f1d8416ae0408d89",
+        "solve": {
+          "summary": "Remaining mass = 1 - 7/8 = 1/8 = (1/2)\u00b3. Time = 3 * half-life = 3 * 60 = 180 days.",
+          "answer": "(C)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "68c8153cfb6b2f16e2d3ceaf",
+        "solve": {
+          "summary": "All statements (A), (B), (C), and (D) are standard results for charged particle motion in uniform fields.",
+          "answer": "All are correct",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "6956d7e988d7701e5617bd3e",
+        "solve": {
+          "summary": "v = \u03c9A cos(\u03c9t). \u03c9 = 2\u03c0/T = 2\u03c0/16 = \u03c0/8. \u03c0 = (\u03c0/8) * A * cos((\u03c0/8) * 2) = (\u03c0/8) * A * cos(\u03c0/4). A = 8 * sqrt(2).",
+          "answer": "(D)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "6956d7bb23cb221e570d6013",
+        "solve": {
+          "summary": "R = H. (u\u00b2 sin 2\u03b8 / g) = (u\u00b2 sin\u00b2 \u03b8 / 2g). 2 sin \u03b8 cos \u03b8 = sin\u00b2 \u03b8 / 2. tan \u03b8 = 4.",
+          "answer": "(B)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "68dea7c2387eea3d0d95f9bb",
+        "solve": {
+          "summary": "Shift = (\u03bc1 - 1)t1 * D/d - (\u03bc2 - 1)t2 * D/d. Shift = (0.5 * 0.2 - 0.4 * 0.15) * 1 / 0.005 = (0.1 - 0.06) / 0.005 = 0.04 / 0.005 = 8 cm.",
+          "answer": "8",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      },
+      {
+        "questionId": "68ecbacb2ec87a18deba1ad7",
+        "solve": {
+          "summary": "The absolute refractory period is caused by the inactivation of voltage-gated Na+ channels.",
+          "answer": "(B)",
+          "uncertainty": "None",
+          "figureRequired": false
+        }
+      }
+    ]
+  },
+  "providerMetadata": {
+    "phase": "independent_solve_batch",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "cache": false,
+    "digest": "c46449e48199fbea1c5ca3b4cf7a7a5b49d37eedbb7d209f3c8b8750350f8648",
+    "attempt": 0,
+    "status": 200,
+    "elapsedMs": 12515,
+    "usage": {
+      "promptTokenCount": 12383,
+      "candidatesTokenCount": 4889,
+      "totalTokenCount": 17272,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 12383
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "responseId": "MGfzaqjBD9SM694PgrL5kAw"
+  }
+}

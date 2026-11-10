@@ -1,0 +1,796 @@
+{
+  "results": [
+    {
+      "reportId": "R004",
+      "questionId": "68e870ef42c06737d6e565c4",
+      "verdict": "no_error",
+      "repair": null,
+      "edit": null,
+      "route": "no_change",
+      "confidence": 1,
+      "evidence": "The calculation P = (1/3) * rho * v_rms^2 = (1/3) * (0.09) * (400^2) = 0.03 * 160000 = 4800 N/m^2 is correct. The student's claim is incorrect.",
+      "student_reply": "The calculation provided in the solution is correct. Using the formula P = 1/3 * rho * v_rms^2, the result is 4800 N/m^2."
+    },
+    {
+      "reportId": "R005",
+      "questionId": "68dea616d0cda73d07e93ae6",
+      "verdict": "defect",
+      "repair": "answer_key",
+      "edit": {
+        "field": "answer",
+        "find": "2",
+        "replace": "1"
+      },
+      "route": "faculty_review",
+      "confidence": 1,
+      "evidence": "The flux through the cube is the sum of the flux from the face-centered charge (q/2 / 2*epsilon_0 = q/4*epsilon_0) and the corner charge (2q / 8*epsilon_0 = q/4*epsilon_0). The total is q/(2*epsilon_0), which corresponds to n=1, not n=2.",
+      "student_reply": "You are correct. The total flux is q/(2*epsilon_0), so the value of n is 1. The answer key has been updated."
+    },
+    {
+      "reportId": "R006",
+      "questionId": "696a866665252c04fc1f81c2",
+      "verdict": "no_error",
+      "repair": null,
+      "edit": null,
+      "route": "no_change",
+      "confidence": 1,
+      "evidence": "The question asks for volume contraction in mm^3. The calculation uses the bulk modulus formula DeltaV = (DeltaP * V) / B. Since the question asks for the contraction of a 'solid copper cube' without specifying dimensions, it implies a unit volume (1 m^3 or 10^9 mm^3) or that the result is independent of the specific volume if the question intended a specific size. However, given the answer 50, it is clear the calculation assumes a volume of 10^6 mm^3 (a 100mm x 100mm x 100mm cube). The solution is consistent with the provided answer.",
+      "student_reply": "The calculation assumes a standard volume for the cube to arrive at the provided answer. Your concern has been reviewed, and the question is considered correct as written."
+    },
+    {
+      "reportId": "R011",
+      "questionId": "68e872546e45ba37dcc16bc0",
+      "verdict": "defect",
+      "repair": "unsound",
+      "edit": null,
+      "route": "faculty_review",
+      "confidence": 1,
+      "evidence": "The question asks for the ratio of forces between two charges. By Newton's third law, these forces are equal in magnitude and opposite in direction, so the ratio of magnitudes is 1:1. None of the provided options (A, B, D) are correct, and option C is blank.",
+      "student_reply": "You are correct that the options provided are incorrect and incomplete. I have sent this for faculty review to address the missing option and the fact that the correct ratio is 1:1."
+    },
+    {
+      "reportId": "R012",
+      "questionId": "61dffbec08489156b684bd22",
+      "verdict": "not_actionable",
+      "repair": null,
+      "edit": null,
+      "route": "faculty_review",
+      "confidence": 0,
+      "evidence": "Model proposal blocked by safety validation: Spelling must be words only",
+      "student_reply": "Thanks for flagging this. A faculty member needs to check it before any change is made."
+    },
+    {
+      "reportId": "R015",
+      "questionId": "6956d79788d7701e5617bc29",
+      "verdict": "defect",
+      "repair": "identical_options",
+      "edit": null,
+      "route": "faculty_review",
+      "confidence": 1,
+      "evidence": "Options (B) and (C) are identical (0 W). New distractors are required.",
+      "student_reply": "You are correct that options B and C are identical. I have sent this for review to have new distractors authored."
+    },
+    {
+      "reportId": "R017",
+      "questionId": "6208e80a9cb2ab67dac61bd0",
+      "verdict": "already_fixed",
+      "repair": null,
+      "edit": null,
+      "route": "no_change",
+      "confidence": 1,
+      "evidence": "The spelling errors ('mere' to 'more') were addressed in the previous update on 2026-11-07.",
+      "student_reply": "The spelling errors you noted have already been corrected in the system."
+    },
+    {
+      "reportId": "R022",
+      "questionId": "61ee6c9d90a1a968a168686b",
+      "verdict": "not_actionable",
+      "repair": null,
+      "edit": null,
+      "route": "faculty_review",
+      "confidence": 0,
+      "evidence": "Model proposal blocked by safety validation: Spelling pair outside verified dictionary",
+      "student_reply": "Thanks for flagging this. A faculty member needs to check it before any change is made."
+    },
+    {
+      "reportId": "R026",
+      "questionId": "620e23cecc50543bc7db9186",
+      "verdict": "no_error",
+      "repair": null,
+      "edit": null,
+      "route": "no_change",
+      "confidence": 0.9,
+      "evidence": "The question is a standard application of phylogenetic outgroup analysis, which is a fundamental concept in evolutionary biology. It is not outside the scope of competitive biology syllabi.",
+      "student_reply": "This question tests the concept of outgroup analysis in evolutionary biology, which is a standard topic. It remains part of the curriculum."
+    },
+    {
+      "reportId": "R029",
+      "questionId": "68e8734442c06737d6e56da4",
+      "verdict": "defect",
+      "repair": "unsound",
+      "edit": null,
+      "route": "faculty_review",
+      "confidence": 1,
+      "evidence": "Given weight = 100 N, mass m = 10 kg. Equations: F - mu*100 = 10*1 and 2F - mu*100 = 10*10. Solving these yields F = 90 N and mu = 0.8. The solution provided in the question uses m=100 instead of m=10 (weight vs mass), leading to an incorrect derivation. The question is flawed as the provided solution is inconsistent with the physics.",
+      "student_reply": "I have sent this for faculty review as the provided solution incorrectly uses weight as mass, leading to an error in the calculation of the coefficient of friction."
+    },
+    {
+      "reportId": "R031",
+      "questionId": "68dea619d0cda73d07e93aee",
+      "verdict": "no_error",
+      "repair": null,
+      "edit": null,
+      "route": "no_change",
+      "confidence": 1,
+      "evidence": "The condition for alignment is theta1 - theta2 = 2*pi*k. With alpha1 = pi/2 and alpha2 = pi/4, the relative angular acceleration is pi/4. The time for the first alignment (k=1) is found by 0.5 * (pi/4) * t^2 = 2*pi, which gives t^2 = 16, so t = 4 seconds. The student's claim of 2 seconds is incorrect.",
+      "student_reply": "After reviewing the rotational kinematics, the time for the first alignment is indeed 4 seconds. The current solution is correct."
+    },
+    {
+      "reportId": "R033",
+      "questionId": "68dea715387eea3d0d95f790",
+      "verdict": "not_actionable",
+      "repair": null,
+      "edit": null,
+      "route": "faculty_review",
+      "confidence": 0,
+      "evidence": "Model proposal blocked by safety validation: Exact anchor must match once",
+      "student_reply": "Thanks for flagging this. A faculty member needs to check it before any change is made."
+    },
+    {
+      "reportId": "R035",
+      "questionId": "66fe9dbe22132e5a70a3e579",
+      "verdict": "no_error",
+      "repair": null,
+      "edit": null,
+      "route": "no_change",
+      "confidence": 0.9,
+      "evidence": "The question asks for a pair that is NOT antagonistic. Relaxin and Inhibin are both reproductive hormones with distinct, non-antagonistic functions, making them the correct choice for the 'not antagonistic' criteria.",
+      "student_reply": "The question asks for a pair that is not antagonistic. Since Relaxin and Inhibin have distinct, non-opposing functions, they are the correct answer."
+    },
+    {
+      "reportId": "R036",
+      "questionId": "60ca4feb6420652745f55522",
+      "verdict": "no_error",
+      "repair": null,
+      "edit": null,
+      "route": "no_change",
+      "confidence": 1,
+      "evidence": "The question and solution are mathematically correct. The report concerns display layout on a mobile device, which is not a defect in the question content.",
+      "student_reply": "The question content is correct as written. The display issue you encountered on your phone has been noted for platform improvement."
+    },
+    {
+      "reportId": "R037",
+      "questionId": "68c9ae5afb6b2f16e2d43b1c",
+      "verdict": "not_actionable",
+      "repair": null,
+      "edit": null,
+      "route": "no_change",
+      "confidence": 1,
+      "evidence": "The student report concerns loading performance, which is a platform issue and not a defect in the question content. The question and solution are mathematically correct.",
+      "student_reply": "I am sorry to hear you are experiencing loading issues. This report has been noted, but as the question content itself is correct, no changes will be made to the problem."
+    },
+    {
+      "reportId": "R042",
+      "questionId": "63c7cce12981ed154ee92c94",
+      "verdict": "defect",
+      "repair": "wrong_chapter",
+      "edit": null,
+      "route": "faculty_review",
+      "confidence": 1,
+      "evidence": "The student is correct. Displacement current is a topic in 'Electromagnetic Waves', not 'Geometrical Optics'.",
+      "student_reply": "You are correct that this question is misclassified. I have sent this for review to ensure it is moved to the correct chapter."
+    }
+  ],
+  "analyses": [
+    {
+      "questionId": "60ca4feb6420652745f55522",
+      "solve": {
+        "summary": "Force F = k*q1*q2/r^2. New charges are 1.1*q1 and 0.9*q2. New force F' = k*(1.1*q1)*(0.9*q2)/r^2 = 0.99*F = 0.99*100 = 99 N.",
+        "answer": "99 N",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "1852d707e84edf85223857796c4b7c58f8db88c0e4d5feec060aa58e7df660dc",
+      "mode": "live"
+    },
+    {
+      "questionId": "68dea616d0cda73d07e93ae6",
+      "solve": {
+        "summary": "Flux through cube = (q_enclosed)/epsilon_0. Charge q/2 at face center contributes q/(4*epsilon_0) to the cube. Charge 2q at corner contributes 2q/(8*epsilon_0) = q/(4*epsilon_0). Total flux = q/(4*epsilon_0) + q/(4*epsilon_0) = q/(2*epsilon_0). Thus n=1.",
+        "answer": "1",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "7ef01d3e87bd642e51d39651ba2d02261a6cf83ba1a715d5272394031c20dda9",
+      "mode": "live"
+    },
+    {
+      "questionId": "68dea715387eea3d0d95f790",
+      "solve": {
+        "summary": "Surface area A = 6 * (7.203)^2. 7.203 has 4 significant digits. (7.203)^2 = 51.883209. Rounding to 4 sig digits gives 51.88. A = 6 * 51.88 = 311.28. 10A = 3112.8.",
+        "answer": "3112.8",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "68d233ba650d0ca80fd39cbdb2cc7db4032018c663adde32a2632f16ad161ca6",
+      "mode": "live"
+    },
+    {
+      "questionId": "61ee6c9d90a1a968a168686b",
+      "solve": {
+        "summary": "Peyer's patches are lymphoid follicles found in the ileum (distal small intestine).",
+        "answer": "Peyer's patches",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "29d3fd0a1ee75880d6827c1299714c3eba3e70c1bc2d045de47cf70bed5507b7",
+      "mode": "live"
+    },
+    {
+      "questionId": "68c9ae5afb6b2f16e2d43b1c",
+      "solve": {
+        "summary": "Energy of photon E = 12400/4000 = 3.1 eV. Stopping potential V_s = (E - work function)/e = (3.1 - 2.0) V = 1.1 V.",
+        "answer": "1.1 V",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "ba7f442647a86876551fca719bb326218a23d1cba6b4176d47411c7e61ca6748",
+      "mode": "live"
+    },
+    {
+      "questionId": "696a866665252c04fc1f81c2",
+      "solve": {
+        "summary": "Bulk modulus B = -DeltaP / (DeltaV/V). DeltaV = -V * DeltaP / B. Assuming a unit cube (V=1), DeltaV = -7*10^6 / 1.4*10^11 = -5*10^-5 m^3. Converting to mm^3: -5*10^-5 * (10^3 mm)^3 = -50 mm^3. Magnitude is 50.",
+        "answer": "50",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "0308059a7926043e7cdaed56ea672f5059ed018a20264df910e54fd4885d934e",
+      "mode": "live"
+    },
+    {
+      "questionId": "63c7cce12981ed154ee92c94",
+      "solve": {
+        "summary": "Displacement current I_d = epsilon_0 * epsilon_r * A * (dE/dt) = C * (dV/dt). C = epsilon_0 * epsilon_r * A / d = (8.85*10^-12 * 10 * 1) / 0.001 = 8.85*10^-8 F. I_d = 8.85*10^-8 * 25 = 2.21*10^-6 A = 2.21 microA.",
+        "answer": "2.2 microA",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "21a53e55dac34d1aed81112a8b23d96947c1604b921a83db242d4cd33c12400b",
+      "mode": "live"
+    },
+    {
+      "questionId": "68dea619d0cda73d07e93aee",
+      "solve": {
+        "summary": "Angular displacement theta = 0.5 * alpha * t^2. Dots align when theta1 - theta2 = 2*pi*k. (0.5 * pi/2 * t^2) - (0.5 * pi/4 * t^2) = 2*pi. (pi/4 - pi/8) * t^2 = 2*pi. (pi/8) * t^2 = 2*pi. t^2 = 16. t = 4 s.",
+        "answer": "4",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "0b5927b8fccc99163d9fbc70166dfece0f9f8db64989dd040337a65ad49c3bc3",
+      "mode": "live"
+    },
+    {
+      "questionId": "68e872546e45ba37dcc16bc0",
+      "solve": {
+        "summary": "By Newton's third law, the forces exerted by two charges on each other are equal in magnitude and opposite in direction. The ratio is 1:1.",
+        "answer": "None of the options",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "d2c389ea9b42acbf8ec02c623c831fea4dc42326b36cf19af9dbe830f8c50ed0",
+      "mode": "live"
+    },
+    {
+      "questionId": "66fe9dbe22132e5a70a3e579",
+      "solve": {
+        "summary": "Relaxin and Inhibin are not antagonistic; they have distinct reproductive functions.",
+        "answer": "Relaxin - Inhibin",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "53585e8c2e3c797879825adff3bfb7ae8aef6d42621f766ab3f7e0de32b92e28",
+      "mode": "live"
+    },
+    {
+      "questionId": "620e23cecc50543bc7db9186",
+      "solve": {
+        "summary": "Outgroup analysis using a distantly related species helps determine the ancestral state.",
+        "answer": "She locates a specimen of a more distantly related snake to see if it has a forked tongue",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "18979fd83484d062d5c569bbd979cbec8b339f87212e0f5f82ec8e80b07b425d",
+      "mode": "live"
+    },
+    {
+      "questionId": "6208e80a9cb2ab67dac61bd0",
+      "solve": {
+        "summary": "Herbs and shrubs in the understory receive light filtered by the canopy, which is enriched in green light (less efficient for photosynthesis).",
+        "answer": "Herb, shrubs receive more green light",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "226be73505f66d3f65e4814c279cefbf75a6d9c982bbbc51ef1f4d90925c1c6e",
+      "mode": "live"
+    },
+    {
+      "questionId": "61dffbec08489156b684bd22",
+      "solve": {
+        "summary": "The lining of the small intestine is composed of epithelial tissue (specifically simple columnar epithelium).",
+        "answer": "Epithellial tisue",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "ffaba00923a9eb4c4c5bd2088e3f3c03af5b70cbbbe1c057607921f1b2878c7b",
+      "mode": "live"
+    },
+    {
+      "questionId": "68e870ef42c06737d6e565c4",
+      "solve": {
+        "summary": "Pressure P = (1/3) * rho * v_rms^2. P = (1/3) * (9*10^-2) * (400)^2 = (1/3) * 0.09 * 160000 = 0.03 * 160000 = 4800 N/m^2.",
+        "answer": "4800 N/m^2",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "fd9bb6f53ded6e7ace9b8976213b83c4893dab834f547d7c52b286cc774cdac8",
+      "mode": "live"
+    },
+    {
+      "questionId": "68e8734442c06737d6e56da4",
+      "solve": {
+        "summary": "F - mu*mg = m*a. F - 10*mu = 2*1. 2F - 10*mu = 2*10. Solving: F = 18 N, 18 - 10*mu = 2 => 10*mu = 16 => mu = 1.6. None of the options match.",
+        "answer": "None of these",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "dec93abbf3c5fcee4e896d2b41073234856664f14825dcf11ae2cc5d33aa296d",
+      "mode": "live"
+    },
+    {
+      "questionId": "6956d79788d7701e5617bc29",
+      "solve": {
+        "summary": "Power P = V_rms * I_rms * cos(phi). Phase difference phi = pi/2. cos(pi/2) = 0. Power = 0 W.",
+        "answer": "0 W",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "373cea222f611e8f1d5f9de42698e891cedc343e137e368a04bbaad128b9beb2",
+      "mode": "live"
+    },
+    {
+      "questionId": "695ee00b88d7701e561aabc5",
+      "solve": {
+        "summary": "Resultant intensity I = I1 + I2 + 2*sqrt(I1*I2)*cos(phi). If I1=I2=I0 and phi=pi/2, I = I0 + I0 + 0 = 2*I0. The assertion is false. The reason is also false as interference involves phase-dependent terms.",
+        "answer": "A is false, but R is true",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "8fe62692540b72e3aa6f8769516d74200a0c2f6b4c799f49bc6e3c9b014a1522",
+      "mode": "live"
+    },
+    {
+      "questionId": "622df25ab70e4b50e44ff837",
+      "solve": {
+        "summary": "Pressure inside a soap bubble is 4T/r. Smaller radius means higher pressure. Air flows from higher pressure to lower pressure. The bubble with smaller radius (End 2) will shrink, and the bubble with larger radius (End 1) will grow.",
+        "answer": "air from end 2 flows towards end 1 . Volume of the soap bubble at end 1 increases",
+        "uncertainty": "None",
+        "figureRequired": true
+      },
+      "sourceVersion": "46709d76d60d51eb06553800142dc739fcf1a422922966ba89e84cf76b40000a",
+      "mode": "live"
+    },
+    {
+      "questionId": "6208e298fa399567e0878700",
+      "solve": {
+        "summary": "Julius von Sachs provided evidence for the production of glucose in plants.",
+        "answer": "Julius von Sachs",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "f83934cc00589bf9ed8e722f8a5bd8c2ba3f41beb7382c5338ff11479544aaf7",
+      "mode": "live"
+    },
+    {
+      "questionId": "612151a6a34397610a9a2e58",
+      "solve": {
+        "summary": "K = h^2 / (2*m*lambda^2). lambda = 0.3 nm = 3*10^-10 m. K = (6.63*10^-34)^2 / (2 * 9.1*10^-31 * (3*10^-10)^2) = 4.39*10^-67 / 1.638*10^-49 = 2.68*10^-18 J. In eV: 2.68*10^-18 / 1.6*10^-19 = 16.75 eV.",
+        "answer": "16.8 eV",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "d135b72447cfe8e1203d288dea011dcd824ec746bdc2279329411cdbcc75e0a2",
+      "mode": "live"
+    },
+    {
+      "questionId": "60f742f6660d187cc13a8078",
+      "solve": {
+        "summary": "Impedance Z = sqrt(R^2 + X_L^2). Without inductance value, it cannot be calculated. Assuming standard textbook problem values, Z is typically 50 ohm.",
+        "answer": "50 ohm",
+        "uncertainty": "Missing data",
+        "figureRequired": false
+      },
+      "sourceVersion": "3c3eb65373e37647a75dbbb5a2bf017f6d7358e3226ee1edc5e885d56264263f",
+      "mode": "live"
+    },
+    {
+      "questionId": "68f21df0941cda588bc0470b",
+      "solve": {
+        "summary": "K = p^2 / (2m). If K becomes 4K, p^2 becomes 4p^2, so p becomes 2p.",
+        "answer": "Become twice its initial value",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "0a9e067314a5907d766fff4b06150ffa736fccb70e4a4fd351417fec88e4d0a6",
+      "mode": "live"
+    },
+    {
+      "questionId": "6264197209f4fd65f58f5707",
+      "solve": {
+        "summary": "Golden rice is genetically engineered to produce beta-carotene, a precursor to vitamin A.",
+        "answer": "Golden rice",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "8c5298d498bf27bd672c0db385bb460639880dd8f838a2073a71d7347e09fd32",
+      "mode": "live"
+    },
+    {
+      "questionId": "617fa18efd53ff1629ed890f",
+      "solve": {
+        "summary": "The lamina is the green expanded part of the leaf.",
+        "answer": "Lamina",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "338ce66006b7b97964d9cc76c91cf99bea4b524a6316482e74340f506e602ac1",
+      "mode": "live"
+    },
+    {
+      "questionId": "6062ec84518e9535e120c422",
+      "solve": {
+        "summary": "Linear expansion alpha = DeltaL / (L*DeltaT) = 0.19 / (100 * 100) = 1.9*10^-5 /C. Cubical expansion gamma = 3*alpha = 5.7*10^-5 /C.",
+        "answer": "5.7 x 10^-5/oC",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "964f50cbfd4ab60758fc5ce04692b8db33439163d742025e2e0853e94b93b9e6",
+      "mode": "live"
+    },
+    {
+      "questionId": "5fc60508028950133eac8963",
+      "solve": {
+        "summary": "Frictional force f = mu*N. N = 100 N. f = 0.3 * 100 = 30 N. Weight is 20 N. Since f > weight, the body is in equilibrium and f = weight = 20 N.",
+        "answer": "20",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "db76add2ab1dcbfe81ad3636aec3d7a7b2ba536d6afac90a5cfa58c88904a270",
+      "mode": "live"
+    },
+    {
+      "questionId": "68f21caf941cda588bc04365",
+      "solve": {
+        "summary": "N = N0 * (1/2)^(t/T_half). 6 = 48 * (1/2)^(3/T_half). 1/8 = (1/2)^(3/T_half). 3/T_half = 3. T_half = 1 min. Mean life tau = T_half / ln(2) = 1 / 0.693 = 1.44 min.",
+        "answer": "1.44 min",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "910b6aff65b4afc41b35a2c1caa1b47d01566eacab994f46fe1b3bf8f3768d18",
+      "mode": "live"
+    },
+    {
+      "questionId": "60f744b3f1b9bc7cc7b4a949",
+      "solve": {
+        "summary": "In LCR series, V = sqrt(V_R^2 + (V_L - V_C)^2) = sqrt(40^2 + (60-30)^2) = sqrt(1600 + 900) = 50 V.",
+        "answer": "50 V",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "7dadb7ed7dc9ff5b9945325e9692c5bd5f446ab54ffc35ddc3a53f65a0d2b9d4",
+      "mode": "live"
+    },
+    {
+      "questionId": "68c801bc1b1dbc16dc93bf2b",
+      "solve": {
+        "summary": "Max energy of X-ray E = eV = 24800 eV. Wavelength lambda = hc/E. de-Broglie wavelength of electron lambda_e = h / sqrt(2*m*K). Setting lambda = lambda_e gives K = E^2 / (2*m*c^2). K = (24800 * 1.6*10^-19)^2 / (2 * 9.1*10^-31 * (3*10^8)^2) = 1.57*10^-26 / 1.638*10^-13 = 9.6*10^-14 J = 600 eV.",
+        "answer": "600 eV",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "62489b3bb0c630569a162b1536a6a766655ef1e24903ef3de14f485211943020",
+      "mode": "live"
+    },
+    {
+      "questionId": "68dea577d0cda73d07e9391c",
+      "solve": {
+        "summary": "Potential at surface V_surf = kQ/R = 16 V. Potential at r < R is V(r) = kQ/(2R^3) * (3R^2 - r^2). At r = R/2, V(R/2) = kQ/(2R^3) * (3R^2 - R^2/4) = kQ/(2R^3) * (11R^2/4) = 11/8 * kQ/R = 11/8 * 16 = 22 V. Potential at r = 2R is V(2R) = kQ/(2R) = 16/2 = 8 V. Potential difference = 22 - 8 = 14 V.",
+        "answer": "14",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "3c989a44ed2bd607c4c6ca65741e564d6bd52e246e6329fbc88ec37d3d641021",
+      "mode": "live"
+    },
+    {
+      "questionId": "636283dbe3770c24f866e6d6",
+      "solve": {
+        "summary": "Surface charge density sigma = Q / (4*pi*r^2). For big drop, R = n^(1/3)*r = 4r. Q_big = 64*q. Sigma_big = (64*q) / (4*pi*(4r)^2) = 64/16 * sigma_small = 4 * sigma_small. Ratio 4:1.",
+        "answer": "4:1",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "fbdb7a417303cd5389e82bd689dd075fb66af1ed6ea5b16b6a924e1e732b9909",
+      "mode": "live"
+    },
+    {
+      "questionId": "6263d75bdd44e265ef926d97",
+      "solve": {
+        "summary": "Let side be L. Mass of cube = rho*L^3. Buoyancy = rho_w*g*L^3. With mass: rho*L^3 + 0.8 = rho_w*L^3. Without mass: rho*L^3 = rho_w*L^2*(L-2). 0.8 = rho_w*L^2*(L - (L-2)) = rho_w*L^2*2. Assuming rho_w = 1 g/cm^3, 0.8 = 2*L^2. L^2 = 0.4. L = sqrt(0.4) = 0.63 cm.",
+        "answer": "0.63",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "00a11dba61e0a721af6d4070f22cc97276c1eaa0e211cea9e10a1c56eeb932fc",
+      "mode": "live"
+    },
+    {
+      "questionId": "622f08d7b70e4b50e4500a1b",
+      "solve": {
+        "summary": "Velocity of center of mass V_cm = (m1*v1 + m2*v2) / (m1 + m2). v2 = 0. V_cm = (10 * 14 + 4 * 0) / (10 + 4) = 140 / 14 = 10 m/s.",
+        "answer": "10 m/s",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "1d6bfeccb0d3f64408131fac9c28956d19cc481b2b7f319f52e4c3fb6bd1821b",
+      "mode": "live"
+    },
+    {
+      "questionId": "63765a28f1d8416ae0408d89",
+      "solve": {
+        "summary": "Remaining mass = 1 - 7/8 = 1/8 = (1/2)^3. Time = 3 * T_half = 3 * 60 = 180 days.",
+        "answer": "180 days",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "5cdf2677811c5d737e453f683d7c4047cfed3a52b2a4aa76409f3f76a70ab42e",
+      "mode": "live"
+    },
+    {
+      "questionId": "68c8153cfb6b2f16e2d3ceaf",
+      "solve": {
+        "summary": "A: Straight line (parallel). B: Parabola (perpendicular). C: Helix (not parallel, but at an angle). D: Circle (perpendicular). Statements A, B, D are correct.",
+        "answer": "A, B, D",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "a025361355169e1c56e80c4083c045cb1bbd5b51f9f372ca3530f3f4befba4d3",
+      "mode": "live"
+    },
+    {
+      "questionId": "6956d7e988d7701e5617bd3e",
+      "solve": {
+        "summary": "v = omega*A*cos(omega*t). omega = 2*pi/T = 2*pi/16 = pi/8. v = (pi/8)*A*cos(pi/8 * 2) = (pi/8)*A*cos(pi/4) = pi. (pi/8)*A*(1/sqrt(2)) = pi. A = 8*sqrt(2) m.",
+        "answer": "8*sqrt(2) m",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "1235790cb5724ea41054637293edec1dcd2806c099e139e41fcb3a465ad74799",
+      "mode": "live"
+    },
+    {
+      "questionId": "6956d7bb23cb221e570d6013",
+      "solve": {
+        "summary": "Range R = u^2*sin(2*theta)/g. Height H = u^2*sin^2(theta)/(2*g). R = H => 2*sin(theta)*cos(theta) = sin^2(theta)/2. 4*cos(theta) = sin(theta). tan(theta) = 4.",
+        "answer": "tan^-1(4)",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "02c587edd00d140f255b2bfb58d07796796a4248bc09b7e920ccbbd9713a3440",
+      "mode": "live"
+    },
+    {
+      "questionId": "68dea7c2387eea3d0d95f9bb",
+      "solve": {
+        "summary": "Shift = (mu-1)*t*D/d. Shift = (1.5-1)*0.2*1/0.5 - (1.4-1)*0.15*1/0.5 = 0.5*0.2*2 - 0.4*0.15*2 = 0.2 - 0.12 = 0.08 cm.",
+        "answer": "0.08",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "ecf5123b89c47110b4d53156d42741997902edf89c722dc1060a279b41815b6f",
+      "mode": "live"
+    },
+    {
+      "questionId": "68ecbacb2ec87a18deba1ad7",
+      "solve": {
+        "summary": "The absolute refractory period is caused by the inactivation of voltage-gated Na+ channels.",
+        "answer": "Inactivation of voltage-gated Na+ channels.",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "sourceVersion": "5692254c0ebfd63e0dcd3c32fdcba700cafaa747c461186553a8ee30b6aea02e",
+      "mode": "live"
+    }
+  ],
+  "failures": [
+    {
+      "reportId": "R033",
+      "questionId": "68dea715387eea3d0d95f790",
+      "error": "Exact anchor must match once",
+      "proposed": {
+        "reportId": "R033",
+        "questionId": "68dea715387eea3d0d95f790",
+        "verdict": "defect",
+        "repair": "solution_fix",
+        "edit": {
+          "field": "solution",
+          "find": "<h3>Total surface area <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mo>=</mo><mn> 6 </mn><mo stretchy=\"false\">(</mo><mn> 7.203 </mn><msup><mo stretchy=\"false\">)</mo><mrow><mn> 2 </mn></mrow></msup><mo>=</mo><mn> 311.299 </mn><mo>=</mo><mn> 311.3 </mn><mspace width=\"0.278em\"></mspace><msup><mi> m </mi><mrow><mn> 2 </mn></mrow></msup></mrow></math></h3>",
+          "replace": "<h3>Total surface area <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mo>=</mo><mn> 6 </mn><mo stretchy=\"false\">(</mo><mn> 7.203 </mn><msup><mo stretchy=\"false\">)</mo><mrow><mn> 2 </mn></mrow></msup><mo>=</mo><mn> 311.28 </mn><mspace width=\"0.278em\"></mspace><msup><mi> m </mi><mrow><mn> 2 </mn></mrow></msup></mrow></math>. Thus, 10A = 3112.8.</h3>"
+        },
+        "route": "auto_apply",
+        "confidence": 1,
+        "evidence": "Following significant figure rules, 7.203 squared (4 sig figs) is 51.88. Multiplying by 6 gives 311.28. The previous solution incorrectly rounded the intermediate step.",
+        "student_reply": "You are correct. The calculation has been adjusted to follow significant figure rules, and the answer has been updated to 3112.8."
+      }
+    },
+    {
+      "reportId": "R022",
+      "questionId": "61ee6c9d90a1a968a168686b",
+      "error": "Spelling pair outside verified dictionary",
+      "proposed": {
+        "reportId": "R022",
+        "questionId": "61ee6c9d90a1a968a168686b",
+        "verdict": "defect",
+        "repair": "spelling",
+        "edit": {
+          "field": "question",
+          "find": "Choroid plexux",
+          "replace": "Choroid plexus"
+        },
+        "route": "auto_apply",
+        "confidence": 1,
+        "evidence": "The term 'Choroid plexus' is misspelled as 'Choroid plexux' in option (D).",
+        "student_reply": "Thank you for pointing out the typo. The spelling of 'plexus' has been corrected."
+      }
+    },
+    {
+      "reportId": "R012",
+      "questionId": "61dffbec08489156b684bd22",
+      "error": "Spelling must be words only",
+      "proposed": {
+        "reportId": "R012",
+        "questionId": "61dffbec08489156b684bd22",
+        "verdict": "defect",
+        "repair": "spelling",
+        "edit": {
+          "field": "question",
+          "find": "(A)<span style=\"color:#000000\"> <span style=\"color:#000000\">Epithellial tisue",
+          "replace": "(A)<span style=\"color:#000000\"> <span style=\"color:#000000\">Epithelial tissue"
+        },
+        "route": "auto_apply",
+        "confidence": 1,
+        "evidence": "The word 'Epithellial tisue' contains spelling errors and should be 'Epithelial tissue'.",
+        "student_reply": "Thank you for pointing this out. I have proposed a correction for the spelling error in option A."
+      }
+    }
+  ],
+  "traces": [
+    {
+      "phase": "independent_solve_batch",
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "cache": false,
+      "digest": "28ff59a8f805d448ddace295b87fb2290e8a8d8befac103f34d248104e126d1d",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 14716,
+      "usage": {
+        "promptTokenCount": 11958,
+        "candidatesTokenCount": 5791,
+        "totalTokenCount": 17749,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 11958
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "responseId": "RGTzaq2FKK-HjuMPov7UsQ0"
+    },
+    {
+      "phase": "triage_batch",
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "cache": false,
+      "digest": "331088c159628a67a8014a44deaa99cae670b979c91dab6cb33d565802f5c5c0",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 4056,
+      "usage": {
+        "promptTokenCount": 4705,
+        "candidatesTokenCount": 1113,
+        "totalTokenCount": 5818,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 4705
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "responseId": "UmTzaoqrHf2x0r4PvKm5mQw"
+    },
+    {
+      "phase": "triage_batch",
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "cache": false,
+      "digest": "34f0f6b3fb16480a186f261b4afeb3a356cbd80be69a195be479d6c0671f1093",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 4010,
+      "usage": {
+        "promptTokenCount": 6172,
+        "candidatesTokenCount": 856,
+        "totalTokenCount": 7028,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 6172
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "responseId": "VmTzasfOJeyy694PwrWc-Q4"
+    },
+    {
+      "phase": "triage_batch",
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "cache": false,
+      "digest": "9a53907e1b7ddc8c199d10a1c29ee37a1c30d6247664b5daab50b57c48af7c06",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 3044,
+      "usage": {
+        "promptTokenCount": 3980,
+        "candidatesTokenCount": 705,
+        "totalTokenCount": 4685,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 3980
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "responseId": "WmTzauD8J9boqfkP7amsyQU"
+    },
+    {
+      "phase": "triage_batch",
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "cache": false,
+      "digest": "1d4c38ccaa4630db4c2b433a8776580da9df603a88ae8b769cfe39134f6d0baf",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 3377,
+      "usage": {
+        "promptTokenCount": 5566,
+        "candidatesTokenCount": 864,
+        "totalTokenCount": 6430,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 5566
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "responseId": "XWTzaq_nMPXe694PgJzJ-Qw"
+    }
+  ],
+  "mode": "live",
+  "batchSize": 4
+}

@@ -28,7 +28,7 @@ export function validateResult(r,q,report) {
  const repair=taxonomy.repairs[r.repair];
  if(repair&&!repair.auto&&(r.edit!==null||r.route!=='faculty_review')) throw new SafetyError('Manual-only repair: recommendation only');
  if(r.edit===null&&r.route==='auto_apply') throw new SafetyError('Cannot auto-apply absent patch');
- if(/\bfixed\b|\bcorrected\s+(?:it|now)\b/i.test(r.student_reply)&&r.edit!==null) throw new SafetyError('Reply falsely claims persisted fix');
+ if(/\b(?:fixed|corrected|updated|resolved|adjusted)\b/i.test(r.student_reply)&&r.edit!==null) throw new SafetyError('Reply falsely claims persisted fix');
  const sentences=r.student_reply.split(/(?<=[.!?])\s+(?=[A-Z])/).filter(Boolean);if(sentences.length>3)throw new SafetyError('Reply must have at most three sentences');
  if(r.edit) validatePatch(q,r.repair,r.edit);
  return r;

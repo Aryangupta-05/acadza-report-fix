@@ -1,0 +1,145 @@
+{
+  "complete": false,
+  "error": "Batch report coverage mismatch",
+  "traces": [
+    {
+      "phase": "independent_solve_batch",
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "cache": false,
+      "digest": "28ff59a8f805d448ddace295b87fb2290e8a8d8befac103f34d248104e126d1d",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 14716,
+      "usage": {
+        "promptTokenCount": 11958,
+        "candidatesTokenCount": 5791,
+        "totalTokenCount": 17749,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 11958
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "responseId": "RGTzaq2FKK-HjuMPov7UsQ0"
+    },
+    {
+      "phase": "triage_batch",
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "cache": false,
+      "digest": "331088c159628a67a8014a44deaa99cae670b979c91dab6cb33d565802f5c5c0",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 4056,
+      "usage": {
+        "promptTokenCount": 4705,
+        "candidatesTokenCount": 1113,
+        "totalTokenCount": 5818,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 4705
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "responseId": "UmTzaoqrHf2x0r4PvKm5mQw"
+    },
+    {
+      "phase": "triage_batch",
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "cache": false,
+      "digest": "34f0f6b3fb16480a186f261b4afeb3a356cbd80be69a195be479d6c0671f1093",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 4010,
+      "usage": {
+        "promptTokenCount": 6172,
+        "candidatesTokenCount": 856,
+        "totalTokenCount": 7028,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 6172
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "responseId": "VmTzasfOJeyy694PwrWc-Q4"
+    },
+    {
+      "phase": "triage_batch",
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "cache": false,
+      "digest": "9a53907e1b7ddc8c199d10a1c29ee37a1c30d6247664b5daab50b57c48af7c06",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 3044,
+      "usage": {
+        "promptTokenCount": 3980,
+        "candidatesTokenCount": 705,
+        "totalTokenCount": 4685,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 3980
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "responseId": "WmTzauD8J9boqfkP7amsyQU"
+    },
+    {
+      "phase": "triage_batch",
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "cache": false,
+      "digest": "1d4c38ccaa4630db4c2b433a8776580da9df603a88ae8b769cfe39134f6d0baf",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 3377,
+      "usage": {
+        "promptTokenCount": 5566,
+        "candidatesTokenCount": 864,
+        "totalTokenCount": 6430,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 5566
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "responseId": "XWTzaq_nMPXe694PgJzJ-Qw"
+    },
+    {
+      "phase": "triage_batch",
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "cache": false,
+      "digest": "495edcedd85a20e6faee0f9f48d3debd4145b94fa8fc38801fd07d2dbd4c75f6",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 6748,
+      "usage": {
+        "promptTokenCount": 5262,
+        "candidatesTokenCount": 2354,
+        "totalTokenCount": 7616,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 5262
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "responseId": "YWTzaobzA-3j4t4PtOq56Qw"
+    }
+  ],
+  "checkedAt": "2026-11-10T18:37:28.682Z"
+}

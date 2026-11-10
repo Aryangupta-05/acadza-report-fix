@@ -288,7 +288,7 @@ No subagents were used. No background resume timer was created: the app instruct
 
 The first live run used Gemini model identifier `gemini-3.6-flash` from the provider response path.12 solve/triage calls succeeded, covering5 complete question groups, with34 failed groups. Some attempts timed out or returned503, followed by many429 responses. See docs/first-live-run.json for actual response metadata and docs/first-live-results.json for the original results. These files are archived evidence, not the submission results. No usage or model calls are fabricated.
 
-A complete live run remains blocked. Later attempts: the batched gemini-2.5-flash returned404; batched3.6 returned429; batched3.8 returned503. These failures were printed by the actual commands. Successful earlier outputs are cached locally under ignored .cache/; cache files do not contain keys. The final root results.json is generated in explicitly labeled reviewed mode from docs/development-reviewed.json, which binds assistant-authored decisions to exact question source hashes. It is not presented as runtime LLM output or as human faculty validation.
+The initial complete live run was blocked. Later attempts: the batched gemini-2.5-flash returned404; batched3.6 returned429; batched3.8 returned503. These failures were printed by the actual commands. Successful earlier outputs are cached locally under ignored .cache/; cache files do not contain keys. The final root results.json is generated in explicitly labeled reviewed mode from docs/development-reviewed.json, which binds assistant-authored decisions to exact question source hashes. It is not presented as runtime LLM output or as human faculty validation.
 
 ## Prompt versions and actual changes
 
@@ -329,7 +329,7 @@ auto_apply means only eligible after deterministic checks. Prefer faculty_review
 
 ## Genuine AI errors and how they were caught
 
-These are coding-assistant errors, not invented failed Gemini classifications. The successful runtime classifications available were not found to contain a substantive verdict error; no quota-failed result is claimed to be a valid classification.
+These are coding-assistant errors, not invented failed Gemini classifications. That early sample did not establish a substantive verdict error. The later full Flash-Lite run did expose model errors, recorded below; no quota-failed output is claimed to be a successful classification.
 
 1. **Windows text encoding.** Original generated inventory code used `read_text()` without encoding, and failed with `UnicodeDecodeError: charmap codec ... byte 0x81`. Explicit UTF-8 fixed it; the rerun inspected every record and verified43/44/39.
 2. **Request strategy.** The initial per-question two-call orchestration had no rate-limit circuit breaker. docs/first-live-run.json records the429/503 cascade and34 unresolved groups. Replaced the default live CLI with batching, stopped immediately on429 and added a test asserting exactly one request on429. This does not retroactively make the failed run complete.
@@ -369,3 +369,37 @@ Subsequent user prompts, verbatim:
 A single gemini-3.8-flash retry returned503 (docs/live-retry-run.json); no fabricated successful classification or constant retry was substituted. The44 reviewed results remain unchanged.
 
 The in-app browser capture was resumed in short active segments.95 seconds of actual viewport frames (1288 source frames) were preserved, including the successful gas-pressure correction, reply and expanded audit. A stale session required refresh before the successful save; this is disclosed in narration. Longer capture/recovery calls later timed out. The successful footage was edited and retimed to a180-second walkthrough with offline synthetic Microsoft Zira narration. This is not represented as an uninterrupted180-second real-time capture, a mockup or Aryan’s voice. See DEMO_SCRIPT.md for the final narration verbatim and docs/video-provenance.json for the timing map.
+
+## Keyed batch revision and completed live run
+
+A free-tier Gemini3.1 Flash-Lite fallback responded successfully. The first large solve returned39 entries but its subsequent triage omittedR019 while returningR018 for the same question. The runner rejected incomplete coverage (docs/ai-error-report-coverage.json). A second large-array solve had duplicate/missing question coverage and was rejected (docs/ai-error-solve-coverage.json). Neither failed run replaced the published results.
+
+The final runner uses four-question keyed solve batches followed by four-question keyed triage batches. JSON schemas require each question ID or report ID as an explicit object property, fixing report/question identities; the complete current schema and parameterized examples are exported in prompts/schemas.json. The original solve-v1 and triage-v1 text stays verbatim above. Their final wrapper suffixes are verbatim below and in prompts/*-batch-v2.txt. Cache keys bind full prompt/input/schema/model; changed wrappers invalidate old caches.
+
+Solve payload: {questions:[{questionId,questionType,question,quesImages,executable_calculations}]}. Keys, stored solutions and reports are withheld from every solve. Triage payload: {taxonomy,cases:[{question,reports (studentId omitted),independent_solve,executable_calculations}]}. Calculations parse only supported stem patterns and corroborate gas pressure, LCR voltage, cube buoyancy and significant figures; unknown stems return no facts. They are not report-ID verdict rules and grant no write authority.
+
+### Final solve wrapper, verbatim
+
+```text
+Input contains independent questions. Return analysesByQuestion as an object keyed by every supplied question ID, with a distinct solve for each. Never merge or omit questions. Keep each summary concise (at most80 words), showing only checkable equations or facts, not private reasoning. Use the stem-only executable_calculations to check arithmetic; do not round intermediate products.
+```
+
+### Final triage wrapper, verbatim
+
+```text
+Input contains a batch of independent question cases. Return resultsByReport as an object keyed by every supplied report ID. Include a distinct result for each report, including multiple reports about the same question. Never merge or omit duplicate reports. The schema fixes each report and question identity. Use executable_calculations as checkable arithmetic corroboration; they are calculated from the stem, not the key or the student. Do not round intermediate values. Student replies must describe a proposal or referral and must not claim a saved correction.
+```
+
+The final run completed20 successful Gemini3.1 Flash-Lite requests,39 independent solves and44 report results, with6-second pacing and no provider-error retries. Eight proposed edits failed deterministic guards and became explicit faculty-review execution-failure entries. Additional substantive errors passed structural guards. All44 raw entries and source references were checked and compared with the source-bound reviewed release; docs/RUNTIME_REVIEW.md and runtime-review.json record the review. Raw output and real metadata are unchanged in docs/lite-v3-{results,run}.json. The release remains development-reviewed; it is not relabeled as runtime inference or faculty validation.
+
+### Genuine model mistakes observed
+
+1. **Premature rounding:** an earlier checkpoint proposed3112.8 for10A. Executable arithmetic gives6×7.203²=311.299254, rounded once to311.3, then10A=3113. Added a generalized stem-only calculator and changed prompt instructions; the final run returned3113.
+2. **Missing duplicate coverage:** R019 was omitted despite a shared question withR018. Required keyed schema now forces each report identity; final44 coverage passed.
+3. **Misread current content:** the final model called the gas keyD although source keyA is stored, and hallucinated a fourth option inR009/R010. Source inspection caught these; retained reviewed answer A→D and missing-option referrals. No regex patch gate can establish those semantic conclusions alone.
+4. **Contradictory verdict:** forR034 the model derived both statements false, noted the key incorrect, then returnedno_error. The source has no both-false option; retained an unsound faculty referral without an AI content patch.
+5. **Premature saved claim and unsafe anchors:** R016 said corrected before persistence; other proposals used broad HTML spelling or nonadditive stem edits. Eight final proposals were blocked by deterministic gates. Strengthened past-tense reply detection and added regressions; did not weaken guards to force model acceptance.
+
+A separate audit review caught that first faculty-authored patches in categories with no AI patch could be mislabeled as edits to AI proposals. The server and dialog now require explicit authorship confirmation in that case and persist faculty_authored provenance. A regression verifies this distinction. All31 tests pass.
+
+Alternate CLI result paths now receive matching <out>.run.json metadata (or explicit --run-out), preventing an experimental --out run from overwriting release provenance. A reviewed-mode custom-output smoke produced44 identical results and preserved the reviewed release metadata.
