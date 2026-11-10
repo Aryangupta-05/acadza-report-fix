@@ -357,3 +357,15 @@ These are coding-assistant errors, not invented failed Gemini classifications. T
 A later local test exposed Windows-sandbox EPERM on cache-file rename. The successful provider-response branch had allowed a cache persistence error to enter the request retry path, potentially spending another model request. Cache writes now have a separate bounded filesystem retry; a cache error is recorded in trace metadata and never repeats a successful provider request. A new regression test verifies that boundary. Cache tests use an ignored workspace runtime directory instead of an unreliable sandbox temp path.
 
 Recording used only the public console. Browser capture did not produce a verified video: background work failed with lost execution context, active capture timed out, native Chrome control later stopped on a URL-verification guard. These failures are disclosed, not represented as a completed screen recording. Prepared narration was synthesized offline with Microsoft Zira via System.Speech; it is not Aryan’s voice.
+
+## Resumption prompts and final media outcome
+
+Subsequent user prompts, verbatim:
+
+> see and try again and do it
+
+> I need the link opened in the in-app browser
+
+A single gemini-3.8-flash retry returned503 (docs/live-retry-run.json); no fabricated successful classification or constant retry was substituted. The44 reviewed results remain unchanged.
+
+The in-app browser capture was resumed in short active segments.95 seconds of actual viewport frames (1288 source frames) were preserved, including the successful gas-pressure correction, reply and expanded audit. A stale session required refresh before the successful save; this is disclosed in narration. Longer capture/recovery calls later timed out. The successful footage was edited and retimed to a180-second walkthrough with offline synthetic Microsoft Zira narration. This is not represented as an uninterrupted180-second real-time capture, a mockup or Aryan’s voice. See DEMO_SCRIPT.md for the final narration verbatim and docs/video-provenance.json for the timing map.

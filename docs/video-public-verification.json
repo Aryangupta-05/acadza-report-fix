@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-11-10T18:22:47.188Z",
+  "playerURL": "https://acadza-report-fix-qeyq.onrender.com/demo",
+  "playerStatus": 200,
+  "videoElement": true,
+  "videoURL": "https://acadza-report-fix-qeyq.onrender.com/demo.mp4",
+  "videoStatus": 200,
+  "mime": "video/mp4",
+  "headStatus": 200,
+  "contentLength": "3656701",
+  "rangeStatus": 206,
+  "contentRange": "bytes 0-1023/3656701",
+  "rangeBytes": 1024,
+  "publicSHA256": "57ed085d21b4a1243a4be745364552426d900679d4d3fdc278cdbf608e70e04c",
+  "localSHA256": "57ed085d21b4a1243a4be745364552426d900679d4d3fdc278cdbf608e70e04c",
+  "identicalPublicFile": true
+}

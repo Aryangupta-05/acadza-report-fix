@@ -2,7 +2,7 @@
 
 A faculty workbench for checking student reports, proposing small corrections, and keeping decisions traceable.
 
-**[Public repository](https://github.com/Aryangupta-05/acadza-report-fix) · [Console](https://acadza-report-fix-qeyq.onrender.com)**
+**[Public repository](https://github.com/Aryangupta-05/acadza-report-fix) · [Console](https://acadza-report-fix-qeyq.onrender.com) · [Three-minute video](https://acadza-report-fix-qeyq.onrender.com/demo)**
 
 ## Read this first: inference provenance
 
@@ -69,4 +69,6 @@ See `PROMPTS.md`, `PRODUCT.md`, `BONUS.md`, `REQUIREMENTS.md`, `PROGRESS.md`, `D
 - Earliest start: 21 November 2026 (confirmed).
 - Motivation draft: I want to build AI that makes a real student workflow more reliable, with clear evidence and careful safeguards. This work interests me because the useful outcome is a correction people can trust, and I want to develop that product judgment alongside my engineering skills. Aryan should review this AI-assisted wording before submission.
 
-**Video remains blocked.** The demo script and 180-second synthetic narration are prepared, but no verified screen recording or hosted video link exists.
+**Video available:** [watch the walkthrough](https://acadza-report-fix-qeyq.onrender.com/demo). The180-second MP4 is edited and retimed from95 seconds of actual browser capture, with synthetic narration; see DEMO_SCRIPT.md and docs/video-provenance.json.
+
+Latest bounded live retry: gemini-3.8-flash returned503 after one request, without retries; actual metadata is in docs/live-retry-run.json. The reviewed result file remains unchanged.

@@ -10,7 +10,7 @@ Here is my Report → Fix assignment:
 
 - Repository: https://github.com/Aryangupta-05/acadza-report-fix
 - Faculty console: https://acadza-report-fix-qeyq.onrender.com
-- Three-minute video: [PENDING: verified recording link]
+- Three-minute video: https://acadza-report-fix-qeyq.onrender.com/demo
 
 The console clearly labels its development-reviewed snapshots. Actual Gemini orchestration is implemented and was exercised, but free-tier 429/503 responses prevented a complete live 44-report run. PROMPTS.md records AI contributions, verbatim prompts, genuine failures and safety decisions. The 44-result reviewed file and reproducible checks are committed. Free hosting may need about a minute to wake.
 
@@ -22,4 +22,6 @@ The console clearly labels its development-reviewed snapshots. Actual Gemini orc
 Thanks,
 Aryan Gupta
 
-Before sending: verify the current public URL, replace the video placeholder, review the personal wording and ensure the acceptance table accurately describes remaining limits. Do not change code or outputs after any final submission without recording that fact.
+The video is edited from actual browser capture and uses synthetic narration.
+
+Before sending: verify the current public URLs and review the personal wording and ensure the acceptance table accurately describes remaining limits. Do not change code or outputs after any final submission without recording that fact.

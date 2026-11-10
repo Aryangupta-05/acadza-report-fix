@@ -1,5 +1,14 @@
 # Progress
 
+## Current state after retry
+- Video created: public/demo.mp4 and ../Acadza_Report_Fix_Demo.mp4,180 seconds,1280×720,H.264/AAC. It uses95 seconds of actual browser viewport capture retimed for narration, with editing/synthetic voice disclosed.1288 source frames;4500 encoded frames decoded without error; representative encoded frames visually inspected.
+- Public player at /demo and byte-range MP4 serving added;27 tests, full result check and build pass. Public /demo returned200; MP4 full/HEAD/range requests returned200/200/206, and the public video SHA-256 matches the decoded local file.
+- One fresh, bounded Gemini3.8 Flash request returned503. Full live inference remains blocked; reviewed root results and source data unchanged.
+- Gas-pressure R004 successfully approved in the actual browser after refreshing an expired session. Saved correction/reply/audit hashes captured.
+- Previous recording-blocker notes below are historical. No submission email or restart timer created.
+
+## Historical milestones (chronological)
+
 ## Completed
 - Read full user prompt, email screenshot, assignment README and all semantic question/report records plus taxonomy. Verified 43 questions, 44 reports, 39 groups; four unreported questions. Original data copied unchanged.
 - Public GitHub and free hosting authorized by user. User confirms remote Mon–Sat, 6 months, start 21 November 2026. Motivation prose may be drafted.
@@ -59,3 +68,15 @@ Finish browser edited-patch and narrow-screen checks, verify current deployment 
 5. Review final four personal answers with Aryan and send email only on explicit instruction.
 
 Final narration verification: FFmpeg decoded the MP3 successfully to exactly00:03:00.00. This is audio only, not the missing screen recording.
+
+## Latest resume action
+Verify public /demo and /demo.mp4 after the video commit deploys, update final verification evidence, commit documentation, refresh source ZIP, and return video link. Only the full runtime LLM run remains provider-blocked. Do not send email.
+
+## Final verified outcome after retry
+- Public video: https://acadza-report-fix-qeyq.onrender.com/demo; direct MP4 /demo.mp4.3656701 bytes,180 seconds,H.264/AAC,1280×720; public/local SHA-256 identical. It is edited/retimed from95 seconds of actual capture, with synthetic narration disclosed.
+- A fresh player UI preview could not be reopened because the browser helper timed out. Source browser actions/capture, local full decode, encoded-frame visual inspection, and public media/HTTP checks are verified. No mockup, invented runtime trace or uninterrupted-capture claim is used.
+- Latest video code commit896d22c deployed live. All27 tests,44-result checks and frontend build pass. Source ZIP is regenerated from the final documentation commit.
+- Submission draft now contains verified repo, live and video URLs. Final motivation wording still needs Aryan’s review; no email sent.
+
+## Exact remaining action
+Only the complete44-report live model run remains provider-blocked: the latest single request returned503 with no retries. When normal provider availability/quota returns, run the safe retry helper from the project root: node --env-file=.env ../../work/live-retry.mjs. It writes separate docs/live-retry-* files and preserves reviewed root output. Inspect every result, safety failure and high-stakes calculation before replacing results.json or its matching engine-run provenance. Do not enable billing, rotate accounts or start constant retries. Do not send the submission email without explicit instruction.

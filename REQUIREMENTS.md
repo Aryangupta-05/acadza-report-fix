@@ -8,7 +8,7 @@ Status: pending / implemented / verified / blocked. Input documents describe the
 | ENGINE | Executable pipeline supports new production-format inputs, groups by question and returns one result per report | src/engine.mjs | implemented |
 | TAXONOMY | Exact verdict/repair keys, result fields and null conventions | src/safety.mjs | verified |
 | LLM | Actual provider calls, strict structured output, retries, timeout, cache, visible failure, server-only secrets | src/llm.mjs; prompts/ | blocked |
-| SOLVER | Independent stem-only solve before stored answer and solution, mathematical checks | src/engine.mjs; src/proofs.mjs | implemented |
+| SOLVER | Independent stem-only solve before stored answer and solution, mathematical checks | src/engine.mjs; scripts/numeric-checks.mjs | implemented |
 | SAFETY | Repair scope and every repair restriction enforced independently of model | src/safety.mjs | verified |
 | MANUAL | auto:false never edited; empty fields mean evidence and recommendation only | src/safety.mjs | verified |
 | PATCH | Unique nonempty anchors, stale versions, idempotency, structure and images retained | src/safety.mjs; src/store.mjs | verified |
@@ -24,14 +24,14 @@ Status: pending / implemented / verified / blocked. Input documents describe the
 | BONUS | Review all 43 questions; keep unreported findings separate | BONUS.md | verified |
 | PROMPTS | Verbatim user and product prompts, versions, decisions, actual AI errors | PROMPTS.md; INITIAL_PROMPT.txt; prompts/ | verified |
 | DOCS | Setup, architecture, env, limits, deployment, PRODUCT at most one page | README.md; PRODUCT.md; .env.example | verified |
-| VIDEO | Actual verified three-minute recording and timestamped script | DEMO_SCRIPT.md; video file | blocked |
-| SUBMIT | Email draft with verified links and 4 confirmed personal answers; never send without approval | SUBMISSION_EMAIL.md | blocked |
+| VIDEO | Actual verified three-minute recording and timestamped script | DEMO_SCRIPT.md; video file | verified |
+| SUBMIT | Email draft with verified links and 4 confirmed personal answers; never send without approval | SUBMISSION_EMAIL.md | verified |
 | TEST | Schema, repair safety, formats, injection, duplicates, stale/conflict, sanitization and durable audit | tests/; VERIFICATION.md | verified |
 | BROWSER | Actual browser queue/detail/diff/actions/persistence; screenshots, narrow screen and errors | docs/; VERIFICATION.md | verified |
-| REPO | Public GitHub code and results committed | GitHub URL pending | verified |
-| DEPLOY | Public live app, persistent reviews, practical evaluator access, seven-day configuration | Live URL pending | verified |
+| REPO | Public GitHub code and results committed | https://github.com/Aryangupta-05/acadza-report-fix | verified |
+| DEPLOY | Public live app, persistent reviews, practical evaluator access, seven-day configuration | https://acadza-report-fix-qeyq.onrender.com | verified |
 | ACCEPT | Final acceptance matrix with honest status and interview walkthrough | ACCEPTANCE.md; WALKTHROUGH.md | verified |
 
 Defaults: proposed auto_apply is eligibility, never proof of persistence. Null repair/edit for nondefects; manual-only defects have null edit. Type migrations always require review. No exposure counts invented. Reviewer actions use isolated durable demo workspaces unless an authorized shared reviewer token is supplied.
 
-Verified scope: reviewed-mode results and public console. Complete live inference remains blocked by provider responses; the video has no verified artifact. See ACCEPTANCE.md and VERIFICATION.md for exact execution boundaries, not just implementation claims.
+Verified scope: reviewed-mode results, public console, and actual edited/retimed video. Complete live inference remains blocked by provider responses. See ACCEPTANCE.md and VERIFICATION.md for exact execution boundaries.

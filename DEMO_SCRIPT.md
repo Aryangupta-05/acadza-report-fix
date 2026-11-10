@@ -1,23 +1,44 @@
-# Three-minute walkthrough
+# Verified three-minute walkthrough
 
-Use the public console in a new evaluation workspace. No personal login or runtime API key is needed. No verified screen recording exists yet. The narration file is synthetic Microsoft Zira audio, not Aryan’s voice. The timeline below supports the remaining actual recording.
+Video: https://acadza-report-fix-qeyq.onrender.com/demo
+MP4: public/demo.mp4
 
-| Time | Screen / action | Narration |
-|---|---|---|
-|0:00–0:20|Queue overview; point to snapshot notice and urgency|This workspace groups 44 reports into 39 questions. This demo uses development-reviewed snapshots; real Gemini requests hit provider limits. Decisions are persisted to a separate server-side workspace for each evaluator.|
-|0:20–0:45|Gas-pressure case R004; question and evidence|The student proposes 8225, but P=0.09×400²/3=4800 Pa, option D. The key A is also wrong. A report can reveal a defect even when the student’s reasoning is wrong.|
-|0:45–1:10|Before/after A→D; expand exact patch and stored solution|Only the answer field changes. The source hash and exact precondition prevent stale or repeated edits. An eligible or proposed fix is not a saved fix.|
-|1:10–1:35|Approve & apply; enter “Verified gas-pressure calculation: 4800 Pa”; save|Faculty approve after checking the evidence. A database transaction records the actor, reason, source version, exact patch and resulting version.|
-|1:35–1:55|Audit history; refresh; reopen the gas-pressure case|The answer and audit remain after refresh. Original input and the before state are retained. Only now does the reply preview say the reviewed correction was saved.|
-|1:55–2:20|Search “Assertion”; inspect R034|This is the trap: at π/2 the intensity is 2I₀, so the assertion is false; the reason’s universal claim is also false. No option means both false. The system proposes no unauthorized option rewrite.|
-|2:20–2:40|Search “total charge”; R044|The student’s 22 V is the potential at one point. The question asks for the difference:22−8=14 V. A report is a lead, not an instruction to change the key.|
-|2:40–3:00|Return to queue, show reply/audit and provenance|The boundary is deliberate: cosmetic eligibility is narrow, semantic fixes need review, and every saved decision is traceable. The live console uses PostgreSQL so audits survive a service restart.|
+This is an edited screen walkthrough from95 seconds of actual deployed-console viewport capture (1,288 source frames), retimed to180 seconds for readability. It is not a mockup, regenerated UI, or an uninterrupted180-second real-time recording. Narration is offline synthetic Microsoft Zira, not Aryan’s voice. See docs/video-provenance.json for the capture segments and exact retiming.
 
-## Exact recording handoff
+| Video time | Recorded content |
+|---|---|
+|0:00–0:20|Queue overview,39 question groups /44 reports, durable demo workspace and explicit reviewed-snapshot banner|
+|0:20–1:00|Gas-pressure R004: student suggests8225, stored key A is also wrong; independent calculation gives4800Pa, option D; rendered question and reports|
+|1:00–1:40|Before/after A→D, exact answer-field patch and stored derivation; semantic fix requires faculty approval|
+|1:40–2:05|Concrete verification reason in the approval dialog; clearly identified demo actor|
+|2:05–2:40|Successful saved correction, student-reply preview and persisted audit|
+|2:40–3:00|Expanded audit source/result hashes, exact patch and provenance|
 
-1. Open https://acadza-report-fix-qeyq.onrender.com in Chrome and wait for the 39-case queue. Keep any API-key pages and private tabs outside the recording.
-2. Use Loom, the Windows Snipping Tool screen recorder, or another recorder to capture only the console tab/window for 180 seconds. Use the timeline above; the gas-pressure case was not applied during verification, so it remains a fresh scenario in the existing browser workspace. A new browser profile also receives a fresh workspace.
-3. The prepared 180-second synthetic narration is outputs/Acadza_Demo_Narration.mp 3 in the task deliverables, outside this repository. You may record your own voice instead. The audio alone is not the required screen recording.
-4. Save MP 4, inspect the beginning/middle/end and confirm sound and 180-second duration. Upload as unlisted YouTube/Loom or a suitably shared Drive file, then replace the submission draft’s video placeholder.
+A session expired after a prior deployment during preparation. It was refreshed, the same unmodified proposal reopened, and the successful save and audit were verified before their footage was used. Idle/tool-recovery gaps are cut. Browser refresh/redeploy persistence was separately tested earlier; the video does not pretend to show an extra refresh sequence that was not captured.
 
-Agent recording attempts were unsuccessful: a native Chrome approval initially timed out; background browser screenshots lost their execution context; a longer active capture timed out and reset the kernel; after user-approved retry, Computer Use stopped because it could not confidently establish the Chrome URL. No screenshot sequence is mislabeled as a three-minute recording.
+## Final narration, verbatim
+
+### 0:00–0:20
+
+This is Acadza Report to Fix. Forty-four student reports are grouped into thirty-nine question cases. The demo clearly labels development-reviewed snapshots, because the live Gemini run hit free-tier provider limits. Reviewer decisions are saved on the server in a separate evaluation workspace.
+
+### 0:20–1:00
+
+Here is the tricky case. A student says the gas pressure should be eight thousand two hundred twenty-five. Independently, pressure equals density times root mean square speed squared, divided by three. Zero point zero nine times four hundred squared, divided by three, gives four thousand eight hundred pascals: option D. The student is wrong, but the stored key A is also wrong. The rendered question retains its mathematics and four options. The report is a lead to investigate, not an instruction to follow.
+
+### 1:00–1:40
+
+The before and after comparison changes only the answer key, from A to D. Expanding the exact patch shows the field, the original value and its replacement. The original question and options remain intact. A source hash and revision prevent stale or repeated changes. The stored derivation also reaches four thousand eight hundred, but the key must first be checked independently. This semantic correction requires faculty approval. A confidence score, or two agreeing models, is not proof that an edit is safe.
+
+### 1:40–2:05
+
+I enter a concrete verification reason in the approval dialog. The actor is explicitly a demo faculty reviewer, not a claim that a real teacher reviewed the case. An expired session required a refresh before the successful save. The server then checked the source version and persisted the correction and audit together.
+
+### 2:05–2:40
+
+The saved state now shows the reviewed correction, the student reply and the audit history. Only after the successful application does the reply preview say the correction has been saved. No student message is actually sent. The audit records the actor, timestamp, reason and change provenance. Earlier deployed checks verified that saved actions survive refresh and redeployment. PostgreSQL holds this history on the server; it is not a browser-local audit trail.
+
+### 2:40–3:00
+
+The expanded audit shows both version hashes and the exact answer-key patch. Manual-only repairs cannot carry AI content edits, and uncertain cases need faculty judgment. The repository includes the prompts, tests and limitations. This walkthrough uses actual browser capture, edited and retimed for narration.
+
