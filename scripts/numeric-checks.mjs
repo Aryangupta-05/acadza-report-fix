@@ -1,0 +1,21 @@
+import assert from 'node:assert/strict';import {writeFile} from 'node:fs/promises';
+const checks=[];function check(name,value,expected,tolerance=1e-8){assert(Math.abs(value-expected)<tolerance,name);checks.push({name,value,expected,tolerance,passed:true})}
+check('LCR phasor voltage in V',Math.hypot(40,60-30),50);
+check('Gas pressure in Pa',.09*400**2/3,4800);
+check('Face and corner flux coefficient n',2*(.5*.5+2/8),1);
+check('Copper contraction in mm^3',7e6/1.4e11*.1**3*1e9,50);
+check('RL impedance with restored 95.5mH',Math.hypot(40,2*Math.PI*50*.0955),50,.01);
+check('Friction coefficient from two accelerations',(100-2*10)/100,.8);
+check('Buoyancy side in cm',Math.sqrt(800/2),20);
+check('Mean life in minutes',3/Math.log(8),1.442695,.000001);
+check('Cubical expansion coefficient',3*.19/(100*100),.000057);
+check('First rim-dot realignment in seconds',Math.sqrt(4*Math.PI/(Math.PI/2-Math.PI/4)),4);
+check('SHM amplitude in meters',Math.PI/((Math.PI/8)*Math.cos(Math.PI/4)),8*Math.SQRT2);
+check('YDSE central shift in cm',1/.005*((1.5-1)*.002-(1.4-1)*.0015)*100,8);
+check('Charged sphere potential difference in V',16/2*(3-.5**2)-16/2,14);
+check('Merged-drop surface density ratio',64/Math.cbrt(64)**2,4);
+check('Rounded 10A',Number((6*7.203**2).toPrecision(4))*10,3113);
+check('Unreported dielectric capacitor positive root',(-1+Math.sqrt(1+4*30))/2,5);
+check('Unreported contacted lenses power each in diopters',(1/.5+1/.125)/2,5);
+check('Unreported displaced-lens image size ratio',((150+Math.sqrt(150**2-4*150*24))/(150-Math.sqrt(150**2-4*150*24)))**2,16);
+await writeFile('docs/numeric-checks.json',JSON.stringify({scope:'Arithmetic corroboration of assistant-derived equations; not an independent semantic parser or faculty ground truth',checks},null,2));console.log(checks.length+' arithmetic checks passed');

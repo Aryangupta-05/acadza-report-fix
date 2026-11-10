@@ -1,0 +1,415 @@
+{
+  "resultSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "reportId",
+      "questionId",
+      "verdict",
+      "repair",
+      "edit",
+      "route",
+      "confidence",
+      "evidence",
+      "student_reply"
+    ],
+    "properties": {
+      "reportId": {
+        "type": "string"
+      },
+      "questionId": {
+        "type": "string"
+      },
+      "verdict": {
+        "type": "string",
+        "enum": [
+          "defect",
+          "no_error",
+          "display_issue",
+          "app_issue",
+          "language_mode",
+          "already_fixed",
+          "not_actionable"
+        ]
+      },
+      "repair": {
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "spelling",
+              "noise",
+              "exam_reference",
+              "markup_leak",
+              "answer_form",
+              "notation",
+              "stem_data",
+              "option_repair",
+              "solution_fix",
+              "solution_missing",
+              "answer_key",
+              "type_mismatch",
+              "identical_options",
+              "diagram",
+              "wrong_question",
+              "unsound",
+              "wrong_chapter",
+              "syllabus"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "edit": {
+        "anyOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "field",
+              "find",
+              "replace"
+            ],
+            "properties": {
+              "field": {
+                "type": "string",
+                "enum": [
+                  "question",
+                  "solution",
+                  "answer",
+                  "questionType"
+                ]
+              },
+              "find": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "replace": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "route": {
+        "type": "string",
+        "enum": [
+          "auto_apply",
+          "faculty_review",
+          "no_change"
+        ]
+      },
+      "confidence": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "evidence": {
+        "type": "string",
+        "minLength": 5,
+        "maxLength": 2200
+      },
+      "student_reply": {
+        "type": "string",
+        "minLength": 5,
+        "maxLength": 700
+      }
+    }
+  },
+  "editSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "field",
+      "find",
+      "replace"
+    ],
+    "properties": {
+      "field": {
+        "type": "string",
+        "enum": [
+          "question",
+          "solution",
+          "answer",
+          "questionType"
+        ]
+      },
+      "find": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "replace": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "solveSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "summary",
+      "answer",
+      "uncertainty",
+      "figureRequired"
+    ],
+    "properties": {
+      "summary": {
+        "type": "string"
+      },
+      "answer": {
+        "type": "string"
+      },
+      "uncertainty": {
+        "type": "string"
+      },
+      "figureRequired": {
+        "type": "boolean"
+      }
+    }
+  },
+  "triageSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "results"
+    ],
+    "properties": {
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "reportId",
+            "questionId",
+            "verdict",
+            "repair",
+            "edit",
+            "route",
+            "confidence",
+            "evidence",
+            "student_reply"
+          ],
+          "properties": {
+            "reportId": {
+              "type": "string"
+            },
+            "questionId": {
+              "type": "string"
+            },
+            "verdict": {
+              "type": "string",
+              "enum": [
+                "defect",
+                "no_error",
+                "display_issue",
+                "app_issue",
+                "language_mode",
+                "already_fixed",
+                "not_actionable"
+              ]
+            },
+            "repair": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "enum": [
+                    "spelling",
+                    "noise",
+                    "exam_reference",
+                    "markup_leak",
+                    "answer_form",
+                    "notation",
+                    "stem_data",
+                    "option_repair",
+                    "solution_fix",
+                    "solution_missing",
+                    "answer_key",
+                    "type_mismatch",
+                    "identical_options",
+                    "diagram",
+                    "wrong_question",
+                    "unsound",
+                    "wrong_chapter",
+                    "syllabus"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "edit": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "field",
+                    "find",
+                    "replace"
+                  ],
+                  "properties": {
+                    "field": {
+                      "type": "string",
+                      "enum": [
+                        "question",
+                        "solution",
+                        "answer",
+                        "questionType"
+                      ]
+                    },
+                    "find": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      ]
+                    },
+                    "replace": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "route": {
+              "type": "string",
+              "enum": [
+                "auto_apply",
+                "faculty_review",
+                "no_change"
+              ]
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "evidence": {
+              "type": "string",
+              "minLength": 5,
+              "maxLength": 2200
+            },
+            "student_reply": {
+              "type": "string",
+              "minLength": 5,
+              "maxLength": 700
+            }
+          }
+        }
+      }
+    }
+  },
+  "solveBatchSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "analyses"
+    ],
+    "properties": {
+      "analyses": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "questionId",
+            "solve"
+          ],
+          "properties": {
+            "questionId": {
+              "type": "string"
+            },
+            "solve": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "summary",
+                "answer",
+                "uncertainty",
+                "figureRequired"
+              ],
+              "properties": {
+                "summary": {
+                  "type": "string"
+                },
+                "answer": {
+                  "type": "string"
+                },
+                "uncertainty": {
+                  "type": "string"
+                },
+                "figureRequired": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,8 +2,9 @@ import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
 import {ModelClient} from './llm.mjs';
 import {taxonomy,resultSchema,validateResult,validatePatch,version} from './safety.mjs';
-const solveSchema={type:'object',additionalProperties:false,required:['summary','answer','uncertainty','figureRequired'],properties:{summary:{type:'string'},answer:{type:'string'},uncertainty:{type:'string'},figureRequired:{type:'boolean'}}};
-const triageSchema={type:'object',additionalProperties:false,required:['results'],properties:{results:{type:'array',items:resultSchema}}};
+export const solveSchema={type:'object',additionalProperties:false,required:['summary','answer','uncertainty','figureRequired'],properties:{summary:{type:'string'},answer:{type:'string'},uncertainty:{type:'string'},figureRequired:{type:'boolean'}}};
+export const triageSchema={type:'object',additionalProperties:false,required:['results'],properties:{results:{type:'array',items:resultSchema}}};
+export const solveBatchSchema={type:'object',additionalProperties:false,required:['analyses'],properties:{analyses:{type:'array',items:{type:'object',additionalProperties:false,required:['questionId','solve'],properties:{questionId:{type:'string'},solve:solveSchema}}}}};
 export async function runEngine({questions,reports,client=new ModelClient(),prompts,mode='live',reviewed=[]}) {
  const results=[],analyses=[],failures=[],groups=new Map();
  for(const r of reports){if(!groups.has(r.questionId))groups.set(r.questionId,[]);groups.get(r.questionId).push(r);}
@@ -28,7 +29,7 @@ export async function runEngine({questions,reports,client=new ModelClient(),prom
 }
 export async function runBatched({questions,reports,client,prompts,batchSize=4,onCheckpoint=async()=>{}}) {
  const needed=questions.filter(q=>reports.some(r=>r.questionId===q._id));
- const solves={type:'object',additionalProperties:false,required:['analyses'],properties:{analyses:{type:'array',items:{type:'object',additionalProperties:false,required:['questionId','solve'],properties:{questionId:{type:'string'},solve:solveSchema}}}}};
+ const solves=solveBatchSchema;
  const blind=await client.generate(prompts.solve+'\nInput is a batch. Analyze each question separately. Return one analysis per questionId.',{questions:needed.map(q=>({questionId:q._id,questionType:q.questionType,question:q[q.questionType].question,quesImages:q[q.questionType].quesImages}))},solves,'independent_solve_batch');
  if(blind.analyses.length!==needed.length||new Set(blind.analyses.map(a=>a.questionId)).size!==needed.length||blind.analyses.some(a=>!needed.some(q=>q._id===a.questionId)))throw new Error('Independent solve batch has incorrect coverage');
  const run={results:[],analyses:blind.analyses.map(a=>({...a,sourceVersion:version(needed.find(q=>q._id===a.questionId)),mode:'live'})),failures:[],traces:client.traces,mode:'live',batchSize};

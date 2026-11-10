@@ -1,0 +1,131 @@
+{
+  "scope": "Arithmetic corroboration of assistant-derived equations; not an independent semantic parser or faculty ground truth",
+  "checks": [
+    {
+      "name": "LCR phasor voltage in V",
+      "value": 50,
+      "expected": 50,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "Gas pressure in Pa",
+      "value": 4800,
+      "expected": 4800,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "Face and corner flux coefficient n",
+      "value": 1,
+      "expected": 1,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "Copper contraction in mm^3",
+      "value": 50.000000000000014,
+      "expected": 50,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "RL impedance with restored 95.5mH",
+      "value": 50.00132593632245,
+      "expected": 50,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "Friction coefficient from two accelerations",
+      "value": 0.8,
+      "expected": 0.8,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "Buoyancy side in cm",
+      "value": 20,
+      "expected": 20,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "Mean life in minutes",
+      "value": 1.4426950408889636,
+      "expected": 1.442695,
+      "tolerance": 0.000001,
+      "passed": true
+    },
+    {
+      "name": "Cubical expansion coefficient",
+      "value": 0.000057,
+      "expected": 0.000057,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "First rim-dot realignment in seconds",
+      "value": 4,
+      "expected": 4,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "SHM amplitude in meters",
+      "value": 11.313708498984761,
+      "expected": 11.313708498984761,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "YDSE central shift in cm",
+      "value": 8.000000000000004,
+      "expected": 8,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "Charged sphere potential difference in V",
+      "value": 14,
+      "expected": 14,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "Merged-drop surface density ratio",
+      "value": 4,
+      "expected": 4,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "Rounded 10A",
+      "value": 3113,
+      "expected": 3113,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "Unreported dielectric capacitor positive root",
+      "value": 5,
+      "expected": 5,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "Unreported contacted lenses power each in diopters",
+      "value": 5,
+      "expected": 5,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "Unreported displaced-lens image size ratio",
+      "value": 16,
+      "expected": 16,
+      "tolerance": 1e-8,
+      "passed": true
+    }
+  ]
+}
