@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-10T19:04:13.984Z",
+  "codeCommit": "fb56a41939a9c0bd699f95dd67d76897692b7f62",
+  "checks": [
+    "Latest frontend authorship gate served",
+    "Gas correction A to D saved; exact replay idempotent; stale decision rejected409",
+    "Reject saved without patch",
+    "Edited unit patch saved with faculty_edited_ai_proposal",
+    "First authored patch without AI patch requires acknowledgement; faculty_authored persisted",
+    "Fresh CSRF session retains saved content and audit while original remains A"
+  ],
+  "limitations": [
+    "API verification supplements the previously recorded real browser flow; it is not a new browser playback observation.",
+    "Isolated synthetic demo actions do not change the source or another evaluator workspace."
+  ],
+  "health": {
+    "ok": true,
+    "store": "postgres",
+    "mode": "reviewed"
+  },
+  "queue": {
+    "questions": 39,
+    "reports": 44,
+    "mode": "reviewed"
+  },
+  "video": {
+    "playerStatus": 200,
+    "status": 200,
+    "rangeStatus": 206,
+    "headStatus": 200,
+    "bytes": 3656701,
+    "sha256": "57ed085d21b4a1243a4be745364552426d900679d4d3fdc278cdbf608e70e04c",
+    "matchesLocal": true
+  }
+}
