@@ -4,7 +4,7 @@ import Ajv from 'ajv';
 const ajv=new Ajv({allErrors:true});
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 export class ModelClient {
- constructor({provider=process.env.LLM_PROVIDER||'gemini',model,cache='.cache',fetcher=fetch,retries=2,timeout=90000}={}) {
+ constructor({provider=process.env.LLM_PROVIDER||'gemini',model,cache='.cache',fetcher=fetch,retries=1,timeout=90000}={}) {
   this.provider=provider;this.model=model||(provider==='gemini'?process.env.GEMINI_MODEL||'gemini-2.5-flash':process.env.OPENAI_MODEL);this.cache=cache;this.fetcher=fetcher;this.retries=retries;this.timeout=timeout;this.calls=0;this.hits=0;this.traces=[];
  }
  async generate(system,data,schema,phase) {
@@ -29,7 +29,7 @@ export class ModelClient {
     }
     this.calls++;const res=await this.fetcher(url,{method:'POST',headers,body:JSON.stringify(body),signal:AbortSignal.timeout(this.timeout)});status=res.status;
     // Do not log raw provider error bodies: they may contain secrets or reflected input.
-    if(!res.ok){const e=new Error('Provider HTTP '+res.status);e.retryable=[429,500,502,503,504].includes(res.status);throw e;}
+    if(!res.ok){const e=new Error('Provider HTTP '+res.status);e.retryable=[500,502,503,504].includes(res.status);e.rateLimited=res.status===429;throw e;}
     const raw=await res.json();
     const outputText=this.provider==='gemini'?raw.candidates?.[0]?.content?.parts?.filter(p=>!p.thought).map(p=>p.text||'').join(''):raw.output?.filter(o=>o.type==='message').flatMap(o=>o.content||[]).filter(c=>c.type==='output_text').map(c=>c.text).join('');
     if(!outputText)throw new Error('Model refusal or empty output');

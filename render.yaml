@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: acadza-report-fix
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm ci && npm test && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 24.2.0
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: acadza-review-db
+          property: connectionString
+databases:
+  - name: acadza-review-db
+    plan: free
+    region: singapore
+    databaseName: acadza_review
+    user: acadza
+    ipAllowList: []

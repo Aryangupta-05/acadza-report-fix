@@ -26,13 +26,32 @@ export async function runEngine({questions,reports,client=new ModelClient(),prom
  }
  results.sort((a,b)=>a.reportId.localeCompare(b.reportId));return{results,analyses,failures,traces:client.traces||[],mode};
 }
+export async function runBatched({questions,reports,client,prompts,batchSize=4,onCheckpoint=async()=>{}}) {
+ const needed=questions.filter(q=>reports.some(r=>r.questionId===q._id));
+ const solves={type:'object',additionalProperties:false,required:['analyses'],properties:{analyses:{type:'array',items:{type:'object',additionalProperties:false,required:['questionId','solve'],properties:{questionId:{type:'string'},solve:solveSchema}}}}};
+ const blind=await client.generate(prompts.solve+'\nInput is a batch. Analyze each question separately. Return one analysis per questionId.',{questions:needed.map(q=>({questionId:q._id,questionType:q.questionType,question:q[q.questionType].question,quesImages:q[q.questionType].quesImages}))},solves,'independent_solve_batch');
+ if(blind.analyses.length!==needed.length||new Set(blind.analyses.map(a=>a.questionId)).size!==needed.length||blind.analyses.some(a=>!needed.some(q=>q._id===a.questionId)))throw new Error('Independent solve batch has incorrect coverage');
+ const run={results:[],analyses:blind.analyses.map(a=>({...a,sourceVersion:version(needed.find(q=>q._id===a.questionId)),mode:'live'})),failures:[],traces:client.traces,mode:'live',batchSize};
+ for(let start=0;start<needed.length;start+=batchSize){
+  const batch=needed.slice(start,start+batchSize),group=reports.filter(r=>batch.some(q=>q._id===r.questionId));
+  const output=await client.generate(prompts.triage+'\nInput contains a batch of independent question cases. Return exactly one result per supplied report across all cases.',{taxonomy,cases:batch.map(q=>({question:q,reports:group.filter(r=>r.questionId===q._id).map(({studentId,...r})=>r),independent_solve:blind.analyses.find(a=>a.questionId===q._id).solve}))},triageSchema,'triage_batch');
+  if(output.results.length!==group.length||new Set(output.results.map(r=>r.reportId)).size!==group.length)throw new Error('Batch report coverage mismatch');
+  for(const r of output.results){const report=group.find(g=>g.reportId===r.reportId),q=batch.find(q=>q._id===r.questionId);if(!report||!q)throw new Error('Unexpected batch result identity');
+   try{validateResult(r,q,report);if(r.edit&&r.route==='auto_apply'&&!validatePatch(q,r.repair,r.edit).eligible)r.route='faculty_review';run.results.push(r)}
+   catch(e){run.failures.push({reportId:r.reportId,questionId:q._id,error:e.message,proposed:structuredClone(r)});const fallback={reportId:report.reportId,questionId:q._id,verdict:'not_actionable',repair:null,edit:null,route:'faculty_review',confidence:0,evidence:'Model proposal blocked by safety validation: '+e.message,student_reply:'Thanks for flagging this. A faculty member needs to check it before any change is made.'};run.results.push(fallback);}
+  }
+  run.results.sort((a,b)=>a.reportId.localeCompare(b.reportId));await onCheckpoint(run);console.log('Checkpoint: '+run.results.length+'/'+reports.length+' reports');
+ }
+ return run;
+}
 async function main(){
  const args=process.argv.slice(2),get=(name,fallback)=>{const i=args.indexOf(name);return i<0?fallback:args[i+1];};
  const mode=get('--mode','live');if(!['live','reviewed'].includes(mode))throw new Error('Mode must be live or reviewed');
  const questions=JSON.parse(await readFile(get('--questions','data/questions.json'),'utf8')),reports=JSON.parse(await readFile(get('--reports','data/reports.json'),'utf8'));
  const prompts={solve:await readFile('prompts/solve-v1.txt','utf8'),triage:await readFile('prompts/triage-v1.txt','utf8')};
  const reviewed=mode==='reviewed'?JSON.parse(await readFile('docs/development-reviewed.json','utf8')):[];
- const run=await runEngine({questions,reports,prompts,mode,reviewed,client:new ModelClient({model:get('--model',undefined)})});
+ const client=new ModelClient({model:get('--model',undefined)});
+ const run=mode==='live'?await runBatched({questions,reports,client,prompts,onCheckpoint:async r=>{await writeFile('docs/batch-checkpoint.json',JSON.stringify(r,null,2))}}):await runEngine({questions,reports,prompts,mode,reviewed,client});
  await mkdir('docs',{recursive:true});await writeFile(get('--out','results.json'),JSON.stringify(run.results,null,2)+'\n');
  await writeFile('docs/engine-run.json',JSON.stringify({...run,results:undefined,generatedAt:new Date().toISOString()},null,2));
  console.log(JSON.stringify({mode,results:run.results.length,failures:run.failures.length,calls:run.traces.filter(t=>!t.cache&&!t.error).length,cacheHits:run.traces.filter(t=>t.cache).length}));

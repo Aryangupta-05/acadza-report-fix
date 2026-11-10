@@ -76,16 +76,31 @@ export function validatePatch(q,repairKey,edit,{facultyAuthored=false}={}) {
  if(repairKey==='noise'&&(!before||after!==''||!(/^(?:space for rough work|rough work|question\s*\d+|q\.?\s*\d+|source\s*:.*)$/i.test(before))))throw new SafetyError('Noise removal is not an approved source label');
  if(repairKey==='exam_reference'&&!(after===''&&/^\(?\s*(?:JEE(?: Main| Advanced)?|NEET|AIPMT)\s+\d{4}\s*\)?$/i.test(before)))throw new SafetyError('Only exam reference label can be removed');
  if(repairKey==='answer_form'&&!(edit.field==='question'&&edit.replace.includes(edit.find)&&/^\s*(?:\(in (?:N|newtons|cm|m|seconds|s|volts|V)\)|in (?:N|newtons|cm|m|seconds|s|volts|V))[ .]*$/i.test(edit.replace.replace(edit.find,''))))throw new SafetyError('Answer form must only add an approved unit');
+ if(repairKey==='markup_leak') {
+   const frac=/^\\frac\{(\d+)\}\{(\d+)\}$/.exec(edit.find);
+   const expected=frac?`<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>${frac[1]}</mn><mn>${frac[2]}</mn></mfrac></math>`:null;
+   if(!expected||edit.replace!==expected)throw new SafetyError('Markup equivalence not proven by the deterministic fraction converter');
+ }
+ if(repairKey==='notation') {
+   if(tags(edit.find).length||tags(edit.replace).length)throw new SafetyError('Complex notation changes require faculty authorship');
+   const a=String(edit.find),b=String(edit.replace);let i=0;while(i<Math.min(a.length,b.length)&&a[i]===b[i])i++;
+   const longer=a.length>b.length?a:b,shorter=a.length>b.length?b:a;
+   if(Math.abs(a.length-b.length)!==1||!/[()\[\]{}^]/.test(longer[i]||'')||longer.slice(0,i)+longer.slice(i+1)!==shorter)throw new SafetyError('Notation patch is not a single lost bracket or exponent marker');
+ }
  if(repairKey==='option_repair') {
    const next=b.question.replace(edit.find,edit.replace),a=optionOffset(b.question),z=optionOffset(next);
    if(a<0||z<0||text(b.question).slice(0,a)!==text(next).slice(0,z))throw new SafetyError('Option repair changes stem');
    if(!/\([ABCD]\)/.test(before+after))throw new SafetyError('Option edit must include an option anchor');
  }
  if(repairKey==='stem_data') {
+   if(edit.field!=='question'||!edit.replace.includes(edit.find))throw new SafetyError('Stem-data guard accepts explicit additive missing data only');
+   const next=b.question.replace(edit.find,edit.replace),a=optionOffset(b.question),z=optionOffset(next);
+   if(a>=0&&(z<0||text(b.question).slice(a)!==text(next).slice(z)))throw new SafetyError('Stem-data patch changes options');
    const additions=after.replace(before,'').match(/\d+(?:\.\d+)?/g)||[];
    if(additions.length===0||!additions.every(n=>text(b.solution).includes(n)))throw new SafetyError('Missing stem value must be explicitly supported by stored solution');
  }
  if(repairKey==='solution_missing'&&b.solution.trim()!=='')throw new SafetyError('Missing solution operation requires truly empty solution');
+ if(repairKey==='solution_missing'&&!text(edit.replace).includes(Array.isArray(b.answer)?b.answer.join(', '):b.answer))throw new SafetyError('New solution does not state the keyed answer');
  }
  const lowRisk=['spelling','noise','exam_reference','markup_leak'];
  return {eligible:!facultyAuthored&&lowRisk.includes(repairKey),reasons:lowRisk.includes(repairKey)?[]:['Semantic repair requires faculty verification or executable proof']};
