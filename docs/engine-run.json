@@ -1,0 +1,1470 @@
+{
+  "analyses": [
+    {
+      "questionId": "68dea616d0cda73d07e93ae6",
+      "sourceVersion": "7ef01d3e87bd642e51d39651ba2d02261a6cf83ba1a715d5272394031c20dda9",
+      "solve": {
+        "summary": "A charge placed at the center of a face of a cube contributes half of its flux to the cube: \\(\\Phi_1 = \\frac{1}{2} \\frac{q/2}{\\varepsilon_0} = \\frac{q}{4\\varepsilon_0}\\). A charge placed at a corner of a cube contributes one-eighth of its flux to the cube: \\(\\Phi_2 = \\frac{1}{8} \\frac{2q}{\\varepsilon_0} = \\frac{q}{4\\varepsilon_0}\\). The total flux through the cube is \\(\\Phi = \\Phi_1 + \\Phi_2 = \\frac{q}{2\\varepsilon_0}\\). Comparing this with the given expression \\(\\frac{nq}{2\\varepsilon_0}\\), we find \\(n = 1\\).",
+        "answer": "1",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "mode": "live"
+    },
+    {
+      "questionId": "61dffbec08489156b684bd22",
+      "sourceVersion": "ffaba00923a9eb4c4c5bd2088e3f3c03af5b70cbbbe1c057607921f1b2878c7b",
+      "solve": {
+        "summary": "The lining of internal organs such as the small intestine is composed of epithelial tissue (specifically simple columnar epithelium) which helps in absorption and secretion.",
+        "answer": "(A)",
+        "uncertainty": "none",
+        "figureRequired": false
+      },
+      "mode": "live"
+    },
+    {
+      "questionId": "6208e80a9cb2ab67dac61bd0",
+      "sourceVersion": "226be73505f66d3f65e4814c279cefbf75a6d9c982bbbc51ef1f4d90925c1c6e",
+      "solve": {
+        "summary": "Herbs and shrubs growing under the shade of tall canopy trees (understory plants) receive light that has been filtered through the upper leaves. Since upper canopy leaves selectively absorb red and blue light for photosynthesis, the light reaching the lower strata is relatively enriched in green light, which is less efficiently used for photosynthesis, resulting in a lower rate of photosynthesis compared to sun plants.",
+        "answer": "(C)",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "mode": "live"
+    },
+    {
+      "questionId": "68dea7c2387eea3d0d95f9bb",
+      "sourceVersion": "ecf5123b89c47110b4d53156d42741997902edf89c722dc1060a279b41815b6f",
+      "solve": {
+        "summary": "The path difference introduced by placing slabs in front of the slits is given by $\\Delta x = (\\mu_1 - 1)t_1 - (\\mu_2 - 1)t_2$. Substituting $\\mu_1 = 1.5, t_1 = 2\\text{ mm}$ and $\\mu_2 = 1.4, t_2 = 1.5\\text{ mm}$, we get $\\Delta x = (1.5 - 1)(2) - (1.4 - 1)(1.5) = 1.0 - 0.6 = 0.4\\text{ mm}$. The shift of central maxima is $\\Delta y = \\frac{D}{d}\\Delta x = \\frac{1000\\text{ mm}}{5\\text{ mm}} \\times 0.4\\text{ mm} = 80\\text{ mm} = 8\\text{ cm}$.",
+        "answer": "8",
+        "uncertainty": "none",
+        "figureRequired": false
+      },
+      "mode": "live"
+    },
+    {
+      "questionId": "620e23cecc50543bc7db9186",
+      "sourceVersion": "18979fd83484d062d5c569bbd979cbec8b339f87212e0f5f82ec8e80b07b425d",
+      "solve": {
+        "summary": "To determine whether a character trait (such as a forked tongue) is ancestral (plesiomorphic) or derived (apomorphic) among a group of closely related species (ingroup), biologists use outgroup comparison. Examining a more distantly related species (outgroup) helps establish the ancestral character state.",
+        "answer": "Option B",
+        "uncertainty": "None",
+        "figureRequired": false
+      },
+      "mode": "live"
+    }
+  ],
+  "failures": [
+    {
+      "questionId": "68e8734442c06737d6e56da4",
+      "error": "Provider HTTP 503"
+    },
+    {
+      "questionId": "60f744b3f1b9bc7cc7b4a949",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "68e870ef42c06737d6e565c4",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "60f742f6660d187cc13a8078",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "695ee00b88d7701e561aabc5",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "622f08d7b70e4b50e4500a1b",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "63c7cce12981ed154ee92c94",
+      "error": "Provider HTTP 503"
+    },
+    {
+      "questionId": "68ecbacb2ec87a18deba1ad7",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "68f21df0941cda588bc0470b",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "63765a28f1d8416ae0408d89",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "6264197209f4fd65f58f5707",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "68dea577d0cda73d07e9391c",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "6956d7bb23cb221e570d6013",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "61ee6c9d90a1a968a168686b",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "6956d79788d7701e5617bc29",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "6263d75bdd44e265ef926d97",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "612151a6a34397610a9a2e58",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "68c801bc1b1dbc16dc93bf2b",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "617fa18efd53ff1629ed890f",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "6956d7e988d7701e5617bd3e",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "60ca4feb6420652745f55522",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "68f21caf941cda588bc04365",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "68e872546e45ba37dcc16bc0",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "6208e298fa399567e0878700",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "636283dbe3770c24f866e6d6",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "6062ec84518e9535e120c422",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "696a866665252c04fc1f81c2",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "66fe9dbe22132e5a70a3e579",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "622df25ab70e4b50e44ff837",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "68c9ae5afb6b2f16e2d43b1c",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "68c8153cfb6b2f16e2d3ceaf",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "68dea715387eea3d0d95f790",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "68dea619d0cda73d07e93aee",
+      "error": "Provider HTTP 429"
+    },
+    {
+      "questionId": "5fc60508028950133eac8963",
+      "error": "Provider HTTP 429"
+    }
+  ],
+  "traces": [
+    {
+      "phase": "independent_solve",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "cache": false,
+      "digest": "de0223e78bb97c28eb089d2ef6dd6e5833fa7e3a861ee7afa3921e7a1ccc20eb",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 6479,
+      "usage": {
+        "promptTokenCount": 448,
+        "candidatesTokenCount": 213,
+        "totalTokenCount": 1189,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 448
+          }
+        ],
+        "thoughtsTokenCount": 528,
+        "serviceTier": "standard"
+      },
+      "responseId": "XDXzaqvfF6jKz7sP1ZrziAo"
+    },
+    {
+      "phase": "triage",
+      "digest": "6343c52a21160ce12088ec22c143615abae4e521d1975ebc7bb8439d55a9e224",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": null,
+      "elapsedMs": 90022,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "phase": "triage",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "cache": false,
+      "digest": "6343c52a21160ce12088ec22c143615abae4e521d1975ebc7bb8439d55a9e224",
+      "attempt": 1,
+      "status": 200,
+      "elapsedMs": 10671,
+      "usage": {
+        "promptTokenCount": 2553,
+        "candidatesTokenCount": 300,
+        "totalTokenCount": 4381,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2553
+          }
+        ],
+        "thoughtsTokenCount": 1528,
+        "serviceTier": "standard"
+      },
+      "responseId": "vTXzapToF7S5694PooPWwAc"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "0a5c1c7dcf3cd6aaa0341801187f1e7f611b79394d9e6f1b9d6fcf84c4f4161b",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 503,
+      "elapsedMs": 2856,
+      "error": "Provider HTTP 503"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "0a5c1c7dcf3cd6aaa0341801187f1e7f611b79394d9e6f1b9d6fcf84c4f4161b",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 503,
+      "elapsedMs": 1511,
+      "error": "Provider HTTP 503"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "0a5c1c7dcf3cd6aaa0341801187f1e7f611b79394d9e6f1b9d6fcf84c4f4161b",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 503,
+      "elapsedMs": 4429,
+      "error": "Provider HTTP 503"
+    },
+    {
+      "phase": "independent_solve",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "cache": false,
+      "digest": "515ca85ae5165c59081530cad87e7debd69a574a3a095dca6d1e33d00936166f",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 3197,
+      "usage": {
+        "promptTokenCount": 365,
+        "candidatesTokenCount": 61,
+        "totalTokenCount": 515,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 365
+          }
+        ],
+        "thoughtsTokenCount": 89,
+        "serviceTier": "standard"
+      },
+      "responseId": "1DXzarnDAcTSz7sP8IS8mAg"
+    },
+    {
+      "phase": "triage",
+      "digest": "4e362923bb17dc3577cdb74c38d7175f3bcf5939fb4479a881e29a8fa71895ad",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 503,
+      "elapsedMs": 4435,
+      "error": "Provider HTTP 503"
+    },
+    {
+      "phase": "triage",
+      "digest": "4e362923bb17dc3577cdb74c38d7175f3bcf5939fb4479a881e29a8fa71895ad",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 503,
+      "elapsedMs": 5040,
+      "error": "Provider HTTP 503"
+    },
+    {
+      "phase": "triage",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "cache": false,
+      "digest": "4e362923bb17dc3577cdb74c38d7175f3bcf5939fb4479a881e29a8fa71895ad",
+      "attempt": 2,
+      "status": 200,
+      "elapsedMs": 4162,
+      "usage": {
+        "promptTokenCount": 1796,
+        "candidatesTokenCount": 209,
+        "totalTokenCount": 2622,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1796
+          }
+        ],
+        "thoughtsTokenCount": 617,
+        "serviceTier": "standard"
+      },
+      "responseId": "4zXzaqywIv3C694PgMnK4Qw"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "3f6d7319d470f9bdc5265b29b1d4bc3a56ff49ddbd895115024c99f78741ad04",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 503,
+      "elapsedMs": 1437,
+      "error": "Provider HTTP 503"
+    },
+    {
+      "phase": "independent_solve",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "cache": false,
+      "digest": "3f6d7319d470f9bdc5265b29b1d4bc3a56ff49ddbd895115024c99f78741ad04",
+      "attempt": 1,
+      "status": 200,
+      "elapsedMs": 4093,
+      "usage": {
+        "promptTokenCount": 420,
+        "candidatesTokenCount": 148,
+        "totalTokenCount": 1049,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 420
+          }
+        ],
+        "thoughtsTokenCount": 481,
+        "serviceTier": "standard"
+      },
+      "responseId": "6TXzavblPJ2i694Pvs6eqAc"
+    },
+    {
+      "phase": "triage",
+      "digest": "aa291e220f6c98faa7c5d3ecc90e33a4a848c9e475d9e18fc3fe770802197c4d",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 487,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "triage",
+      "digest": "aa291e220f6c98faa7c5d3ecc90e33a4a848c9e475d9e18fc3fe770802197c4d",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 503,
+      "elapsedMs": 5500,
+      "error": "Provider HTTP 503"
+    },
+    {
+      "phase": "triage",
+      "digest": "aa291e220f6c98faa7c5d3ecc90e33a4a848c9e475d9e18fc3fe770802197c4d",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 341,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "cdb23bc8e2d7c101682e42052f4a57d430930d5ff6c534942ad3c6810b2d56b8",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 431,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "cdb23bc8e2d7c101682e42052f4a57d430930d5ff6c534942ad3c6810b2d56b8",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 414,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "cdb23bc8e2d7c101682e42052f4a57d430930d5ff6c534942ad3c6810b2d56b8",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 406,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "cache": false,
+      "digest": "d7943a3c12d3f55fd1a1024396caf15908b2af545c909531c27735c7c1cfbc68",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 4483,
+      "usage": {
+        "promptTokenCount": 383,
+        "candidatesTokenCount": 146,
+        "totalTokenCount": 1170,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 383
+          }
+        ],
+        "thoughtsTokenCount": 641,
+        "serviceTier": "standard"
+      },
+      "responseId": "-zXzavP0J53ag8UPh72k8QI"
+    },
+    {
+      "phase": "triage",
+      "digest": "70c10ccaf54a9559bade092cd932f7c8b828a44047f7e1a638c380ebde15d170",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 393,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "triage",
+      "digest": "70c10ccaf54a9559bade092cd932f7c8b828a44047f7e1a638c380ebde15d170",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 425,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "triage",
+      "digest": "70c10ccaf54a9559bade092cd932f7c8b828a44047f7e1a638c380ebde15d170",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 335,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "9615c787b6c49d1ae27ab6574255d9954e87a5616801590fb60210ef35b216b0",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 393,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "9615c787b6c49d1ae27ab6574255d9954e87a5616801590fb60210ef35b216b0",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 388,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "9615c787b6c49d1ae27ab6574255d9954e87a5616801590fb60210ef35b216b0",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 398,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "a7c979d0db9add5f5a3830689c7418ac53fb203c4cdea45062548a42c0657726",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 355,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "a7c979d0db9add5f5a3830689c7418ac53fb203c4cdea45062548a42c0657726",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 391,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "a7c979d0db9add5f5a3830689c7418ac53fb203c4cdea45062548a42c0657726",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 335,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "bd4160f2eb666c3bc8a8b358fee376fdbeb93193b586669bf2df5e4d9f4918d3",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 520,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "bd4160f2eb666c3bc8a8b358fee376fdbeb93193b586669bf2df5e4d9f4918d3",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 336,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "cache": false,
+      "digest": "bd4160f2eb666c3bc8a8b358fee376fdbeb93193b586669bf2df5e4d9f4918d3",
+      "attempt": 2,
+      "status": 200,
+      "elapsedMs": 4199,
+      "usage": {
+        "promptTokenCount": 386,
+        "candidatesTokenCount": 107,
+        "totalTokenCount": 891,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 386
+          }
+        ],
+        "thoughtsTokenCount": 398,
+        "serviceTier": "standard"
+      },
+      "responseId": "EDbzaoyUIqTm694PjOeT8A4"
+    },
+    {
+      "phase": "triage",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "cache": false,
+      "digest": "5fb9d54cf254382ebc3420a57efdb3e5dbec88cd52fa752b1d2b8cff18fe0636",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 5729,
+      "usage": {
+        "promptTokenCount": 1932,
+        "candidatesTokenCount": 167,
+        "totalTokenCount": 2782,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1932
+          }
+        ],
+        "thoughtsTokenCount": 683,
+        "serviceTier": "standard"
+      },
+      "responseId": "FDbzapSAO87a3LUPx7W_gQ8"
+    },
+    {
+      "phase": "independent_solve",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "cache": false,
+      "digest": "b435f39ac49517ac50b4159d82b78ca08fe7ebadde2f7cd3b48b48f1accb31f4",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 5613,
+      "usage": {
+        "promptTokenCount": 259,
+        "candidatesTokenCount": 229,
+        "totalTokenCount": 1360,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 259
+          }
+        ],
+        "thoughtsTokenCount": 872,
+        "serviceTier": "standard"
+      },
+      "responseId": "GjbzasLWGvCLqfkPqeHwoQQ"
+    },
+    {
+      "phase": "triage",
+      "digest": "9f2f79ad74162b2feb8acd9db0e7265394a0ef7fbd0d5a9b79be134afc8d8b55",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 503,
+      "elapsedMs": 18971,
+      "error": "Provider HTTP 503"
+    },
+    {
+      "phase": "triage",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "cache": false,
+      "digest": "9f2f79ad74162b2feb8acd9db0e7265394a0ef7fbd0d5a9b79be134afc8d8b55",
+      "attempt": 1,
+      "status": 200,
+      "elapsedMs": 8411,
+      "usage": {
+        "promptTokenCount": 2568,
+        "candidatesTokenCount": 275,
+        "totalTokenCount": 3756,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2568
+          }
+        ],
+        "thoughtsTokenCount": 913,
+        "serviceTier": "standard"
+      },
+      "responseId": "NDbzaomME5TYg8UP-a7GgQ8"
+    },
+    {
+      "phase": "independent_solve",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "cache": false,
+      "digest": "575daa49b1adea8770fd685a132953fbd9cd3cd902130e58da60760f251b3b9a",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 4795,
+      "usage": {
+        "promptTokenCount": 458,
+        "candidatesTokenCount": 97,
+        "totalTokenCount": 997,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 458
+          }
+        ],
+        "thoughtsTokenCount": 442,
+        "serviceTier": "standard"
+      },
+      "responseId": "PDbzar7pK_rLz7sP7N-ogAI"
+    },
+    {
+      "phase": "triage",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "cache": false,
+      "digest": "4dcb230d445b2aa99f994902a1f84a232fda136db12ffd9b82094b0e54b5909f",
+      "attempt": 0,
+      "status": 200,
+      "elapsedMs": 8116,
+      "usage": {
+        "promptTokenCount": 1940,
+        "candidatesTokenCount": 183,
+        "totalTokenCount": 3019,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1940
+          }
+        ],
+        "thoughtsTokenCount": 896,
+        "serviceTier": "standard"
+      },
+      "responseId": "QTbzapm9KYCN694P8tb2-A4"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "aaa96b951563d445118f28f40f2ddc0551a712f16a5d4a6780f7c4616ec8a8fb",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 380,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "aaa96b951563d445118f28f40f2ddc0551a712f16a5d4a6780f7c4616ec8a8fb",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 346,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "aaa96b951563d445118f28f40f2ddc0551a712f16a5d4a6780f7c4616ec8a8fb",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 503,
+      "elapsedMs": 5425,
+      "error": "Provider HTTP 503"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "ec05cc8f5ab2903984be6e4a3103f7f533087b2faa08d4f0571f890354e2133b",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 414,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "ec05cc8f5ab2903984be6e4a3103f7f533087b2faa08d4f0571f890354e2133b",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 363,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "ec05cc8f5ab2903984be6e4a3103f7f533087b2faa08d4f0571f890354e2133b",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 340,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "239cbf01377ab0c61aa2e61b173b7d548c12d4dd99a0cce6ee6bc9c9cfc08c22",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 820,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "239cbf01377ab0c61aa2e61b173b7d548c12d4dd99a0cce6ee6bc9c9cfc08c22",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 503,
+      "elapsedMs": 2030,
+      "error": "Provider HTTP 503"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "239cbf01377ab0c61aa2e61b173b7d548c12d4dd99a0cce6ee6bc9c9cfc08c22",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 402,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "b0cbf888138255570c2118b6bd736799cfc8ac1d40bb68e9e714628cf0d068e1",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 395,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "b0cbf888138255570c2118b6bd736799cfc8ac1d40bb68e9e714628cf0d068e1",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 379,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "b0cbf888138255570c2118b6bd736799cfc8ac1d40bb68e9e714628cf0d068e1",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 466,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "e82e97777e2f9d8ea4ea5ddd5505175829cd5ba1bacb213aaf8584300cd6c25b",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 374,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "e82e97777e2f9d8ea4ea5ddd5505175829cd5ba1bacb213aaf8584300cd6c25b",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 467,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "e82e97777e2f9d8ea4ea5ddd5505175829cd5ba1bacb213aaf8584300cd6c25b",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 385,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "198582d4841e9974be79477a369cb82f0455cde4a0552a96493fe03cde3aeeb9",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 401,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "198582d4841e9974be79477a369cb82f0455cde4a0552a96493fe03cde3aeeb9",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 460,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "198582d4841e9974be79477a369cb82f0455cde4a0552a96493fe03cde3aeeb9",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 393,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "5b4e13e861d24da132d00c47bd33e2a9f22f884e21d9b2ac446fad7a10608b4f",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 394,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "5b4e13e861d24da132d00c47bd33e2a9f22f884e21d9b2ac446fad7a10608b4f",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 312,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "5b4e13e861d24da132d00c47bd33e2a9f22f884e21d9b2ac446fad7a10608b4f",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 522,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "43cb1309819e810611f5dea0741743e011b8b9b6cdb543451d6bd677c1f9db6c",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 377,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "43cb1309819e810611f5dea0741743e011b8b9b6cdb543451d6bd677c1f9db6c",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 403,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "43cb1309819e810611f5dea0741743e011b8b9b6cdb543451d6bd677c1f9db6c",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 346,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "6653237db54d34979ec2fdfbb2794127540a8658c13cb7cb47c6580cab255fa0",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 419,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "6653237db54d34979ec2fdfbb2794127540a8658c13cb7cb47c6580cab255fa0",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 420,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "6653237db54d34979ec2fdfbb2794127540a8658c13cb7cb47c6580cab255fa0",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 470,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "2ef602188a86d580c9b6127b6ef31d7928b310ae34cbd6ce088794746c9afed4",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 323,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "2ef602188a86d580c9b6127b6ef31d7928b310ae34cbd6ce088794746c9afed4",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 361,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "2ef602188a86d580c9b6127b6ef31d7928b310ae34cbd6ce088794746c9afed4",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 379,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "189c8a2fb218f3a7eb28dd139f8572d4a182599e9cda9813fc56f29ceaad54fb",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 328,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "189c8a2fb218f3a7eb28dd139f8572d4a182599e9cda9813fc56f29ceaad54fb",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 374,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "189c8a2fb218f3a7eb28dd139f8572d4a182599e9cda9813fc56f29ceaad54fb",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 576,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "d66b710c1be619637c0dc8b6f75eec1d7793589f2228c815c3d5172944ec4eff",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 319,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "d66b710c1be619637c0dc8b6f75eec1d7793589f2228c815c3d5172944ec4eff",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 391,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "d66b710c1be619637c0dc8b6f75eec1d7793589f2228c815c3d5172944ec4eff",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 484,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "21c0ce209274e061ddcdf92840167a6ffd16039ecdaa4ac854bf0ba436e7bdb7",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 508,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "21c0ce209274e061ddcdf92840167a6ffd16039ecdaa4ac854bf0ba436e7bdb7",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 467,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "21c0ce209274e061ddcdf92840167a6ffd16039ecdaa4ac854bf0ba436e7bdb7",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 406,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "99b0e63d51387f9042b602a1e01d90955e80929eb5cbcfcfa165809c4c3b1d2f",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 397,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "99b0e63d51387f9042b602a1e01d90955e80929eb5cbcfcfa165809c4c3b1d2f",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 348,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "99b0e63d51387f9042b602a1e01d90955e80929eb5cbcfcfa165809c4c3b1d2f",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 326,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "a4f3f06dcfbaf8f5a3b17d73aee558bbcbc84ef89b672ef8756d401e102156f8",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 321,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "a4f3f06dcfbaf8f5a3b17d73aee558bbcbc84ef89b672ef8756d401e102156f8",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 402,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "a4f3f06dcfbaf8f5a3b17d73aee558bbcbc84ef89b672ef8756d401e102156f8",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 372,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "f2c48454ff9c15f3f6d0e9caba6ab2d7aaf5d6383a98eca81219bcfb83fa0258",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 853,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "f2c48454ff9c15f3f6d0e9caba6ab2d7aaf5d6383a98eca81219bcfb83fa0258",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 374,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "f2c48454ff9c15f3f6d0e9caba6ab2d7aaf5d6383a98eca81219bcfb83fa0258",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 339,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "b31d084d9f91deecf5acccfa5bb63e681e9351f0c6273fb8e2b35c5fd73295d2",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 719,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "b31d084d9f91deecf5acccfa5bb63e681e9351f0c6273fb8e2b35c5fd73295d2",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 398,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "b31d084d9f91deecf5acccfa5bb63e681e9351f0c6273fb8e2b35c5fd73295d2",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 485,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "63a3e0c74761a2ab8ca828e76556718e0d4c5a2cd2c0a6ee684ec53c46dddd59",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 364,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "63a3e0c74761a2ab8ca828e76556718e0d4c5a2cd2c0a6ee684ec53c46dddd59",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 407,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "63a3e0c74761a2ab8ca828e76556718e0d4c5a2cd2c0a6ee684ec53c46dddd59",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 2763,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "92d9e98085645a4f2bb78236e77e007bcde9178b76084261bba4d3bd54ddf9f2",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 428,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "92d9e98085645a4f2bb78236e77e007bcde9178b76084261bba4d3bd54ddf9f2",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 590,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "92d9e98085645a4f2bb78236e77e007bcde9178b76084261bba4d3bd54ddf9f2",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 462,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "35a70bccb5b84585504b8c0aa0bb9500b14ecab3e3cbb0f123eb98109a7b15f4",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 946,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "35a70bccb5b84585504b8c0aa0bb9500b14ecab3e3cbb0f123eb98109a7b15f4",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 426,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "35a70bccb5b84585504b8c0aa0bb9500b14ecab3e3cbb0f123eb98109a7b15f4",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 493,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "f4496bc023e2651fd64dfdbe96adc0f469a21875aa2ae6704825cbc8c1a75dd5",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 572,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "f4496bc023e2651fd64dfdbe96adc0f469a21875aa2ae6704825cbc8c1a75dd5",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 372,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "f4496bc023e2651fd64dfdbe96adc0f469a21875aa2ae6704825cbc8c1a75dd5",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 441,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "a13ec643c3e6e13534b5129cb8e47d078534f950ef1e594b487e5c92c1f3eea6",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 300,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "a13ec643c3e6e13534b5129cb8e47d078534f950ef1e594b487e5c92c1f3eea6",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 319,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "a13ec643c3e6e13534b5129cb8e47d078534f950ef1e594b487e5c92c1f3eea6",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 486,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "1094f9c314deacf674e1196e657c8f2cf9ef39b13813ff6339e276a311c492ab",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 318,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "1094f9c314deacf674e1196e657c8f2cf9ef39b13813ff6339e276a311c492ab",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 315,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "1094f9c314deacf674e1196e657c8f2cf9ef39b13813ff6339e276a311c492ab",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 400,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "73ad67be3be25d5353dc3d762c1ece7c7eda504c9751643944bf1b492d581526",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 381,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "73ad67be3be25d5353dc3d762c1ece7c7eda504c9751643944bf1b492d581526",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 315,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "73ad67be3be25d5353dc3d762c1ece7c7eda504c9751643944bf1b492d581526",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 386,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "63ad44f34f20e7106155f96777eb1d1bff5423d1f8bb42a2dedfa1162aaf39b1",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 405,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "63ad44f34f20e7106155f96777eb1d1bff5423d1f8bb42a2dedfa1162aaf39b1",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 344,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "63ad44f34f20e7106155f96777eb1d1bff5423d1f8bb42a2dedfa1162aaf39b1",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 535,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "ef1370307d2ccfd83ab33387157dd32d203eee74043d95c2c154dfe119f989f3",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 489,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "ef1370307d2ccfd83ab33387157dd32d203eee74043d95c2c154dfe119f989f3",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 426,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "ef1370307d2ccfd83ab33387157dd32d203eee74043d95c2c154dfe119f989f3",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 350,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "3d541e1b4be6570fd240438cd6ef8036f0bf289cca4503d39920ce92d6f12507",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 423,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "3d541e1b4be6570fd240438cd6ef8036f0bf289cca4503d39920ce92d6f12507",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 428,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "3d541e1b4be6570fd240438cd6ef8036f0bf289cca4503d39920ce92d6f12507",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 430,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "ce8878766a32d2b207df3845ed1f895b90f47585af201b908edae28c8669ea3c",
+      "model": "gemini-3.6-flash",
+      "attempt": 0,
+      "status": 429,
+      "elapsedMs": 411,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "ce8878766a32d2b207df3845ed1f895b90f47585af201b908edae28c8669ea3c",
+      "model": "gemini-3.6-flash",
+      "attempt": 1,
+      "status": 429,
+      "elapsedMs": 474,
+      "error": "Provider HTTP 429"
+    },
+    {
+      "phase": "independent_solve",
+      "digest": "ce8878766a32d2b207df3845ed1f895b90f47585af201b908edae28c8669ea3c",
+      "model": "gemini-3.6-flash",
+      "attempt": 2,
+      "status": 429,
+      "elapsedMs": 511,
+      "error": "Provider HTTP 429"
+    }
+  ],
+  "mode": "live",
+  "generatedAt": "2026-11-10T15:22:51.480Z"
+}
