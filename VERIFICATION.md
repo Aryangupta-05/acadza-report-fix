@@ -6,7 +6,7 @@ Checked on 10 November 2026. Status words distinguish implementation from actual
 
 | Check | Actual result | Evidence |
 |---|---|---|
-|Input inventory|PASS:43 questions,44 reports,39 reported-question groups|data-inventory.json; all records inspected|
+|Input inventory|PASS:43 questions, 44 reports, 39 reported-question groups|data-inventory.json; all records inspected|
 |Original bytes|PASS: copied inputs match original SHA-256 hashes|docs/input-hashes.json; npm run check|
 |Result coverage|PASS:44 unique input report IDs, correct question references|docs/results-check.json|
 |Taxonomy/schema/scopes|PASS for all 44 development-reviewed results|npm run check; Ajv and deterministic patch checks|
@@ -29,11 +29,11 @@ No lint/type system is configured for this plain-JavaScript project. Whole-sourc
 URL: https://acadza-report-fix-qeyq.onrender.com
 
 - Public page and evaluation session loaded without Aryan’s login. Queue showed 39 questions /44 reports and the development-reviewed provenance banner.
-- LCR R 001–R 003: inspected source C, proposed A, evidence and before/after; approved with reason. UI displayed saved A, revision 1, demo actor, timestamp and audit. After refresh, the same saved correction and audit remained.
-- R 034: inspected the both-false/no-valid-option reasoning, then approved the faculty recommendation. The server recorded reviewed status with no content patch.
-- R 044: independently compared22 V and8 V, confirmed14 V with no content edit; an audit was saved.
-- R 022: rejected a spelling proposal in the isolated demo workspace; rejection reason and actor appeared in audit, preserving the source.
-- R 024: edited the proposed answer-form label from “in N” to “in newtons”, saved, and observed faculty_edited_ai_proposal provenance.
+- LCR R001–R003: inspected source C, proposed A, evidence and before/after; approved with reason. UI displayed saved A, revision 1, demo actor, timestamp and audit. After refresh, the same saved correction and audit remained.
+- R034: inspected the both-false/no-valid-option reasoning, then approved the faculty recommendation. The server recorded reviewed status with no content patch.
+- R044: independently compared 22 V and 8 V, confirmed 14 V with no content edit; an audit was saved.
+- R022: rejected a spelling proposal in the isolated demo workspace; rejection reason and actor appeared in audit, preserving the source.
+- R024: edited the proposed answer-form label from “in N” to “in newtons”, saved, and observed faculty_edited_ai_proposal provenance.
 - After a code redeploy and a documented cold start, the LCR correction and audit still appeared. This verifies hosted persistence across a service restart/redeploy, not merely browser state.
 - Browser console errors/warnings queried after the initial deployed action: empty. Later browser tooling target/detachment/timeouts were automation failures, not reported application console errors.
 - At 390×844, opened the long X-ray/de-Broglie solution. DOM measurement: viewport 390, document width 375 including scrollbar treatment,11 MathML elements in the selected detail; no horizontal page overflow. The native fractions/exponents rendered in the saved screenshot. Temporary viewport override reset.
@@ -41,7 +41,7 @@ URL: https://acadza-report-fix-qeyq.onrender.com
 
 ## Hosted service
 
-Render service srv-dbpjjhei0phs73acm 320; PostgreSQL dpg-dbpjirei0phs73ackec 0-a; Blueprint exs-dbpjhuh42hec73cqrc6g. The reviewed free web+Postgres plan was explicitly approved. The first deployment failed because production install omitted esbuild; npm ci --include=dev corrected it. Subsequent deployments reached live. A direct public GET /health returned 200 and {"ok":true,"store":"postgres","mode":"reviewed"}. A direct read-only SQL inspection was attempted but blocked because external database access is disabled. The exact result is saved in docs/hosted-audit-verification.json; the allowlist was not weakened. Hosted persistence evidence comes from the actual browser flow.
+Render service srv-dbpjjhei0phs73acm320; PostgreSQL dpg-dbpjirei0phs73ackec0-a; Blueprint exs-dbpjhuh42hec73cqrc6g. The reviewed free web+Postgres plan was explicitly approved. The first deployment failed because production install omitted esbuild; npm ci --include=dev corrected it. Subsequent deployments reached live. A direct public GET /health returned 200 and {"ok":true,"store":"postgres","mode":"reviewed"}. A direct read-only SQL inspection was attempted but blocked because external database access is disabled. The exact result is saved in docs/hosted-audit-verification.json; the allowlist was not weakened. Hosted persistence evidence comes from the actual browser flow.
 
 The free database has a 30-day lifetime; web service sleeps on idle. Configuration is intended to cover seven days after the 11 November deadline, but uninterrupted future uptime cannot be verified or promised. No model key is deployed. Public review workspaces are durable and isolated, not shared global content edits or institute-grade identity.
 

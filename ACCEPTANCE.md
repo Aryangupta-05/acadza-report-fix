@@ -1,6 +1,6 @@
 # Final acceptance — not fully complete
 
-Deadline: **11 November 2026,11:59 PM IST**. No submission email was sent.
+Deadline: **11 November 2026, 11:59 PM IST**. No submission email was sent.
 
 | Requirement | Artifact or URL | Verification performed | Status | Remaining action |
 |---|---|---|---|---|

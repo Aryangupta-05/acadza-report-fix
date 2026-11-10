@@ -58,15 +58,15 @@ The deployment is intended to remain available through at least **18 November 20
 
 ## Results and verification
 
-Source:43 questions,44 reports,39 reported-question groups. Committed results:44 unique report IDs,27 defect reports,19 proposed patches,4 automatic-eligible routes,23 faculty-review routes and 17 no-change routes. Source byte hashes are recorded in `docs/input-hashes.json`; `npm run check` compares them, validates every result and rejects repeat patch application. See `VERIFICATION.md` for actual test/browser/deployment evidence and limits. Evaluator ground-truth labels are unavailable; no accuracy percentage is claimed. Confidence values are subjective judgments, not calibrated probabilities.
+Source: 43 questions, 44 reports, 39 reported-question groups. Committed results: 44 unique report IDs, 27 defect reports, 19 proposed patches, 4 automatic-eligible routes, 23 faculty-review routes and 17 no-change routes. Source byte hashes are recorded in `docs/input-hashes.json`; `npm run check` compares them, validates every result and rejects repeat patch application. See `VERIFICATION.md` for actual test/browser/deployment evidence and limits. Evaluator ground-truth labels are unavailable; no accuracy percentage is claimed. Confidence values are subjective judgments, not calibrated probabilities.
 
 See `PROMPTS.md`, `PRODUCT.md`, `BONUS.md`, `REQUIREMENTS.md`, `PROGRESS.md`, `DEMO_SCRIPT.md`, `SUBMISSION_EMAIL.md` and `WALKTHROUGH.md`. Submission answers are in the draft email. Do not send it without Aryan’s final instruction.
 
 ## Submission answers for review
 
 - Remote Monday–Saturday: yes (confirmed by Aryan).
-- Commitment:6 months (confirmed).
-- Earliest start:21 November 2026 (confirmed).
+- Commitment: 6 months (confirmed).
+- Earliest start: 21 November 2026 (confirmed).
 - Motivation draft: I want to build AI that makes a real student workflow more reliable, with clear evidence and careful safeguards. This work interests me because the useful outcome is a correction people can trust, and I want to develop that product judgment alongside my engineering skills. Aryan should review this AI-assisted wording before submission.
 
 **Video remains blocked.** The demo script and 180-second synthetic narration are prepared, but no verified screen recording or hosted video link exists.

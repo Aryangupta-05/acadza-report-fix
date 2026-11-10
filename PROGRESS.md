@@ -57,3 +57,5 @@ Finish browser edited-patch and narrow-screen checks, verify current deployment 
 3. Inspect the actual MP4 duration, audio and representative frames, upload through an approved public/video destination, update the submission draft, acceptance and progress, commit/push, and verify the URL. Audio alone does not satisfy video.
 4. Full live inference can be retried once normal free quota is available using the bounded batched runner, preserving the reviewed file and actual provenance. Do not loop constantly, rotate accounts, enable billing or fabricate successful model output.
 5. Review final four personal answers with Aryan and send email only on explicit instruction.
+
+Final narration verification: FFmpeg decoded the MP3 successfully to exactly00:03:00.00. This is audio only, not the missing screen recording.
