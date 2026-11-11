@@ -1,8 +1,12 @@
-# Latest change — user-recorded narration verified locally
+# Latest verified release — Aryan’s own voice synchronized
 
-Aryan supplied six recordings and explicitly confirmed their order. All six were transcribed locally for section/cue corroboration; no audio sent to an external speech-recognition service. The current local video uses only his recordings, natural speech speed, balanced levels/peak limiting and edge fades. Screen segments are retimed to the words;180seconds total. Candidate full-decode, loudness/peak, per-section decoded-audio similarity and encoded-frame checks passed. No listening check is claimed because the tool cannot accept audio input. See docs/voice-video-verification.json and video-provenance.json.
+All six user recordings are synchronized in the order Aryan confirmed. Speech remains at its original speed. Section boundaries:0,21,63,100,125,161,180seconds. Levels/peaks and short edge fades are adjusted; screen transitions follow locally corroborated word cues. Original recordings and local model/transcripts remain private and unchanged. The current MP4 is180seconds,1280×720,H.264/AAC,4500decoded frames,4888377bytes, SHA256ff1c3aacc687f040428c39eb4de29b2e7da943b4e84cd1ce50fdda57950a62d7. All six decoded sections correlate above0.99997 with the processed recordings; integrated loudness−16.53LUFS, true peak−2.45dBTP. All six encoded cue frames inspected. Tool audio listening is unsupported; no listening check is claimed.
 
-Next: run applicable code/build/result checks; publish the authorized video/disclosure updates; verify matching live deployment, cache-busted player,200/206/HEAD and public/local SHA; regenerate final sourceZIP with core.autocrlf=false. Keep raw recordings/model cache/transcripts private. Do not send the submission email.
+Video code commitf7934d0958bac58908cec6931ef1dc26321f7a80 deployed live in Render dep-dbq1hnff3r2c73b517ag. Public player/media200,HEAD200,range206 and complete public/local SHA match verified; PostgreSQL health and39/44 reviewed queue checked. See docs/video-public-verification.json and voice-video-verification.json. Cache-busted URL: https://acadza-report-fix-qeyq.onrender.com/demo?v=voice-ff1c3aacc687
+
+All31 tests, build and44-result/source checks pass. Initial Git push transport reset; remote was checked and a sequential HTTP/1.1 retry succeeded. No duplicate run, new resource or paid API was used. The final evidence-only commit records this state; sourceZIP is regenerated from the finalHEAD with core.autocrlf=false.
+
+Next for Aryan: play the final video, review personal submission wording and WALKTHROUGH.md, then decide whether to submit by11November2026 at23:59IST. No submission email has been sent. If further edits are requested, inspect this checkpoint and current files/deployment first; keep voice originals private and do not replace reviewed results with unchecked inference.
 
 ---
 

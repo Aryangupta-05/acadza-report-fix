@@ -1,17 +1,30 @@
 {
-  "checkedAt": "2026-11-10T18:22:47.188Z",
-  "playerURL": "https://acadza-report-fix-qeyq.onrender.com/demo",
+  "checkedAt": "2026-11-11T07:29:01.419Z",
+  "playerURL": "https://acadza-report-fix-qeyq.onrender.com/demo?v=voice-ff1c3aacc687",
   "playerStatus": 200,
-  "videoElement": true,
-  "videoURL": "https://acadza-report-fix-qeyq.onrender.com/demo.mp4",
+  "userRecordedVoiceDisclosure": true,
+  "cacheBustedMediaVersion": "voice-ff1c3aacc687",
+  "videoURL": "https://acadza-report-fix-qeyq.onrender.com/demo.mp4?v=voice-ff1c3aacc687",
   "videoStatus": 200,
   "mime": "video/mp4",
   "headStatus": 200,
-  "contentLength": "3656701",
+  "contentLength": 4888377,
   "rangeStatus": 206,
-  "contentRange": "bytes 0-1023/3656701",
+  "contentRange": "bytes 0-1023/4888377",
   "rangeBytes": 1024,
-  "publicSHA256": "57ed085d21b4a1243a4be745364552426d900679d4d3fdc278cdbf608e70e04c",
-  "localSHA256": "57ed085d21b4a1243a4be745364552426d900679d4d3fdc278cdbf608e70e04c",
-  "identicalPublicFile": true
+  "publicSHA256": "ff1c3aacc687f040428c39eb4de29b2e7da943b4e84cd1ce50fdda57950a62d7",
+  "localSHA256": "ff1c3aacc687f040428c39eb4de29b2e7da943b4e84cd1ce50fdda57950a62d7",
+  "identicalPublicFile": true,
+  "health": {
+    "ok": true,
+    "store": "postgres",
+    "mode": "reviewed"
+  },
+  "queue": {
+    "groups": 39,
+    "reports": 44,
+    "mode": "reviewed",
+    "failures": 0
+  },
+  "verificationBoundary": "HTTP/media identity and API queue checks; local full decode, section correlation and encoded-frame inspection are in voice-video-verification.json. No browser playback or audio listening claim."
 }
