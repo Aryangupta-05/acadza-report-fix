@@ -1,3 +1,11 @@
+# Latest change — user-recorded narration verified locally
+
+Aryan supplied six recordings and explicitly confirmed their order. All six were transcribed locally for section/cue corroboration; no audio sent to an external speech-recognition service. The current local video uses only his recordings, natural speech speed, balanced levels/peak limiting and edge fades. Screen segments are retimed to the words;180seconds total. Candidate full-decode, loudness/peak, per-section decoded-audio similarity and encoded-frame checks passed. No listening check is claimed because the tool cannot accept audio input. See docs/voice-video-verification.json and video-provenance.json.
+
+Next: run applicable code/build/result checks; publish the authorized video/disclosure updates; verify matching live deployment, cache-busted player,200/206/HEAD and public/local SHA; regenerate final sourceZIP with core.autocrlf=false. Keep raw recordings/model cache/transcripts private. Do not send the submission email.
+
+---
+
 # Current project checkpoint —11 November2026
 
 All required deliverable files and public links are present. No submission email was sent. Public console/results use explicitly development-reviewed snapshots; raw runtime output is preserved separately and is not claimed correct.
@@ -15,7 +23,7 @@ All required deliverable files and public links are present. No submission email
 -31 tests pass;44-result/source/schema/idempotency checks, frontend build and18 numeric checks pass. Secret scan passed74 publication files. Custom-output CLI smoke produced44 identical reviewed results plus separate metadata, preserving release provenance.
 - Actual browser verification previously covered native MathML, before/after, approval/edit/reject/manual-review, durable audit after refresh/redeploy,390px layout and empty initial console errors. docs/console-preview.png and deployed-mobile.png are actual screenshots.
 - Final deployed API checks passed: health postgres/reviewed;39/44 queue; gas A→D approval; idempotent replay; stale409; rejection; edited-unit provenance; first faculty patch with no AI patch requires confirmation and persists faculty_authored; fresh CSRF session retains correction/audit while source staysA. See docs/final-live-verification.json. Mutations were isolated synthetic demo tests, not shared institute content.
-- Video is180 seconds,1280×720,H.264/AAC,4500 decoded frames,3656701 bytes. Public200/HEAD/206 and local/public SHA256 match57ed085d21b4a1243a4be745364552426d900679d4d3fdc278cdbf608e70e04c. It is edited/retimed from95 seconds of actual browser capture, with synthetic Microsoft Zira narration; provenance and final script are disclosed. No mockup or uninterrupted180-second realtime claim.
+- Video is180 seconds,1280×720,H.264/AAC,4500 decoded frames. Current narration uses six real user recordings, replacing the historical synthetic version; current bytes/hash and QC are in docs/video-provenance.json and voice-video-verification.json. It is edited/retimed from95 seconds of actual browser capture. No mockup or uninterrupted180-second realtime claim.
 - README, PROMPTS, PRODUCT, REQUIREMENTS, ACCEPTANCE, VERIFICATION, DEMO_SCRIPT, BONUS, WALKTHROUGH and SUBMISSION_EMAIL are complete. Submission draft includes repo/live/video and confirmed Mon–Sat,6months,21November2026 answers. Motivation is AI-assisted draft wording for Aryan to review.
 
 ## Limits and user actions

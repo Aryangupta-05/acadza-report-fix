@@ -22,6 +22,6 @@ The console clearly labels its development-reviewed snapshots. Actual Gemini orc
 Thanks,
 Aryan Gupta
 
-The video is edited from actual browser capture and uses synthetic narration.
+The video is edited from actual browser capture and uses my own recorded narration.
 
 Before sending: verify the current public URLs and review the personal wording and ensure the acceptance table accurately describes remaining limits. Do not change code or outputs after any final submission without recording that fact.

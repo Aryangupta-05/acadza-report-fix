@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-11-11T07:17:09.575013+00:00",
+  "durationSeconds": 180,
+  "decodedVideoFrames": 4500,
+  "resolution": "1280x720",
+  "codec": "H.264/AAC",
+  "audioSampleRate": 48000,
+  "speechPlaybackRate": 1.0,
+  "allSixSectionsMatchProcessedUserRecordings": [
+    {
+      "section": 1,
+      "decodedAudioSimilarityToProcessedUserRecording": 0.9999701299036344
+    },
+    {
+      "section": 2,
+      "decodedAudioSimilarityToProcessedUserRecording": 0.999983284798323
+    },
+    {
+      "section": 3,
+      "decodedAudioSimilarityToProcessedUserRecording": 0.9999835332066657
+    },
+    {
+      "section": 4,
+      "decodedAudioSimilarityToProcessedUserRecording": 0.999974795167359
+    },
+    {
+      "section": 5,
+      "decodedAudioSimilarityToProcessedUserRecording": 0.9999803177460879
+    },
+    {
+      "section": 6,
+      "decodedAudioSimilarityToProcessedUserRecording": 0.9999878736655864
+    }
+  ],
+  "integratedLoudnessLUFS": -16.53,
+  "truePeakDbTP": -2.45,
+  "loudnessRangeLU": 4.3,
+  "longestDetectedPauseSeconds": 3.875297,
+  "fullDecodePassed": true,
+  "sourceOrderConfirmedByUser": true,
+  "alignmentVerification": "Local approximate ASR word timestamps plus inspected encoded frames; audio listening is unavailable to this tool.",
+  "bytes": 4888377,
+  "sha256": "ff1c3aacc687f040428c39eb4de29b2e7da943b4e84cd1ce50fdda57950a62d7"
+}

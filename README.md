@@ -71,6 +71,6 @@ See `PROMPTS.md`, `PRODUCT.md`, `BONUS.md`, `REQUIREMENTS.md`, `PROGRESS.md`, `D
 - Earliest start: 21 November 2026 (confirmed).
 - Motivation draft: I want to build AI that makes a real student workflow more reliable, with clear evidence and careful safeguards. This work interests me because the useful outcome is a correction people can trust, and I want to develop that product judgment alongside my engineering skills. Aryan should review this AI-assisted wording before submission.
 
-**Video available:** [watch the walkthrough](https://acadza-report-fix-qeyq.onrender.com/demo). The180-second MP4 is edited and retimed from95 seconds of actual browser capture, with synthetic narration; see DEMO_SCRIPT.md and docs/video-provenance.json.
+**Video available:** [watch the walkthrough](https://acadza-report-fix-qeyq.onrender.com/demo). The180-second MP4 is edited and retimed from95 seconds of actual browser capture, with Aryan’s own recorded narration at natural speech speed; see DEMO_SCRIPT.md, docs/video-provenance.json and docs/voice-video-verification.json.
 
 Latest full execution: docs/lite-v3-run.json records 20 successful calls and eight safety-blocked proposals. The released 44-result file remains explicitly development-reviewed after substantive review.

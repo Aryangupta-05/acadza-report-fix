@@ -16,11 +16,11 @@ Deadline: **11 November 2026, 11:59 PM IST**. No submission email was sent.
 |Direct SQL inspection|docs/hosted-audit-verification.json|MCP query could not reach database with external allowlist empty|NOT VERIFIED|Not required for app use; preserve private database networking|
 |Public repository|https://github.com/Aryangupta-05/acadza-report-fix|Repo visibility and pushes verified; secret excluded|PASS|None|
 |Free public deployment with durable store|render.yaml; public /health|Render live deploy, health 200/store postgres/mode reviewed, browser mutation and persistence|PASS|Seven-day intention documented; future uninterrupted uptime cannot be verified|
-|AI-use disclosure|PROMPTS.md; INITIAL_PROMPT.txt; prompts/|Verbatim user/product prompts, schemas, real runtime traces, actual coding failures/corrections, reviewed mode and synthetic voice disclosed|PASS|Aryan should understand the AI-assisted work before submission|
+|AI-use disclosure|PROMPTS.md; INITIAL_PROMPT.txt; prompts/|Verbatim user/product prompts, schemas, real runtime traces, actual coding failures/corrections, reviewed mode and current user-recorded voice disclosed|PASS|Aryan should understand the AI-assisted work before submission|
 |Product thinking|PRODUCT.md|Four requested questions answered in a concise one-page-sized Markdown document|PASS|None|
 |Checks|VERIFICATION.md; tests/|31 tests pass; full result/source checks and build pass;18 arithmetic checks pass|PASS|OpenAI alternative and full live inference not claimed tested|
 |Unreported defects bonus|BONUS.md|All 43 questions inspected, extra spelling/notation/ambiguity findings separate|PASS|Findings are assistant-reviewed, not faculty-confirmed labels|
-|Three-minute screen walkthrough|https://acadza-report-fix-qeyq.onrender.com/demo; public/demo.mp4|180-second MP4 decodes; representative encoded frames inspected; actual95-second browser capture edited/retimed with synthetic narration|PASS|Public200/206/HEAD and identical-file SHA-256 verified|
+|Three-minute screen walkthrough|https://acadza-report-fix-qeyq.onrender.com/demo; public/demo.mp4|180-second MP4 decodes; representative encoded frames inspected; actual95-second browser capture edited/retimed to six user-recorded clips; natural speech speed|PASS|Public200/206/HEAD and identical-file SHA-256 verified|
 |Submission materials|SUBMISSION_EMAIL.md|Repo, live and video links plus confirmed availability answers; draft only|PASS|Aryan review motivation wording; send only after explicit instruction|
 |Resume checkpoint|PROGRESS.md; Git commits|Saved exact state, IDs, limitations and next actions|PASS|Resume this existing session; no automatic restart timer was created|
 

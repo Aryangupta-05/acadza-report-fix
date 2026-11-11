@@ -405,3 +405,19 @@ A separate audit review caught that first faculty-authored patches in categories
 Alternate CLI result paths now receive matching <out>.run.json metadata (or explicit --run-out), preventing an experimental --out run from overwriting release provenance. A reviewed-mode custom-output smoke produced44 identical results and preserved the reviewed release metadata.
 
 The final ZIP audit caught an archive-hash mismatch: git archive honored core.autocrlf=true and emitted CRLF although the Git blob and local results both used LF, with identical parsed JSON. Labeled the review hash as Git blob bytes and regenerated with git -c core.autocrlf=false archive. Rechecked the actual ZIP bytes against the published hash. This was a packaging error, not a changed triage decision.
+
+## User-recorded voice revision
+
+Subsequent user instructions, verbatim:
+
+> okayy and in 3 minute video i need my voice can you do it
+
+> sync them okyy carefully
+
+> Yes, that is the order
+
+Aryan supplied six real M4A recordings, confirming their base-file then2–6 order. The earlier synthetic version was replaced by those recordings, not voice cloning or generated speech. Approximate local Whisper tiny.en transcripts confirmed section identity and word timings; no audio was sent to an external transcription API. Raw recordings and imperfect automatic transcripts remain private. The recording script is labeled a script, not an exact transcript.
+
+The editor retained natural speech speed, trimmed only short recording-edge silence, balanced levels, limited peaks and added brief edge fades. Actual browser frames were retimed to the speech cues and reading pauses, keeping the final video exactly180seconds. The public player uses a versioned media URL to avoid stale synthetic audio in browser caches.
+
+Genuine editing failures were caught before publication: transcription dependency downloads failed or arrived truncated, so the existing local Transformers runtime was used instead; an English-only model rejected redundant language/task flags; normalization overshoot required a peak limiter; the initial encode inherited full-range/non-square pixel metadata, corrected to limited-range yuv420p with square pixels; audio timestamp offsets caused cumulative short sections, fixed with explicit sample-count padding/trimming and reset timestamps. Full decode and technical audio/encoded-frame checks validate the replacement. Audio listening is unsupported by the tool, so no listening check is claimed.

@@ -4,8 +4,10 @@
   "sourceFrameCount": 1288,
   "width": 1280,
   "height": 720,
-  "editing": "Active browser segments joined and retimed for narration; not an uninterrupted180-second real-time capture",
-  "voice": "Offline Microsoft Zira synthetic voice, not Aryan",
+  "editing": "Actual browser segments retimed to user narration; not an uninterrupted180-second real-time capture",
+  "voice": "Six real user-recorded narration clips supplied by Aryan Gupta; no synthesis or voice cloning",
+  "voiceOrderConfirmedByUser": true,
+  "speechPlaybackRate": 1.0,
   "captureSource": "Public deployed console, in-app browser",
   "sourceSegments": [
     {
@@ -86,18 +88,42 @@
       "sourceStart": 0,
       "sourceEnd": 20,
       "videoStart": 0,
-      "videoEnd": 20
+      "videoEnd": 21
     },
     {
       "sourceStart": 20,
+      "sourceEnd": 30,
+      "videoStart": 21,
+      "videoEnd": 51.6
+    },
+    {
+      "sourceStart": 30,
+      "sourceEnd": 40,
+      "videoStart": 51.6,
+      "videoEnd": 55
+    },
+    {
+      "sourceStart": 40,
       "sourceEnd": 45,
-      "videoStart": 20,
-      "videoEnd": 60
+      "videoStart": 55,
+      "videoEnd": 63
     },
     {
       "sourceStart": 45,
+      "sourceEnd": 55,
+      "videoStart": 63,
+      "videoEnd": 68.3
+    },
+    {
+      "sourceStart": 55,
+      "sourceEnd": 65,
+      "videoStart": 68.3,
+      "videoEnd": 82.2
+    },
+    {
+      "sourceStart": 65,
       "sourceEnd": 70,
-      "videoStart": 60,
+      "videoStart": 82.2,
       "videoEnd": 100
     },
     {
@@ -108,16 +134,209 @@
     },
     {
       "sourceStart": 80,
-      "sourceEnd": 90,
+      "sourceEnd": 85,
       "videoStart": 125,
-      "videoEnd": 160
+      "videoEnd": 140
+    },
+    {
+      "sourceStart": 85,
+      "sourceEnd": 90,
+      "videoStart": 140,
+      "videoEnd": 161
     },
     {
       "sourceStart": 90,
       "sourceEnd": 95,
-      "videoStart": 160,
+      "videoStart": 161,
       "videoEnd": 180
     }
   ],
-  "fileBytes": 3656701
+  "audioSections": [
+    {
+      "section": 1,
+      "sourceLabel": "user-recording-1",
+      "sourceSHA256": "aa8c942dbb8c8ec481e08d6c62a174e54bf95c3c87218ac84bda17166722cc2d",
+      "sourceDurationSeconds": 19.968,
+      "trimStartSeconds": 0.614708,
+      "trimEndSeconds": 19.706979,
+      "retainedRecordingSeconds": 19.092271,
+      "videoStart": 0,
+      "videoEnd": 21,
+      "audioOffsetSeconds": 0.2,
+      "playbackRate": 1.0,
+      "processing": "70Hz high-pass, two-pass loudness normalization, peak limiter, short edge fades; natural speech speed retained",
+      "normalizationMeasurement": {
+        "input_i": "-22.60",
+        "input_tp": "-6.98",
+        "input_lra": "4.00",
+        "input_thresh": "-33.06",
+        "output_i": "-16.66",
+        "output_tp": "-1.50",
+        "output_lra": "2.00",
+        "output_thresh": "-27.07",
+        "normalization_type": "dynamic",
+        "target_offset": "0.66"
+      }
+    },
+    {
+      "section": 2,
+      "sourceLabel": "user-recording-2",
+      "sourceSHA256": "3ea6922827e53469c23a2e360be128a0461ff0de1de5fcf4aefe37f7062f928e",
+      "sourceDurationSeconds": 39.2533125,
+      "trimStartSeconds": 0.43012500000000004,
+      "trimEndSeconds": 39.026687,
+      "retainedRecordingSeconds": 38.596562000000006,
+      "videoStart": 21,
+      "videoEnd": 63,
+      "audioOffsetSeconds": 0.2,
+      "playbackRate": 1.0,
+      "processing": "70Hz high-pass, two-pass loudness normalization, peak limiter, short edge fades; natural speech speed retained",
+      "normalizationMeasurement": {
+        "input_i": "-18.75",
+        "input_tp": "-2.28",
+        "input_lra": "3.30",
+        "input_thresh": "-29.35",
+        "output_i": "-15.54",
+        "output_tp": "-1.50",
+        "output_lra": "2.50",
+        "output_thresh": "-26.14",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.46"
+      }
+    },
+    {
+      "section": 3,
+      "sourceLabel": "user-recording-3",
+      "sourceSHA256": "b1346c274230b74d930134606c08bdf07e9acf5b1992f6171965a7de978141fe",
+      "sourceDurationSeconds": 34.2186875,
+      "trimStartSeconds": 0.15760400000000002,
+      "trimEndSeconds": 34.125417000000006,
+      "retainedRecordingSeconds": 33.96781300000001,
+      "videoStart": 63,
+      "videoEnd": 100,
+      "audioOffsetSeconds": 0.2,
+      "playbackRate": 1.0,
+      "processing": "70Hz high-pass, two-pass loudness normalization, peak limiter, short edge fades; natural speech speed retained",
+      "normalizationMeasurement": {
+        "input_i": "-19.68",
+        "input_tp": "-0.43",
+        "input_lra": "2.90",
+        "input_thresh": "-30.03",
+        "output_i": "-17.04",
+        "output_tp": "-1.50",
+        "output_lra": "2.30",
+        "output_thresh": "-27.41",
+        "normalization_type": "dynamic",
+        "target_offset": "1.04"
+      }
+    },
+    {
+      "section": 4,
+      "sourceLabel": "user-recording-4",
+      "sourceSHA256": "f5e7b163b8f0058f56bd7ed0cded4668771e084738cb82f8cf14a0cac080fa0a",
+      "sourceDurationSeconds": 22.272,
+      "trimStartSeconds": 0.6117920000000001,
+      "trimEndSeconds": 22.034062,
+      "retainedRecordingSeconds": 21.422269999999997,
+      "videoStart": 100,
+      "videoEnd": 125,
+      "audioOffsetSeconds": 0.2,
+      "playbackRate": 1.0,
+      "processing": "70Hz high-pass, two-pass loudness normalization, peak limiter, short edge fades; natural speech speed retained",
+      "normalizationMeasurement": {
+        "input_i": "-20.51",
+        "input_tp": "-3.62",
+        "input_lra": "4.10",
+        "input_thresh": "-31.00",
+        "output_i": "-16.81",
+        "output_tp": "-1.50",
+        "output_lra": "2.30",
+        "output_thresh": "-27.28",
+        "normalization_type": "dynamic",
+        "target_offset": "0.81"
+      }
+    },
+    {
+      "section": 5,
+      "sourceLabel": "user-recording-5",
+      "sourceSHA256": "8d8fb7cd3771a122a7bcb01a7748a1a98ae70eeb9506f3aa0a823298270815b9",
+      "sourceDurationSeconds": 33.536,
+      "trimStartSeconds": 0.868333,
+      "trimEndSeconds": 33.13825,
+      "retainedRecordingSeconds": 32.269917,
+      "videoStart": 125,
+      "videoEnd": 161,
+      "audioOffsetSeconds": 0.2,
+      "playbackRate": 1.0,
+      "processing": "70Hz high-pass, two-pass loudness normalization, peak limiter, short edge fades; natural speech speed retained",
+      "normalizationMeasurement": {
+        "input_i": "-19.29",
+        "input_tp": "-3.02",
+        "input_lra": "3.40",
+        "input_thresh": "-29.83",
+        "output_i": "-16.54",
+        "output_tp": "-1.50",
+        "output_lra": "3.20",
+        "output_thresh": "-27.10",
+        "normalization_type": "dynamic",
+        "target_offset": "0.54"
+      }
+    },
+    {
+      "section": 6,
+      "sourceLabel": "user-recording-6",
+      "sourceSHA256": "b6148f173e75d796c2a8096b7d0d6194af530242f220e6841004d2f163f20498",
+      "sourceDurationSeconds": 16.384,
+      "trimStartSeconds": 0.486312,
+      "trimEndSeconds": 16.223437999999998,
+      "retainedRecordingSeconds": 15.737125999999998,
+      "videoStart": 161,
+      "videoEnd": 180,
+      "audioOffsetSeconds": 0.2,
+      "playbackRate": 1.0,
+      "processing": "70Hz high-pass, two-pass loudness normalization, peak limiter, short edge fades; natural speech speed retained",
+      "normalizationMeasurement": {
+        "input_i": "-19.27",
+        "input_tp": "-1.98",
+        "input_lra": "3.00",
+        "input_thresh": "-29.74",
+        "output_i": "-16.57",
+        "output_tp": "-1.50",
+        "output_lra": "2.50",
+        "output_thresh": "-27.03",
+        "normalization_type": "dynamic",
+        "target_offset": "0.57"
+      }
+    }
+  ],
+  "recognitionForAlignment": "Whisper tiny.en ran locally. Approximate word timestamps corroborated section identity and visual cue alignment; no recordings sent to an external speech-recognition service. Not a verbatim transcript or proof of speaker identity.",
+  "visualCues": [
+    {
+      "cue": "rendered question",
+      "spokenAtApprox": 51.83,
+      "visualTransition": 51.6
+    },
+    {
+      "cue": "report is a lead",
+      "spokenAtApprox": 55.23,
+      "visualTransition": 55
+    },
+    {
+      "cue": "expanding exact patch",
+      "spokenAtApprox": 68.58,
+      "visualTransition": 68.3
+    },
+    {
+      "cue": "stored derivation",
+      "spokenAtApprox": 82.42,
+      "visualTransition": 82.2
+    },
+    {
+      "cue": "audit records actor",
+      "spokenAtApprox": 139.83,
+      "visualTransition": 140
+    }
+  ],
+  "fileBytes": 4888377,
+  "sha256": "ff1c3aacc687f040428c39eb4de29b2e7da943b4e84cd1ce50fdda57950a62d7"
 }

@@ -1,5 +1,7 @@
 # Verification and limits
 
+Current video: Aryan’s six supplied recordings replace the earlier synthetic track. docs/voice-video-verification.json and docs/video-provenance.json describe the current media; earlier synthetic-track checks below are historical. Full decode, per-section audio similarity, peaks, timing and encoded frames were checked. Tool audio listening is unavailable; no listening check is claimed.
+
 Checked on 10 November 2026. Status words distinguish implementation from actual execution. The evaluator’s ground-truth labels are unavailable.
 
 ## Automated checks
@@ -68,3 +70,7 @@ The latest31-test suite also covers required duplicate-report keys, generalized 
 ## Final published API verification
 
 Code commitfb56a41939a9c0bd699f95dd67d76897692b7f62 reached Render live (deploydep-dbpmkl2vcj2c73c2kni0). docs/final-live-verification.json records the public PostgreSQL health/queue, isolated approve/edit/reject actions, replay idempotency, stale409, first-authored-patch acknowledgement/provenance, fresh-session persistence, and unchanged source. Public video200/HEAD/206 and full-file SHA match were reverified. This API check supplements the actual earlier browser flow; no fresh browser playback observation is invented.
+
+## User-recorded narration replacement
+
+Aryan supplied six M4A recordings and confirmed base-file,2,3,4,5,6 order. Whisper tiny.en ran locally to corroborate sections and approximate cue timestamps; no recordings were uploaded for recognition. Screen transitions were aligned to the rendered-question, exact-patch, stored-derivation and audit phrases. Section boundaries are0,21,63,100,125,161,180seconds. Speech playback stays1.0; only screen time is retimed. Audio uses a70Hz high-pass, per-clip two-pass normalization, peak limiting and short edge fades. Full original recordings stay private. Current public-file verification follows deployment.
